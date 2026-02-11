@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  /* Modern Church Palette: Navy & Gold with Soft Accents */
+  --color-primary: #1a2c4e;
+  /* Deep Trust Navy */
+  --color-accent: #d4af37;
+  /* Elegant Gold */
+  --color-surface: #fcfcfd;
+  /* Off-white background */
+  --color-card: #ffffff;
+}
+
+body {
+  @apply bg-surface text-slate-800 antialiased;
+  font-family: 'Inter', system-ui, sans-serif;
+}
