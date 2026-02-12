@@ -5,6 +5,7 @@ use CodeIgniter\Model;
 class MemberModel extends Model {
     protected $table = 'members';
     protected $primaryKey = 'id';
+    protected $useSoftDeletes = true;
     
     // BIG UPDATE HERE: Add 'barangay', 'town_city', 'province', 'zip_code'
     protected $allowedFields = [
@@ -52,8 +53,8 @@ class MemberModel extends Model {
 
     protected $validationRules = [
         'full_name' => 'required|is_unique[members.full_name,id,{id}]',
-        'birth_date' => 'required',
-        'birthplace' => 'required',
+        'birth_date' => 'permit_empty',
+        'birthplace' => 'permit_empty',
     ];
 
     protected $validationMessages = [

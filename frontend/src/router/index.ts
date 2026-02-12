@@ -51,6 +51,11 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('../components/MemberExportView.vue')
     },
     {
+        path: '/import',
+        name: 'MemberImport',
+        component: () => import('../components/ImportCsv.vue')
+    },
+    {
         path: '/settings',
         name: 'Settings',
         component: () => import('../components/SettingsView.vue')
@@ -61,6 +66,25 @@ const routes: Array<RouteRecordRaw> = [
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes,
+});
+
+// Navigation Guard
+router.beforeEach((to, from, next) => {
+    const publicPages = ['/login'];
+    const authRequired = !publicPages.includes(to.path);
+    const loggedIn = localStorage.getItem('user');
+
+    // If trying to access a restricted page + not logged in
+    if (authRequired && !loggedIn) {
+        return next('/login');
+    }
+
+    // If trying to access login page + logged in
+    if (to.path === '/login' && loggedIn) {
+        return next('/');
+    }
+
+    next();
 });
 
 export default router;

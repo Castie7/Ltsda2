@@ -404,7 +404,11 @@ const submitForm = async () => {
         <div v-show="currentStep === 2" class="space-y-8 animate-fade-in">
           <h2 class="text-xl font-bold text-blue-900 border-b pb-4">Baptismal Record</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div><label class="label">Date of Baptism</label><input v-model="form.baptism_date" type="date" class="input-field" /></div>
+            <div>
+                <label class="label">Date of Baptism</label>
+                <input v-model="form.baptism_date" type="text" class="input-field" placeholder="YYYY-MM-DD or Month Year (e.g. Sept 1995)" />
+                <p class="text-[10px] text-slate-400 mt-1">Format: Exact Date, Year, or Month & Year</p>
+            </div>
             <div><label class="label">Officiating Minister</label><input v-model="form.officiating_minister" type="text" class="input-field" /></div>
             <div class="col-span-2"><label class="label">Place of Baptism</label><input v-model="form.place_of_baptism" type="text" class="input-field" /></div>
           </div>
@@ -415,7 +419,10 @@ const submitForm = async () => {
               <label for="rebaptism" class="text-slate-800 font-bold cursor-pointer select-none">Was this member Re-baptized?</label>
             </div>
             <div v-if="isRebaptism" class="grid grid-cols-1 md:grid-cols-2 gap-6 animate-fade-in">
-               <div><label class="label text-amber-800">Re-baptism Date</label><input v-model="form.rebaptism_date" type="date" class="input-field bg-white border-amber-200" /></div>
+               <div>
+                   <label class="label text-amber-800">Re-baptism Date</label>
+                   <input v-model="form.rebaptism_date" type="text" class="input-field bg-white border-amber-200" placeholder="YYYY-MM-DD or Month Year" />
+               </div>
                <div><label class="label text-amber-800">Officiating Minister</label><input v-model="form.rebaptism_minister" type="text" class="input-field bg-white border-amber-200" /></div>
                <div class="col-span-2"><label class="label text-amber-800">Place of Re-baptism</label><input v-model="form.rebaptism_place" type="text" class="input-field bg-white border-amber-200" /></div>
             </div>
@@ -494,10 +501,10 @@ const submitForm = async () => {
 <style scoped>
 @reference "tailwindcss";
 
-.label { @apply block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2; }
+.label { @apply block text-sm font-bold text-slate-700 uppercase tracking-wider mb-2; }
 
 .input-field { 
-  @apply w-full px-4 py-3 bg-slate-50 border border-slate-100 rounded-xl focus:ring-2 focus:ring-blue-900/20 focus:border-blue-900 outline-none transition-all text-slate-800 font-medium placeholder:text-slate-300; 
+  @apply w-full px-4 py-4 bg-slate-50 border border-slate-100 rounded-xl focus:ring-2 focus:ring-blue-900/20 focus:border-blue-900 outline-none transition-all text-slate-800 font-medium placeholder:text-slate-300; 
 }
 
 .animate-fade-in { animation: fadeIn 0.4s ease-out forwards; }

@@ -1,0 +1,760 @@
+first_name,middle_name,last_name,member_code,status,gender,civil_status,birth_date,birthplace,address_street,barangay,town_city,province,zip_code,phone_no,email,educational_level,occupation,hear_about_us,former_religion,hobbies_gifts,baptism_date,officiating_minister,place_of_baptism,rebaptism_date,rebaptism_minister,rebaptism_place,received_by,date_received,from_church,observation
+Vic Oren,Rudolf,ABAYA,MEM0001,Child,,,2015-01-23,Israel,,,,,,,,,,,,,,,,,,,,,,active
+Braylon,,AGPAD,MEM0002,Child,,,2011-09-29,PCDH,,,,,,,,,,,,,,,,,,,,,,active
+Frendell,Cade,AGPAD,MEM0003,Child,,,2015-07-28,Beng. Gen Hosp.,,,,,,,,,,,,,,,,,,,,,,active
+Geo,,ALANGDEO,MEM0004,Child,,,2009-10-08,,,,,,,,,,,,,,,,,,,,,,,inactive
+Hyacinth,,ALANGDEO,MEM0005,Child,,,2014-03-24,,,,,,,,,,,,,,,,,,,,,,,inactive
+Jubert,,BAGSAOAN,MEM0006,Child,,,2013-07-20,,,,,,,,,,,,,,,,,,,,,,,
+Kent,,BAGSAOAN,MEM0007,Child,,,2008-07-19,,,,,,,,,,,,,,,,,,,,,,,
+Girlie,,BAGSAOAN,MEM0008,Child,,,2006-10-11,,,,,,,,,,,,,,,,,,,,,,,earliteens 
+Nyah,,BAGSAOAN,MEM0009,Child,,,2009-01-11,,,,,,,,,,,,,,,,,,,,,,,
+Althea,,BALANG,MEM0010,Child,,,2006-09-19,,,,,,,,,,,,,,,,,,,,,,,earliteens
+Ephraim,,BALANG,MEM0011,Child,,,2013-08-30,,,,,,,,,,,,,,,,,,,,,,,active
+JM,,BALANG,MEM0012,Child,,,2017-02-14,Beng. Gen Hosp.,,,,,,,,,,,,,,,,,,,,,,active
+Zak,Densel,BALDAS,MEM0013,Child,,,2007-08-03,,,,,,,,,,,,,,,,,,,,,,,
+Remuz,Kent,BALDAS,MEM0014,Child,,,2009-07-01,,,,,,,,,,,,,,,,,,,,,,,
+Shalmia,Jane,BALDAS,MEM0015,Child,,,2013-06-10,,,,,,,,,,,,,,,,,,,,,,,
+Yixien,,BANGLOT,MEM0016,Child,,,2014-12-16,Beng. Gen Hosp.,,,,,,,,,,,,,,,,,,,,,,active
+Zac,,BANGLOT,MEM0017,Child,,,2011-02-25,Beng. Gen Hosp.,,,,,,,,,,,,,,,,,,,,,,active
+Kia,Martina,BANGLOT,MEM0018,Child,,,2011-08-31,,,,,,,,,,,,,,,,,,,,,,,
+Lacy,,BANGLOT,MEM0019,Child,,,2008-05-07,,,,,,,,,,,,,,,,,,,,,,,
+Ashley,,BANGLOT,MEM0020,Child,,,2005-01-31,,,,,,,,,,,,,,,,,,,,,,,earliteens
+Althea Reign,B.,BUDAYAO,MEM0021,Child,,,"December 15, 2016 ",Beng. Gen Hosp.,,,,,,,,,,,,,,,,,,,,,,active
+Clara Olivett,B.,BUDAYAO,MEM0022,Child,,,"July 26, 2018",Beng. Gen Hosp.,,,,,,,,,,,,,,,,,,,,,,active
+Renjie Zion,B.,BUDAYAO,MEM0023,Child,,,"January 4, 2022",Beng. Gen Hosp.,,,,,,,,,,,,,,,,,,,,,,active
+Gengen,,CABANG,MEM0024,Child,,,,,,,,,,,,,,,,,,,,,,,,,,Youth
+Avery,,CABANG,MEM0025,Child,,,2002-10-12,,,,,,,,,,,,,,,,,,,,,,,Youth
+Yumi,Cyrem,CABANG,MEM0026,Child,,,2006-12-10,,,,,,,,,,,,,,,,,,,,,,,active
+Cherrylyn,,CALASIAO,MEM0027,Child,,,2003-10-01,,,,,,,,,,,,,,,,,,,,,,,Youth
+Charmell,,CALASIAO,MEM0028,Child,,,2008-03-30,,,,,,,,,,,,,,,,,,,,,,,active
+Tyren,,CASTRO,MEM0029,Child,,,2014-10-14,,,,,,,,,,,,,,,,,,,,,,,
+Vrix,Jahryl,CRUZ,MEM0030,Child,,,2008-10-07,Beng. Gen Hosp.,,,,,,,,,,,,,,,,,,,,,,active
+Liam,Rhyne,CRUZ,MEM0031,Child,,,2012-07-25,Beng. Gen Hosp.,,,,,,,,,,,,,,,,,,,,,,active
+Ellen,Monica,DIEGO,MEM0032,Child,,,2014-11-21,,,,,,,,,,,,,,,,,,,,,,,active
+Olive,Jozzle,DIEGO,MEM0033,Child,,,2008-10-17,,,,,,,,,,,,,,,,,,,,,,,active
+Joshua,Sean,DIEGO,MEM0034,Child,,,2003-08-03,,,,,,,,,,,,,,,,,,,,,,,Youth
+Jaycin,Rose,DELA CRUZ,MEM0035,Child,,,2011-11-26,,,,,,,,,,,,,,,,,,,,,,,active
+Ralph,Vince,DELA CRUZ,MEM0036,Child,,,2006-04-24,,,,,,,,,,,,,,,,,,,,,,,earliteens
+Nhova,Vhilla,DELA CRUZ,MEM0037,Child,,,2016-11-25,Beng. Gen Hosp.,,,,,,,,,,,,,,,,,,,,,,active
+Francine,Laurette,DUPAIS,MEM0038,Child,,,2006-01-23,,,,,,,,,,,,,,,,,,,,,,,earliteens
+Jahred,,DUPAIS,MEM0039,Child,,,2008-11-10,,,,,,,,,,,,,,,,,,,,,,,active
+Japheth,,DUPAIS,MEM0040,Child,,,2011-01-18,,,,,,,,,,,,,,,,,,,,,,,active
+Zian,Dane,EVANGELISTA,MEM0041,Child,,,2011-05-17,Finland,,,,,,,,,,,,,,,,,,,,,,
+Zeph,Niel,EVANGELISTA,MEM0042,Child,,,2016-07-04,Finland,,,,,,,,,,,,,,,,,,,,,,
+Jennifer,,FANWA,MEM0043,Child,,,2002-08-18,,,,,,,,,,,,,,,,,,,,,,,junior
+Jommel,,FANWA,MEM0044,Child,,,,,,,,,,,,,,,,,,,,,,,,,,youth
+Benj,Jairel,LACAMEN,MEM0045,Child,,,2008-07-21,,,,,,,,,,,,,,,,,,,,,,,active
+Brylle,Jairus,LACAMEN,MEM0046,Child,,,2006-10-26,,,,,,,,,,,,,,,,,,,,,,,active
+Arreih,Kim,LANDISAN,MEM0047,Child,,,2009-10-06,,,,,,,,,,,,,,,,,,,,,,,
+Jasper,Jim,LANDISAN,MEM0048,Child,,,2015-06-17,,,,,,,,,,,,,,,,,,,,,,,
+Yvonne,Pilasania,LEAÑO,MEM0049,Child,,,2001-07-24,,,,,,,,,,,,,,,,,,,,,,,Youth
+Adriel,,LIBANGAN,MEM0050,Child,,,2003-04-01,,,,,,,,,,,,,,,,,,,,,,,youth
+Zaiden,Zebedee,OSNGAO,MEM0051,Child,,,2013-02-15,,,,,,,,,,,,,,,,,,,,,,,active
+Zackiesha,Hanani,OSNGAO,MEM0052,Child,,,2015-01-23,,,,,,,,,,,,,,,,,,,,,,,active
+Triomar,,PALADIO,MEM0053,Child,,,2002-03-28,,,,,,,,,,,,,,,,,,,,,,,Youth
+Gedeon,,PALADIO,MEM0054,Child,,,2005-09-02,,,,,,,,,,,,,,,,,,,,,,,earliteens
+Kizzhea,,PALADIO,MEM0055,Child,,,2010-01-19,,,,,,,,,,,,,,,,,,,,,,,active
+Kassandra,Christine,POLOC,MEM0056,Child,,,2010-06-19,,,,,,,,,,,,,,,,,,,,,,,inactive
+Cai,Jin,POLOC,MEM0057,Child,,,2013-06-04,PCDH,,,,,,,,,,,,,,,,,,,,,,inactive
+Jea,Drew,POLOC,MEM0058,Child,,,2015-07-11,PCDH,,,,,,,,,,,,,,,,,,,,,,active
+Flynn,TD,PULICAY,MEM0059,Child,,,2012-02-05,,,,,,,,,,,,,,,,,,,,,,,youth
+Peja,,PULICAY,MEM0060,Child,,,2003-04-02,,,,,,,,,,,,,,,,,,,,,,,Youth
+Zimara,,PULICAY,MEM0061,Child,,,2009-12-12,,,,,,,,,,,,,,,,,,,,,,,
+Lendrei,Vaughn,PUNSALANG,MEM0062,Child,,,2010-05-01,,,,,,,,,,,,,,,,,,,,,,,
+Chanela,Eowyn,PUNSALANG,MEM0063,Child,,,2007-05-12,,,,,,,,,,,,,,,,,,,,,,,
+Chelonai,Rois,PUNSALANG,MEM0064,Child,,,2004-10-03,,,,,,,,,,,,,,,,,,,,,,,Youth
+Aron,Jef,SENCIO,MEM0065,Child,,,,,,,,,,,,,,,,,,,,,,,,,,active
+Gwyneth,Leanne,TAO - EY,MEM0066,Child,,,2005-06-30,Beng. Gen Hosp.,,,,,,,,,,,,,,,,,,,,,,earliteens
+Angel,Shereen,TAO - EY,MEM0067,Child,,,2007-12-16,Beng. Gen Hosp.,,,,,,,,,,,,,,,,,,,,,,active
+Sky Zion,Kenji,TAO - EY,MEM0068,Child,,,2015-11-26,Tabuk,,,,,,,,,,,,,,,,,,,,,,
+Romar,,TIBANGAY,MEM0069,Child,,,2007-03-13,,,,,,,,,,,,,,,,,,,,,,,
+Shema,,TIBANGAY,MEM0070,Child,,,2008-07-19,,,,,,,,,,,,,,,,,,,,,,,
+Carliegh Mae,R.,TIBANGAY,MEM0071,Child,,,2016-07-07,,,,,,,,,,,,,,,,,,,,,,,active
+Xhydny,,TINO,MEM0072,Child,,,2008-12-16,,,,,,,,,,,,,,,,,,,,,,,
+Ceasar,,TOQUERO,MEM0073,Child,,,2008-01-13,,,,,,,,,,,,,,,,,,,,,,,
+Riggs,,TOQUERO,MEM0074,Child,,,2011-08-19,,,,,,,,,,,,,,,,,,,,,,,
+Cris,Emerald,USTARE,MEM0075,Child,,,2009-12-07,Baguio Gen. Hosp.,,,,,,,,,,,,,,,,,,,,,,active
+Carl,Jasper,USTARE,MEM0076,Child,,,2011-07-03,PCDH,,,,,,,,,,,,,,,,,,,,,,active
+Bohnjer,Dion,ZARATE,MEM0077,Child,,,2007-06-06,,,,,,,,,,,,,,,,,,,,,,,active
+Jette,Ayatmi,ZARATE,MEM0078,Child,,,2011-05-16,,,,,,,,,,,,,,,,,,,,,,,active
+Josef,Jergen,ZENNER,MEM0079,Child,,,2007-10-17,Germany,,,,,,,,,,,,,,,,,,,,,,active
+LILIBETH,D.,ABAYA,MEM0080,Abroad,,,1974-02-06,,,,,,,,,,Caregiver,,,,March 1984 or 1985,,Bokawkan,,,,,,,
+CLEOFE,,BANGLOT,MEM0081,Abroad,,,1979-01-31,,,,,,,,,,OFW,,,,2011-03-19,,,,,,,,,Drop
+CHRISTINE,RUTH,BANGLOT,MEM0082,Abroad,,,1993-09-30,,,,,,,,,,Nurse,,,,2004-04-03,Ptr. Romeo Wagayan,,,,,,,,
+DAISY,,BANGLOT,MEM0083,Abroad,,,1977-03-04,,,,,,,,,,Caregiver,,,,1990-04-01,Ptr. S. Gifford,,,,,,,,Drop
+EDUARDO,JR.,BANGLOT,MEM0084,Abroad,,,1988-06-07,,,,,,,,,,Mechanic,,,,1997-01-01,,,,,,,,,Drop
+GENEVIVE,COLAS,CAMIT,MEM0085,Abroad,,,1975-11-17,,,,,,,,,,Caregiver,,,,,Ptr. Romeo Wagayan,,,,,,,,
+SEPAL,YABES,CAMIT,MEM0086,Abroad,,,1987-01-16,,,,,,,,,,OFW,,,,2016-03-21,Ptr. Romeo Wagayan,Piraso Resort B.C.,,,,,,,
+SHEILA,ABASTILLA,CAMPBELL,MEM0087,Abroad,,,2017-01-17,,,,,,,,,,,,,,,,,,,,,,,Drop
+JAN,,CELOY,MEM0088,Abroad,,,1981-05-17,,,,,,,,,,OFW,,,,1997-05-03,Ptr. R. Liwag,,,,,,,,Drop
+RHODESIA,,CELOY,MEM0089,Abroad,,,1976-05-29,,,,,,,,,,Researcher ,,,,1984-03-01,Ptr. A. Smith,,,,,,,,Drop
+MERIVA,PEDRO,EVANGELISTA,MEM0090,Abroad,,,1987-08-02,,,,,,,,,,Caregiver,,,,1998-01-03,Ptr. Solomon Gandeza,"Bayabas, Pico LTB",,,,,,,
+PAUL,,FIACHING,MEM0091,Abroad,,,1988-07-20,,,,,,,,,,,,,,2014-10-23,,,,,,,,,Drop
+JOEL,,FIACHING,MEM0092,Abroad,,,,,,,,,,,,,,,,,,,,,,,,,,
+IMELDA,,GAMBOA,MEM0093,Abroad,,,1970-04-10,,,,,,,,,,Retired Teacher,,,,1993-08-08,Ptr. Santiago Antiporda,,,,,,,,
+ROWENA,,GUMINIGUIN,MEM0094,Abroad,,,1958-12-03,,,,,,,,,,OFW,,,,1969,"Ptr. Geronimo,Calangan",,,,,,,,
+HILTON,D.,LANDISAN,MEM0095,Abroad,,,1980-08-26,,,,,,,,,,OFW,,,,2014-11-29,Ptr. Cayetano Emilio,Greenvalley B.C.,,,,,,,Drop
+ALYNE,JOY,LIBANGAN,MEM0096,Abroad,,,1986-11-15,,,,,,,,,,Teacher,,,,1998-01-03,Ptr. Solomon Gandeza,"Bayabas, Pico LTB",,,,,,,
+ARCELYN,COLBONGAN,SILOY,MEM0097,Abroad,,,1990-07-27,,,,,,,,,,OFW,,,,2011-03-19,,Greenvalley B.C.,,,,,,,
+REMEDIOS,,TERCERO,MEM0098,Abroad,,,1969-11-02,,,,,,,,,,,,,,,,,,,,,,,Drop
+FRANCIS,ALANGDEO,TINO,MEM0099,Abroad,,,,,,,,,,,,,OFW,,,,2016-05-01,,Piraso Resort B.C.,,,,,,,
+JULIE,PULICAY,TINO,MEM0100,Abroad,,,1983-07-04,,,,,,,,,,OFW,,,,,Ptr. Rogelio Taguba,,,,,,,,
+ABEGAIL,TAMPOA,ZARATE,MEM0101,Abroad,,,1975-05-25,,,,,,,,,,Nurse,,,,,Ptr. R. Biscaro,,,,,,,,Drop
+MARSHALL,,ZARATE,MEM0102,Abroad,,,1974-05-24,,,,,,,,,,OFW,,,,,Ptr. Max Delos Reyes,,,,,,,,Drop
+LILIBETH,D.,ABAYA,MEM0103,Abroad,,,1974-02-06,,,,,,,,,,Caregiver,,,,March 1984 or 1985,,Bokawkan,,,,,,,
+CLEOFE,,BANGLOT,MEM0104,Abroad,,,1979-01-31,,,,,,,,,,OFW,,,,2011-03-19,,,,,,,,,
+CHRISTINE,RUTH,BANGLOT,MEM0105,Abroad,,,1993-09-30,,,,,,,,,,Nurse,,,,2004-04-03,Ptr. Romeo Wagayan,,,,,,,,
+DAISY,,BANGLOT,MEM0106,Abroad,,,1977-03-04,,,,,,,,,,Caregiver,,,,1990-04-01,Ptr. S. Gifford,,,,,,,,
+GENEVIVE,COLAS,CAMIT,MEM0107,Abroad,,,1975-11-17,,,,,,,,,,Caregiver,,,,,Ptr. Romeo Wagayan,,,,,,,,
+SEPAL,YABES,CAMIT,MEM0108,Abroad,,,1987-01-16,,,,,,,,,,OFW,,,,2016-03-21,Ptr. Romeo Wagayan,Piraso Resort B.C.,,,,,,,
+SHEILA,ABASTILLA,CAMPBELL,MEM0109,Abroad,,,2017-01-17,,,,,,,,,,,,,,,,,,,,,,,
+ESTHER,,CARIŇO,MEM0110,Abroad,,,"June 7, 1990",,,,,,,,,,,,,,"August 1, 2021",Ptr. Max Cadalig,La Trinidad SDA Church,,,,,,,
+RHODESIA,,CELOY,MEM0111,Abroad,,,1976-05-29,,,,,,,,,,Researcher ,,,,1984-03-01,Ptr. A. Smith,,,,,,,,
+LIBERTY,,EBBES,MEM0112,Abroad,,,1986-09-06,,,,,,,,,,,,,,1998-01-03,Ptr. Solomon Gandeza,Bayabas L.T.B.,,,,,,,
+MERIVA,PEDRO,EVANGELISTA,MEM0113,Abroad,,,1987-08-02,,,,,,,,,,Caregiver,,,,1998-01-03,Ptr. Solomon Gandeza,"Bayabas, Pico LTB",,,,,,,
+JOEL,,FIACHING,MEM0114,Abroad,,,,,,,,,,,,,,,,,,Ptr. Willie Ortaleza,,,,,,,,
+PAUL,,FIACHING,MEM0115,Abroad,,,1988-07-20,,,,,,,,,,,,,,2014-10-23,,,,,,,,,
+ROWENA,,GUMINIGUIN,MEM0116,Abroad,,,1958-12-03,,,,,,,,,,OFW,,,,1969,Ptr. Geronimo Calangan,,,,,,,,
+JAY-AR,G.,MACULAM,MEM0117,Abroad,,,"April 26, 1997",,,,,,,,,,,,,,"May 13,  2023",Ptr. Wilson Laoad,La Trinidad SDA Church,,,,,,,
+MERESA,W.,MARTIN,MEM0118,Abroad,,,1990-03-11,,,,,,,,,,,,,,2016-08-13,Ptr. Max Cadalig,Piraso Resort,,,,,,,Transfer 4- 7- 2023
+VALERIO,,MARTIN,MEM0119,Abroad,,,,,,,,,,,,,,,,,,Ptr. Max Cadalig,"Pugo, L.U.",,,,,,,Transfer 4- 7- 2023
+SHEA CELOY,S.,MINDARO,MEM0120,Abroad,,,1995-01-27,,,,,,,,,,,,,,2003-03-22,Ptr. G. Scheuneman,Piraso Resort,,,,,,,
+ALYNE,JOY,LIBANGAN,MEM0121,Abroad,,,1986-11-15,,,,,,,,,,Teacher,,,,1998-01-03,Ptr. Solomon Gandeza,"Bayabas, Pico LTB",,,,,,,
+GWYNETH LEANNE,TULL,TAO-EY,MEM0122,Abroad,,,2005-06-30,,,,,,,,,,,,,,2017-09-30,Ptr. Eduardo Garlejo,La Trinidad SDA Church,,,,,,,
+LESTER,,TAO-EY,MEM0123,Abroad,,,1978-12-14,,,,,,,,,,,,,,1989-02-25,Ptr. Anthonio B. Smith,Parapad,,,,,,,
+PATY LEAH JOY,COLOMA,TAO-EY,MEM0124,Abroad,,,1990-05-03,,,,,,,,,,,,,,2017-03-04,Ptr. Eduardo Garlejo,Piraso Resort,,,,,,,
+REMEDIOS,,TERCERO,MEM0125,Abroad,,,1969-11-02,,,,,,,,,,,,,,,,,,,,,,,
+ABEGAIL,TAMPOA,ZARATE,MEM0126,Abroad,,,1975-05-25,,,,,,,,,,Nurse,,,,,Ptr. R. Biscaro,,,,,,,,2017-09-02
+MARSHALL,,ZARATE,MEM0127,Abroad,,,1974-05-24,,,,,,,,,,OFW,,,,,Ptr. Max Delos Reyes,,,,,,,,2017-09-02
+FEDERICO,H.,ALLAGA,MEM0128,Abroad,,,1987-11-20,,,,,,,,,,transferred,,,,2014-12-06,Ptr. Cayetano Emilio,,,,,,,,
+BRENT,,AGPAWA,MEM0129,Abroad,,,1993-04-23,,,,,,,,,,transferred,,,,,,,,,,,,,
+NARDY,,AGPAWA,MEM0130,Abroad,,,,,,,,,,,,,transferred,,,,2000-11-26,Ptr. Max delos Reyes,Piraso Resort B.C.,,,,,,,2017-09-02
+GUILLERMO,,BALBIN,MEM0131,Abroad,,,1933-06-13,,,,,,,,,,transferred,,,,,,,,,,,,,
+ROSALYN,,BATANGLAWIN,MEM0132,Abroad,,,1992-03-22,,,,,,,,,,transferred,,,,2013-01-05,Ptr. Cayetano Emilio,,,,,,,,2017-09-02
+MARIETA,BORGUILLAS,CALICA,MEM0133,Abroad,,,,,,,,,,,,,transferred,,,,2001-02-24,Ptr. Willie Ortaleza,,,,,,,,
+CORAZON,,CELOY,MEM0134,Abroad,,,,,,,,,,,,,transferred,,,,,,,,,,,,,
+JOHN,JR.,CELOY,MEM0135,Abroad,,,1979-03-17,,,,,,,,,,transferred,,,,,,,,,,,,,
+JUDILYN,,CELOY,MEM0136,Abroad,,,1977-07-27,,,,,,,,,,transferred,,,,,,Piraso Resort B.C.,,,,,,,
+MAY EMELIE ROSE,POLON,CELOY,MEM0137,Abroad,,,1984-11-20,,,,,,,,,,transferred,,,,,,,,,,,,,2017-09-02
+MARIA,COLINA,COMPAS,MEM0138,Abroad,,,1962-11-06,,,,,,,,,,transferred,,,,2016-06-04,Ptr. Hyre Tangonan,,,,,,,,2017-09-02
+MARLYN,L.,DALLIGOS,MEM0139,Abroad,,,1971-05-17,,,,,,,,,,transferred,,,,1984-03-04,Ptr. R. Biscaro,Navy Base B.C.,,,,,,,2017-09-02
+DENVER,,DANIEL,MEM0140,Abroad,,,1970-10-04,,,,,,,,,,transferred,,,,1983-05-21,Ptr. D. Tucker,Navy Base B.C.,,,,,,,2017-09-02
+CHRISLYN,,DEL ROSARIO,MEM0141,Abroad,,,,,,,,,,,,,transferred,,,,1998-06-20,Ptr. Max delos Reyes,,,,,,,,2017-09-02
+MADELINE,,DEL ROSARIO,MEM0142,Abroad,,,1979-09-22,,,,,,,,,,transferred,,,,1998-06-20,Ptr. Max delos Reyes,,,,,,,,2017-09-02
+BERLINDA,,DIASEN,MEM0143,Abroad,,,,,,,,,,,,,transferred,,,,,,Greenvalley B.C.,,,,,,,2016-10-01
+VEGERLIO,,DIASEN,MEM0144,Abroad,,,,,,,,,,,,,transferred,,,,,,,,,,,,,2016-10-02
+DANIELA YSA,DOMINGUEZ,DOG-AP,MEM0145,Abroad,,,,,,,,,,,,,transferred,,,,2010-07-03,Ptr. Valentin Aplod,,,,,,,,2016-10-03
+ALVIN,,DUMASING,MEM0146,Abroad,,,1987-07-08,,,,,,,,,,transferred,,,,1996-10-23,Ptr. Bruno Pollito,,,,,,,,2017-09-02
+FEBE,GUMINIGUIN,DUMEPNAS,MEM0147,Abroad,,,1971-02-11,,,,,,,,,,transferred,,,,,Ptr. Ajir,,,,,,,,2017-09-02
+MARTINA,,ECCA,MEM0148,Abroad,,,,,,,,,,,,,transferred,,,,,,Dagman Quirino I.S.,,,,,,,2017-09-02
+CZARINA,MAE,EMILIO,MEM0149,Abroad,,,1990-09-01,,,,,,,,,,transferred,,,,,,,,,,,,,2017-09-02
+MIA,,EMILIO,MEM0150,Abroad,,,1964-04-15,,,,,,,,,,transferred,,,,1972-10-17,Ptr. Alejandro Corpuz,,,,,,,,2017-09-02
+PASTOR,CAYETANO,EMILIO,MEM0151,Abroad,,,1955-11-01,,,,,,,,,,transferred,,,,,,,,,,,,,2017-09-02
+JULIET,,GAMBOA,MEM0152,Abroad,,,1982-12-12,,,,,,,,,,transferred,,,,1998-06-20,Ptr. Max delos Reyes,,,,,,,,
+JOSHUA,,GUICINGAN,MEM0153,Abroad,,,,,,,,,,,,,transferred,,,,2011-03-19,,,,,,,,,
+RICO,,GURON,MEM0154,Abroad,,,,,,,,,,,,,transferred,,,,2015-03-21,Ptr. Cayetano Emilio,Piraso Resort B.C.,,,,,,,
+MERJINA,,INFANTE,MEM0155,Abroad,,,1954,,,,,,,,,,transferred,,,,,Ptr. Cayetano Emilio,Greenvalley B.C.,,,,,,,2017-09-02
+MARLON,CHURPING,KILLIP,MEM0156,Abroad,,,1995-09-06,,,,,,,,,,transferred,,,,2016-06-04,Ptr. Hyre Tangonan,,,,,,,,2017-09-02
+CARLOS,,LABUTEN,MEM0157,Abroad,,,2002-02-24,,,,,,,,,,transferred,,,,2014-11-29,Ptr. Cayetano Emilio,,,,,,,,2017-09-02
+COMELAT,,LALAWE,MEM0158,Abroad,,,1969-09-10,,,,,,,,,,transferred,,,,1994-07-14,Ptr.A. Edwin,,,,,,,,2017-09-02
+EMILYN,LESTINO,LALAWE,MEM0159,Abroad,,,1976-03-28,,,,,,,,,,transferred,,,,1989-04-19,Ptr. C. Catolico,,,,,,,,2017-09-02
+JASON,,LALIS,MEM0160,Abroad,,,,,,,,,,,,,transferred,,,,,,,,,,,,,2017-09-02
+DIMLER,,LASATEN,MEM0161,Abroad,,,1978-06-28,,,,,,,,,,transferred,,,,2011-03-19,,,,,,,,,2017-09-02
+ANTONIO,,LAZARO,MEM0162,Abroad,,,1973-05-04,,,,,,,,,,transferred,,,,2011-03-19,,,,,,,,,2017-09-02
+EXAL,,LAZARO,MEM0163,Abroad,,,,,,,,,,,,,transferred,,,,,,Piraso Resort B.C.,,,,,,,
+ELLEN,,LEGMAYO,MEM0164,Abroad,,,1976,,,,,,,,,,transferred,,,,2003-03-22,Ptr. G. Scheuneman,,,,,,,,
+LYCA ROSE,H.,LEGADO,MEM0165,Abroad,,,2000-12-10,,,,,,,,,,transferred,,,,2016-06-04,Ptr. Hyre Tangonan,,,,,,,,
+MARK,JUNEIRY,MADARANG,MEM0166,Abroad,,,1992,,,,,,,,,,transferred,,,,,,,,,,,,,2017-09-02
+RICO,,MANUEL,MEM0167,Abroad,,,1975-11-21,,,,,,,,,,transferred,,,,,Ptr. C. Ojano,Profession by faith,,,,,,,2017-09-02
+EDWIN,,NAHIG,MEM0168,Abroad,,,1982,,,,,,,,,,transferred,,,,2003-03-22,Ptr. G. Scheuneman,Tuding S.D.A. Church,,,,,,,2017-09-02
+FELY,,PECUA,MEM0169,Abroad,,,,,,,,,,,,,transferred,,,,1999-01-16,Ptr. Solomon Gandeza,Profession by faith,,,,,,,2017-09-02
+JOHN,JR.,PECUA,MEM0170,Abroad,,,,,,,,,,,,,transferred,,,,1999-01-16,Ptr. Solomon Gandeza,,,,,,,,2017-09-02
+JOHN,SR.,PECUA,MEM0171,Abroad,,,,,,,,,,,,,transferred,,,,1999-01-16,Ptr. Solomon Gandeza,,,,,,,,2017-09-02
+CANDIDO,,PINGKIHAN,MEM0172,Abroad,,,,,,,,,,,,,transferred,,,,2000-03-18,,,,,,,,,2017-09-02
+MARIBEL,,POYAO,MEM0173,Abroad,,,,,,,,,,,,,transferred,,,,,,,,,,,,,
+MINDA,,POYAO,MEM0174,Abroad,,,,,,,,,,,,,transferred,,,,,,Greenvalley B.C.,,,,,,,
+NORMA,,PUYAO,MEM0175,Abroad,,,1940-06-15,,,,,,,,,,transferred,,,,1984-03-20,Ptr. A. Smith,Greenvalley B.C.,,,,,,,
+NARCISA,ESTARIJA,RAYMUNDO,MEM0176,Abroad,,,1989-01-02,,,,,,,,,,transferred,,,,2015-03-31,,Piraso Resort B.C.,,,,,,,
+RODERICK,,RAYMUNDO,MEM0177,Abroad,,,,,,,,,,,,,transferred,,,,2015-03-21,,,,,,,,,
+VALERIE,SAGALTO,RODRIGUEZ,MEM0178,Abroad,,,2001-12-08,,,,,,,,,,transferred,,,,2014-11-29,Ptr. Cayetano Emilio,,,,,,,,2017-09-02
+APRIL,JOY,SHONTOGAN,MEM0179,Abroad,,,1990-04-03,,,,,,,,,,transferred,,,,2002-05-18,Ptr. Romeo Wagayan,,,,,,,,
+MAIKO,,SIBAYAN,MEM0180,Abroad,,,2005-06-14,,,,,,,,,,transferred,,,,,,,,,,,,,
+MARILYN,,TACLOY,MEM0181,Abroad,,,1997-01-07,,,,,,,,,,transferred,,,,2015-06-06,Ptr. Cayetano Emilio,,,,,,,,
+GEORGE,,TERCERO,MEM0182,Abroad,,,1955-02-22,,,,,,,,,,transferred,,,,1968,Ptr. Berto,,,,,,,,
+JUANA,A.,TOG-ACA,MEM0183,Abroad,,,1973-12-28,,,,,,,,,,transferred,,,,1986-08-30,Ptr. A. Smith,,,,,,,,
+IMELDA,,TRANQUILO,MEM0184,Abroad,,,1939-04-05,,,,,,,,,,transferred,,,,,Ptr. Damocles,,,,,,,,
+MADELYN,M.,WADWADAN,MEM0185,Abroad,,,1973-09-05,,,,,,,,,,transferred,,,,1985-09-01,Ptr. Solomon Gandeza,,,,,,,,
+MERCY,M.,WADWADAN,MEM0186,Abroad,,,1975-12-25,,,,,,,,,,transferred,,,,1986-10-01,Ptr. Afenir,,,,,,,,
+GIVEE,LEE,WAGAYAN,MEM0187,Abroad,,,,,,,,,,,,,transferred,,,,,,,,,,,,,
+LOMA,,WAGAYAN,MEM0188,Abroad,,,1965,,,,,,,,,,transferred,,,,1983-05-21,Ptr. R. Biscaro,,,,,,,,
+ROMEO,,WAGAYAN,MEM0189,Abroad,,,1960,,,,,,,,,,transferred,,,,1980-01-01,Ptr. W. Pasiwen,Piraso Resort B.C.,,,,,,,
+GLECERIA,PACSI,ZARATE,MEM0190,Abroad,,,1974-05-13,,,,,,,,,,transferred,,,,1984-10-02,Ptr. A. Edwin,Piraso Resort B.C.,,,,,,,
+GILBERT,,BAGSAOAN,MEM0191,Abroad,,,1984-04-04,,,,,,,,,,drop,,,,2012-03-03,Ptr. Cayetano Emilio,Greenvalley B.C.,,,,,,,
+JULIE,L.,BAGSAOAN,MEM0192,Abroad,,,1980-07-30,,,,,,,,,,drop,,,,2012-03-03,Ptr. Cayetano Emilio,,,,,,,,
+AGOSTO,,BALANG,MEM0193,Abroad,,,1974-08-17,,,,,,,,,,drop,,,,2003-03-15,Ptr. J. Legrand,,,,,,,,
+QUIRINO,,BUKAK-EW,MEM0194,Abroad,,,,,,,,,,,,,drop,,,,,,,,,,,,,
+EMELYN,,CALIAG,MEM0195,Abroad,,,1984,,,,,,,,,,drop,,,,,,,,,,,,,
+CHATO,,COLEMPEP,MEM0196,Abroad,,,,,,,,,,,,,drop,,,,2001-02-24,Ptr. Willie Ortaleza,,,,,,,,
+JOANA,,COLEMPEP,MEM0197,Abroad,,,,,,,,,,,,,drop,,,,2001-04-14,Ptr. Willie Ortaleza,,,,,,,,
+SHALMIA,,EBBES,MEM0198,Abroad,,,,,,,,,,,,,drop,,,,,,,,,,,,,
+JANICE,,ECCA,MEM0199,Abroad,,,1987-08-01,,,,,,,,,,drop,,,,1999-01-16,Ptr. Solomon Gandeza,Greenvalley B.C.,,,,,,,
+MA.,LUISA,ECCA,MEM0200,Abroad,,,1984-10-14,,,,,,,,,,drop,,,,1999-01-16,Ptr. Solomon Gandeza,,,,,,,,
+AGUSTINA,,ESPADA,MEM0201,Abroad,,,,,,,,,,,,,drop,,,,2003-03-15,Ptr. Eugene Torres,,,,,,,,
+FROILAN,,FADLAS,MEM0202,Abroad,,,1985-05-03,,,,,,,,,,drop,,,,2002-05-18,Ptr. Romeo Wagayan,Bayabas L.T.B.,,,,,,,
+MILTON,,FANWA,MEM0203,Abroad,,,1969-02-04,,,,,,,,,,drop,,,,1994-04-01,Ptr. Rogelio Taguba,,,,,,,,
+EDWARD,,FLORES,MEM0204,Abroad,,,1986-11-17,,,,,,,,,,drop,,,,1998-01-03,Ptr. Solomon Gandeza,,,,,,,,
+REX,S.,GAMBOA,MEM0205,Abroad,,,1973-04-09,,,,,,,,,,drop,,,,1993-08-08,Ptr. Santiago T. Antiporda,,,,,,,,
+DICKWIN,,GAYDAO,MEM0206,Abroad,,,1971-06-21,,,,,,,,,,drop,,,,1998-06-20,Ptr. R. Lawson,,,,,,,,
+ELIZABETH,,GOMEYAC,MEM0207,Abroad,,,,,,,,,,,,,drop,,,,2001-10-13,Ptr. Romeo Wagayan,,,,,,,,
+ABEGAIL,,GUMASTIN,MEM0208,Abroad,,,1991,,,,,,,,,,drop,,,,2003-01-18,Ptr. Romeo Wagayan,,,,,,,,
+MERYGULSA,,INFANTE,MEM0209,Abroad,,,1989,,,,,,,,,,drop,,,,2003-01-18,Ptr. Romeo Wagayan,,,,,,,,
+ELSIE,,INGUSAN,MEM0210,Abroad,,,1992,,,,,,,,,,drop,,,,2003-01-18,Ptr. Romeo Wagayan,,,,,,,,
+MERCY,,INGUSAN,MEM0211,Abroad,,,1990,,,,,,,,,,drop,,,,2003-01-18,Ptr. Romeo Wagayan,,,,,,,,
+JOCELYN,,LAB-ISA,MEM0212,Abroad,,,1970-04-13,,,,,,,,,,drop,,,,1993-02-09,Ptr. Rogelio Taguba,,,,,,,,
+JUAN,,LAB-ISA,MEM0213,Abroad,,,1969-06-27,,,,,,,,,,drop,,,,1994-05-26,Ptr. Rogelio Taguba,,,,,,,,
+KIMBERLY,,LAB-ISA,MEM0214,Abroad,,,1987,,,,,,,,,,drop,,,,2002-12-07,Ptr. Romeo Wagayan,Piraso Resort B.C.,,,,,,,
+RONNIE,,LABUTEN,MEM0215,Abroad,,,,,,,,,,,,,drop,,,,,,Greenvalley B.C.,,,,,,,
+LYEJIATE,,LASATEN,MEM0216,Abroad,,,1998-07-13,,,,,,,,,,drop,,,,2012-03-03,Ptr. Cayetano Emilio,,,,,,,,
+ESTHER,,LATIRO,MEM0217,Abroad,,,1991,,,,,,,,,,drop,,,,2003-03-15,Ptr. Romeo Wagayan,,,,,,,,
+JENNIFER,,LATIW,MEM0218,Abroad,,,1905-06-12,,,,,,,,,,drop,,,,2003-03-15,Ptr. J. Legrand,,,,,,,,
+ZAIDA,,LIWAN,MEM0219,Abroad,,,,,,,,,,,,,drop,,,,,,,,,,,,,
+LEON,,LONOGAN,MEM0220,Abroad,,,1964-01-30,,,,,,,,,,drop,,,,,,,,,,,,,
+FE,M.,MANGAOANG,MEM0221,Abroad,,,1999-04-30,,,,,,,,,,drop,,,,,,,,,,,,,
+SANCHEZ,,MANGSI,MEM0222,Abroad,,,1905-06-03,,,,,,,,,,drop,,,,2003-03-15,Ptr. Romeo Wagayan,,,,,,,,
+ALMA,,MONTES,MEM0223,Abroad,,,1980-12-02,,,,,,,,,,drop,,,,1998-05-23,Ptr. Solomon Gandeza,,,,,,,,
+MARICEL,,NANA,MEM0224,Abroad,,,1993,,,,,,,,,,drop,,,,2003-03-15,Ptr. G. Scheuneman,,,,,,,,
+ADELIN,,OGALE,MEM0225,Abroad,,,,,,,,,,,,,drop,,,,2001-10-06,Ptr. Romeo Wagayan,,,,,,,,
+DIANA,ROSE,OGALE,MEM0226,Abroad,,,,,,,,,,,,,drop,,,,2001-10-06,Ptr. Romeo Wagayan,,,,,,,,
+MARK,WINSTON,OGALE,MEM0227,Abroad,,,,,,,,,,,,,drop,,,,2001-10-06,Ptr. Romeo Wagayan,,,,,,,,
+WILLIE,,OGALE,MEM0228,Abroad,,,,,,,,,,,,,drop,,,,2001-10-06,Ptr. Romeo Wagayan,,,,,,,,
+WINSTON,,OGALE,MEM0229,Abroad,,,,,,,,,,,,,drop,,,,,Ptr. Romeo Wagayan,,,,,,,,
+REY,,PECUA,MEM0230,Abroad,,,1991-10-11,,,,,,,,,,drop,,,,2015-01-24,,Greenvalley B.C.,,,,,,,
+RONABELLE,,PECUA,MEM0231,Abroad,,,1971-02-22,,,,,,,,,,drop,,,,2005-02-12,Ptr. Romeo Wagayan,,,,,,,,
+CRIS,,PESCADOR,MEM0232,Abroad,,,,,,,,,,,,,drop,,,,2003-03-15,Ptr. J. Legrand,Piraso Resort B.C.,,,,,,,
+MELVIN,K.,PONIPON,MEM0233,Abroad,,,,,,,,,,,,,drop,,,,1998-05-23,Ptr. Solomon Gandeza,Greenvalley B.C.,,,,,,,
+TESSIE,,PONTINO,MEM0234,Abroad,,,,,,,,,,,,,drop,,,,,Ptr. Robert Carantes,,,,,,,,
+JESSICA,,PULICAY,MEM0235,Abroad,,,1979-01-22,,,,,,,,,,drop,,,,2003-03-15,Ptr. Eugene Torres,,,,,,,,
+JOANA,,SAMSON,MEM0236,Abroad,,,1981-01-06,,,,,,,,,,drop,,,,2002-05-18,Ptr. Romeo Wagayan,,,,,,,,
+ANALYN,,SANTOS,MEM0237,Abroad,,,,,,,,,,,,,drop,,,,2001-04-14,Ptr. Willie Ortaleza,Piraso Resort B.C.,,,,,,,
+JAY-AN,,SEGUNDO,MEM0238,Abroad,,,,,,,,,,,,,drop,,,,2010-06-16,Ptr. Harold Hall,Greenvalley B.C.,,,,,,,
+MAY,A.,SEGUNDO,MEM0239,Abroad,,,1984-05-03,,,,,,,,,,drop,,,,2013-01-05,Ptr. Cayetano Emilio,,,,,,,,
+VICTOR,,SIB-ATEN,MEM0240,Abroad,,,1974,,,,,,,,,,drop,,,,2003-03-15,Ptr. G. Scheuneman,,,,,,,,
+BILLY,BRIAN,SILOY,MEM0241,Abroad,,,,,,,,,,,,,drop,,,,,,,,,,,,,
+LUZ,,SHONTOGAN,MEM0242,Abroad,,,1960-03-21,,,,,,,,,,drop,,,,2002-05-18,Ptr. Romeo Wagayan,,,,,,,,
+DENLY,,TABOR,MEM0243,Abroad,,,,,,,,,,,,,drop,,,,2002-06-01,Ptr. Romeo Wagayan,,,,,,,,
+MYLENE,,TABOR,MEM0244,Abroad,,,1985-08-10,,,,,,,,,,drop,,,,2002-05-18,Ptr. Romeo Wagayan,,,,,,,,
+RICKY,,TABOR,MEM0245,Abroad,,,1988-12-22,,,,,,,,,,drop,,,,2002-05-18,Ptr. Romeo Wagayan,Piraso Resort B.C.,,,,,,,
+GENGEN,C.,TAMPOA,MEM0246,Abroad,,,1984-09-27,,,,,,,,,,drop,,,,1995-12-25,Ptr. Santiago T. Antiporda,Bayabas L.T.B.,,,,,,,
+GEORGE ALLEN,A.,TANELON,MEM0247,Abroad,,,1995-07-20,,,,,,,,,,drop,,,,2011-03-19,,Piraso Resort B.C.,,,,,,,
+LUTHER,HARRY,TAO-EY,MEM0248,Abroad,,,1986-01-24,,,,,,,,,,drop,,,,1998-01-03,Ptr. Solomon Gandeza,La Union,,,,,,,
+ERIC,,TULAGAN,MEM0249,Abroad,,,,,,,,,,,,,drop,,,,,Ptr. Romeo Wagayan,Piraso Resort B.C.,,,,,,,
+SANDY,,ZORILLA,MEM0250,Abroad,,,,,,,,,,,,,drop,,,,2001-04-21,Ptr. Willie Ortaleza,,,,,,,,
+ANALYN,,AGBUYA,MEM0251,Abroad,,,1980-10-14,,,,,,,,,,inactive,,,,2015-01-24,Ptr. Cayetano Emilio,,,,,,,,
+EMILYN,T.,ALIMURONG,MEM0252,Abroad,,,,,,,,,,,,,inactive,,,,,,,,,,,,,
+ELENA,EBBES,BALDAS,MEM0253,Abroad,,,1977-06-27,,,,,,,,,,inactive,,,,,Ptr. Anthonio B. Smith,,,,,,,,
+DENNAH,D.,BANGLOT,MEM0254,Abroad,,,1981-01-08,,,,,,,,,,inactive,,,,2001-03-23,Ptr. S. Gifford,,,,,,,,
+MARNIE,D.,BANGLOT,MEM0255,Abroad,,,1995-09-13,,,,,,,,,,inactive,,,,,,,,,,,,,
+DEIRDRE,B.,CABANG,MEM0256,Abroad,,,1975-04-23,,,,,,,,,,inactive,,,,1990-04-01,Ptr. S. Gifford,,,,,,,,
+NORUSKY,T.,CALBAYAN,MEM0257,Abroad,,,1999-07-19,,,,,,,,,,inactive,,,,2012-03-03,Ptr. Cayetano Emilio,,,,,,,,
+MARIE,,DAALONG,MEM0258,Abroad,,,1976-07-27,,,,,,,,,,inactive,,,,,Ptr. Santiago Antiporda,Bayabas L.T.B.,,,,,,,
+MYRA,,DILMAN,MEM0259,Abroad,,,1990-10-05,,,,,,,,,,inactive,,,,2011-03-19,,,,,,,,,
+LIBERTY,,EBBES,MEM0260,Abroad,,,1986-09-06,,,,,,,,,,inactive,,,,1998-01-03,Ptr. Solomon Gandeza,Piraso Resort B.C.,,,,,,,
+DANTE,,GAMBOA,MEM0261,Abroad,,,,,,,,,,,,,inactive,,,,1998-05-09,Ptr. Solomon Gandeza,,,,,,,,
+GEDEON,,GONATICE,MEM0262,Abroad,,,1986-09-16,,,,,,,,,,inactive,,,,2015-06-06,Ptr. Cayetano Emilio,Piraso Resort B.C.,,,,,,,
+JONARD,,GRAGANTA,MEM0263,Abroad,,,1982,,,,,,,,,,inactive,,,,,,Piraso Resort B.C.,,,,,,,
+EPIFANIA,,LAGDA,MEM0264,Abroad,,,1980-06-27,,,,,,,,,,inactive,,,,2011-03-19,Ptr. Max Delos Reyes,,,,,,,,
+JAIME B.,JR.,MALAG,MEM0265,Abroad,,,1967-02-08,,,,,,,,,,inactive,,,,2013-01-05,Ptr. Cayetano Emilio,Piraso Resort B.C.,,,,,,,
+JOVY,,MANGLEDAN,MEM0266,Abroad,,,,,,,,,,,,,inactive,,,,2003-02-03,Ptr. Romeo Wagayan,,,,,,,,
+ALLEN,P.,MOVIDA,MEM0267,Abroad,,,1987-01-18,,,,,,,,,,inactive,,,,2013-01-05,Ptr. Cayetano Emilio,,,,,,,,
+JONES,A.,OLANGCAY,MEM0268,Abroad,,,1996-01-20,,,,,,,,,,inactive,,,,2012-12-01,Ptr. Max Delos Reyes,Tuding Church,,,,,,,
+MELCHOR,JR.,PAGCU,MEM0269,Abroad,,,1998-12-14,,,,,,,,,,inactive,,,,2012-02-04,Ptr. Cayetano Emilio,Tuding Church,,,,,,,
+IRVIN,,PECUA,MEM0270,Abroad,,,1986-07-06,,,,,,,,,,inactive,,,,1999-01-16,Ptr. Solomon Gandeza,,,,,,,,
+RICHARD,,PECUA,MEM0271,Abroad,,,1979-12-29,,,,,,,,,,inactive,,,,1999-01-16,Ptr. Solomon Gandeza,,,,,,,,
+GLENFORD,PHILIP,POLON,MEM0272,Abroad,,,1987-01-28,,,,,,,,,,inactive,,,,2002-05-18,Ptr. Romeo Wagayan,,,,,,,,
+JAKE,EDWARD,POLON,MEM0273,Abroad,,,1988-02-14,,,,,,,,,,inactive,,,,2002-05-11,,,,,,,,,
+LUCIA,,POLON,MEM0274,Abroad,,,1950-10-17,,,,,,,,,,inactive,,,,2002-05-11,,,,,,,,,
+SHALEMA,,POLON,MEM0275,Abroad,,,1976-05-07,,,,,,,,,,inactive,,,,2002-06-01,Ptr. Romeo Wagayan,Bayabas L.T.B.,,,,,,,
+BENITA,,SUBADAY,MEM0276,Abroad,,,1954-03-12,,,,,,,,,,inactive,,,,2015-06-06,Ptr. Cayetano Emilio,Greenvalley B.C.,,,,,,,
+BRENDON,LUCAS,TAO-EY,MEM0277,Abroad,,,1987-12-07,,,,,,,,,,inactive,,,,1998-01-03,Ptr. Solomon Gandeza,Parapad,,,,,,,
+IRIANEY,GRACE,TAO-EY,MEM0278,Abroad,,,1991-12-03,,,,,,,,,,inactive,,,,,,Greenvalley B.C.,,,,,,,
+LESTER,,TAO-EY,MEM0279,Abroad,,,1978-12-14,,,,,,,,,,inactive,,,,1989-02-25,Ptr. Anthonio B. Smith,Piraso Resort B.C.,,,,,,,
+SOLEDAD,,TENGAO,MEM0280,Abroad,,,1958-08-20,,,,,,,,,,inactive,,,,1998-06-20,Ptr. R. Lawson,,,,,,,,
+TEODORO,KITKITOY,TILADO,MEM0281,Abroad,,,1994-03-04,,,,,,,,,,inactive,,,,2015-06-06,Ptr. Cayetano Emilio,,,,,,,,
+SOLEDAD,,ACOSTA,MEM0282,Abroad,,,,,,,,,,,,,missing,,,,2000-11-26,Ptr. Max Delos Reyes,,,,,,,,
+BOYAN,,ANTONIO,MEM0283,Abroad,,,1992-03-01,,,,,,,,,,missing,,,,2000-06-01,Ptr. Romeo Wagayan,,,,,,,,
+DOMINGA,,BENAWE,MEM0284,Abroad,,,1968-03-20,,,,,,,,,,missing,,,,1990-03-30,Ptr. Geronimo Calangan,,,,,,,,
+DENVER,,BONGYAO,MEM0285,Abroad,,,1992,,,,,,,,,,missing,,,,2003-03-22,Ptr. G. Scheuneman,,,,,,,,
+JOEL,,BONGYAO,MEM0286,Abroad,,,1991,,,,,,,,,,missing,,,,2003-03-22,Ptr. G. Scheuneman,,,,,,,,
+JONRAY,,BONGYAO,MEM0287,Abroad,,,,,,,,,,,,,missing,,,,2003-03-22,Ptr. G. Scheuneman,,,,,,,,
+MANUEL,,BONGYAO,MEM0288,Abroad,,,,,,,,,,,,,missing,,,,2003-03-22,Ptr. G. Scheuneman,,,,,,,,
+LINDA,R.,CARIO,MEM0289,Abroad,,,1967-02-23,,,,,,,,,,missing,,,,1987-11-22,Ptr. C. Catolico,,,,,,,,
+APRIL MAY,LYNN,CHINANGHAY,MEM0290,Abroad,,,1975,,,,,,,,,,missing,,,,,,,,,,,,,
+PRESLYN CAMMIL,JANE,CHINANGHAY,MEM0291,Abroad,,,1983,,,,,,,,,,missing,,,,,,,,,,,,,
+MYRA,,DULNUAN,MEM0292,Abroad,,,,,,,,,,,,,missing,,,,2011-03-19,,,,,,,,,
+DONALD,,DUMPIT,MEM0293,Abroad,,,1987,,,,,,,,,,missing,,,,,,,,,,,,,
+JOCELYN,,HUGO,MEM0294,Abroad,,,1983-02-28,,,,,,,,,,missing,,,,2002-06-30,Ptr. Romeo Wagayan,,,,,,,,
+CARLOS,,LABUTEN,MEM0295,Abroad,,,1965,,,,,,,,,,missing,,,,,,,,,,,,,
+ELLA,,LEGMAYO,MEM0296,Abroad,,,1976,,,,,,,,,,missing,,,,2003-03-22,Ptr. G. Scheuneman,,,,,,,,
+VENUS,"""VIERNEZ""",LIWAN,MEM0297,Abroad,,,1992-01-20,,,,,,,,,,missing,,,,2011-03-19,,,,,,,,,
+MARY,JANE,LOPEZ,MEM0298,Abroad,,,,,,,,,,,,,missing,,,,2011-03-19,,,,,,,,,
+JOAN,,MENDOZA,MEM0299,Abroad,,,1989,,,,,,,,,,missing,,,,,Ptr. Romeo Wagayan,,,,,,,,
+FATIMA,,OLIGARIO,MEM0300,Abroad,,,1963-05-13,,,,,,,,,,missing,,,,2011-03-19,,,,,,,,,
+RACHEL,,SAGCHA-AN,MEM0301,Abroad,,,1984,,,,,,,,,,missing,,,,,Ptr. Romeo Wagayan,,,,,,,,
+TESSIE,,SUBLI,MEM0302,Abroad,,,,,,,,,,,,,missing,,,,2000-11-26,Ptr. Max Delos Reyes,San Emilio I.S.,,,,,,,
+MYLENE,,WASIT,MEM0303,Abroad,,,1986,,,,,,,,,,missing,,,,2003-02-02,Ptr. Romeo Wagayan,Piraso Resort,,,,,,,
+ARSENIA,D.,ABAYA,MEM0304,Abroad,,,1950-11-04,,,,,,,,,,ACTIVE,,,,1969-03-22,Ptr. Berto,Piraso Resort,,,,,,,
+BEVERLY,,ALANGDEO,MEM0305,Abroad,,,1988-12-08,,,,,,,,,,ACTIVE,,,,2011-03-19,Ptr. Cayetano Emilio,,,,,,,,
+HANS,GEOFFREY,ALANGDEO,MEM0306,Abroad,,,1987-08-28,,,,,,,,,,ACTIVE,,,,2011-03-19,Ptr. Cayetano Emilio,Greenvalley,,,,,,,
+ELBERT,,ALATANG,MEM0307,Abroad,,,1977-05-10,,,,,,,,,,ACTIVE,,,,2004-03-24,Ptr. Jeramel Dupagan,,,,,,,,
+ELLEN,,ALATANG,MEM0308,Abroad,,,1961-01-10,,,,,,,,,,ACTIVE,,,,2005-03-24,Ptr. Jeramel Dupagan,Piraso Resort,,,,,,,
+LILIA,,ANDRES,MEM0309,Abroad,,,1956-01-13,,,,,,,,,,ACTIVE,,,,May,Ptr. Manalo,Trinidad S.D.A.Babtistry,,,,,,,
+AUGUSTO,C.,BAANI,MEM0310,Abroad,,,1978-08-26,,,,,,,,,,ACTIVE,,,,2015-09-05,Ptr. Cayetano Emilio,,,,,,,,
+ALTHEA,M.,BALANG,MEM0311,Abroad,,,2006-09-19,,,,,,,,,,ACTIVE,,,,2017-09-30,Ptr. Eduardo Garlejo,,,,,,,,
+JANNILYN,M.,BALANG,MEM0312,Abroad,,,1985-01-28,,,,,,,,,,ACTIVE,,,,1994-05-14,Ptr. Willie Ortaleza,MPM Navy Base,,,,,,,
+NOVEL,,BALANG,MEM0313,Abroad,,,1979-01-27,,,,,,,,,,ACTIVE,,,,,,,,,,,,,
+EDUARDO,SR.,BANGLOT,MEM0314,Abroad,,,1949-07-03,,,,,,,,,,ACTIVE,,,,2002-03-18,Ptr. Max Delos Reyes,Piraso Resort,,,,,,,
+MERCY,D.,BANGLOT,MEM0315,Abroad,,,1955-11-03,,,,,,,,,,ACTIVE,,,,,Ptr. Dingoasen,Piraso Resort,,,,,,,
+JOSHUA,A.,CABEZO,MEM0316,Abroad,,,2004-03-26,,,,,,,,,,ACTIVE,,,,2017-08-05,Ptr. Jemuel Pollito,Piraso Resort,,,,,,,
+LORENA,A.,CABEZO,MEM0317,Abroad,,,1971-09-21,,,,,,,,,,ACTIVE,,,,2016-09-03,Ptr. Eduardo Garlejo,,,,,,,,
+CHERRYLYN,T.,CALASIAO,MEM0318,Abroad,,,2003-10-01,,,,,,,,,,ACTIVE,,,,2016-06-04,Ptr. Hyre Tangonan,,,,,,,,
+ELVIE,,CALASIAO,MEM0319,Abroad,,,1986-02-08,,,,,,,,,,ACTIVE,,,,2004-05-01,Ptr. Romeo Wagayan ,Bokawkan,,,,,,,
+JERRY,,CALASIAO,MEM0320,Abroad,,,1982-01-11,,,,,,,,,,ACTIVE,,,,,,,,,,,,,
+JOSEPH,,CARIÑO,MEM0321,Abroad,,,1956-05-30,,,,,,,,,,ACTIVE,,,,1975,Ptr. Anthonio Smith,Piraso Resort,,,,,,,
+LORELIE,,CARIÑO,MEM0322,Abroad,,,1959-12-11,,,,,,,,,,ACTIVE,,,,1982-05-01,Ptr. Alolor,Sinacbat,,,,,,,
+GEMMA,MENDOZA,COSME,MEM0323,Abroad,,,1994-04-06,,,,,,,,,,ACTIVE,,,,2016-08-13,Ptr. Max Cadalig,Tabuk,,,,,,,
+RIMAR,,DEGSI,MEM0324,Abroad,,,1994-10-30,,,,,,,,,,ACTIVE,,,,2004-02-07,Ptr. Cayetano Emilio,Piraso Resort,,,,,,,
+VINA,RUTH,DELA CRUZ,MEM0325,Abroad,,,1985-10-02,,,,,,,,,,ACTIVE,,,,,Ptr. Rogelio Taguba,Greenvalley,,,,,,,
+JOSEPH,,DIEGO,MEM0326,Abroad,,,1970-12-27,,,,,,,,,,ACTIVE,,,,2010-07-03,Ptr. Valentin Aplod,Piraso Resort,,,,,,,
+JOSHUA SEAN,L.,DIEGO,MEM0327,Abroad,,,2004-08-03,,,,,,,,,,ACTIVE,,,,2017-07-29,Ptr. Hyre Tangonan,Trinidad S.D.A.Babtistry,,,,,,,
+MICHELLYN,,DIEGO,MEM0328,Abroad,,,1979-09-17,,,,,,,,,,ACTIVE,,,,2010-07-03,Ptr. Valentin Aplod,Bayabas L.T.B.,,,,,,,
+FRANCINE LOURIETE,G.,DUPAIS,MEM0329,Abroad,,,2006-01-23,,,,,,,,,,ACTIVE,,,,2017-09-30,Ptr. Eduardo Garlejo,Piraso Resort,,,,,,,
+LOVELY ROSE,G.,DUPAIS,MEM0330,Abroad,,,1987-01-14,,,,,,,,,,ACTIVE,,,,1998-01-03,Ptr. Solomon Gandeza,Piraso Resort,,,,,,,
+JENNIFER,C.,FANWA,MEM0331,Abroad,,,2002-08-18,,,,,,,,,,ACTIVE,,,,2016-06-04,Ptr. Hyre Tangonan,,,,,,,,
+JOMMEL,,FANWA,MEM0332,Abroad,,,1993-05-23,,,,,,,,,,ACTIVE,,,,2011-03-19,,,,,,,,,
+JULIE,C.,FANWA,MEM0333,Abroad,,,1976-04-04,,,,,,,,,,ACTIVE,,,,1994-04-01,Ptr. Rogelio Taguba,Piraso Resort,,,,,,,
+PERFECTO,,FIACHING,MEM0334,Abroad,,,1950-09-12,,,,,,,,,,ACTIVE,,,,1989-07-01,Ptr. Anthonio Smith,,,,,,,,
+ZAREEN,VELASCO,GADLANGAN,MEM0335,Abroad,,,1998-05-23,,,,,,,,,,ACTIVE,,,,2017-08-05,Ptr. Hyre Tangonan,,,,,,,,
+JOSEFINA,,GANADEN,MEM0336,Abroad,,,1946-08-27,,,,,,,,,,ACTIVE,,,,2011-03-19,,,,,,,,,
+EFRAIM,,GATULLA,MEM0337,Abroad,,,,,,,,,,,,,ACTIVE,,,,,,,,,,,,,
+IGNACIA,,GATULLA,MEM0338,Abroad,,,1966-04-26,,,,,,,,,,ACTIVE,,,,,,,,,,,,,
+VANESSA,M.,GAWI,MEM0339,Abroad,,,1993-02-14,,,,,,,,,,ACTIVE,,,,2005,Ptr. Romeo Wagayan ,,,,,,,,
+ADELINE,S.,GUMINIGUIN,MEM0340,Abroad,,,1949-08-12,,,,,,,,,,ACTIVE,,,,1960,Ptr. T. Atiteo,PUC NLC Isabela,,,,,,,
+GEORGE,,HILL,MEM0341,Abroad,,,,,,,,,,,,,ACTIVE,,,,,,,,,,,,,
+BENIGNO,,LACAMEN,MEM0342,Abroad,,,1978-03-20,,,,,,,,,,ACTIVE,,,,,Ptr. Rogelio Bernal,,,,,,,,
+DIVINA,J.,LACAMEN,MEM0343,Abroad,,,1980-02-28,,,,,,,,,,ACTIVE,,,,,,,,,,,,,
+FAUSTINO,,LALIS,MEM0344,Abroad,,,1965-11-15,,,,,,,,,,ACTIVE,,,,,Ptr. Biscaro,,,,,,,,
+ISABEL,LINDAWAN,LASATEN,MEM0345,Abroad,,,1987-05-08,,,,,,,,,,ACTIVE,,,,2011-03-19,,Piraso Resort,,,,,,,
+JOLLIC,,LASATEN,MEM0346,Abroad,,,1983-06-15,,,,,,,,,,ACTIVE,,,,2011-03-19,,,,,,,,,
+YVONNE,PILASENIA,LEAÑO,MEM0347,Abroad,,,2001-07-24,,,,,,,,,,ACTIVE,,,,2017-07-29,Ptr. Valentin Aplod,Bayabas L.T.B.,,,,,,,
+ALBERT,,LIBANGAN,MEM0348,Abroad,,,1958-06-04,,,,,,,,,,ACTIVE,,,,1989-11-18,Ptr. Anthonio Smith,,,,,,,,
+ALYMAR,,LIBANGAN,MEM0349,Abroad,,,1986-08-06,,,,,,,,,,ACTIVE,,,,1998-01-03,Ptr. Solomon Gandeza,,,,,,,,
+LYNFA,,LIBANGAN,MEM0350,Abroad,,,1962-09-27,,,,,,,,,,ACTIVE,,,,1989-11-18,Ptr. Anthonio Smith,Kapangan,,,,,,,
+NATHANAEL,,LIBANGAN,MEM0351,Abroad,,,1991-05-04,,,,,,,,,,ACTIVE,,,,,,Piraso Resort,,,,,,,
+EMIL,KARL,MANANSALA,MEM0352,Abroad,,,1999-04-30,,,,,,,,,,ACTIVE,,,,2008,Ptr. Jimson Rizalino,Trinidad S.D.A.Babtistry,,,,,,,
+MERESA,W.,MARTIN,MEM0353,Abroad,,,1990-03-11,,,,,,,,,,ACTIVE,,,,2016-08-13,Ptr. Max Cadalig,Greenvalley,,,,,,,
+VALERIE,BAGUILOD,ODAYAN,MEM0354,Abroad,,,2001-02-14,,,,,,,,,,ACTIVE,,,,2017-09-30,Ptr. Eduardo Garlejo,Tabuk,,,,,,,
+DEMSON,M.,OSNGAO,MEM0355,Abroad,,,1980-01-07,,,,,,,,,,ACTIVE,,,,2014-11-29,Ptr. Cayetano Emilio,,,,,,,,
+DEXIE,F.,OSNGAO,MEM0356,Abroad,,,1981-11-21,,,,,,,,,,ACTIVE,,,,,Ptr. Solomon Gandeza,,,,,,,,
+MARCIAL,,PALADIO,MEM0357,Abroad,,,1974-05-12,,,,,,,,,,ACTIVE,,,,1994-09-01,Ptr. Rogelio Taguba,,,,,,,,
+MARICIEL,A.,PALADIO,MEM0358,Abroad,,,1979-03-08,,,,,,,,,,ACTIVE,,,,,,,,,,,,,
+FLORENA,C.,PEDRO,MEM0359,Abroad,,,1960-05-22,,,,,,,,,,ACTIVE,,,,1979-12-07,Ptr. J. Taylor,MPM Navy Base,,,,,,,
+ALETA,BANGLOT,POLOC,MEM0360,Abroad,,,1984-04-04,,,,,,,,,,ACTIVE,,,,,,,,,,,,,
+DOUGLAS,,PULICAY,MEM0361,Abroad,,,1950-07-04,,,,,,,,,,ACTIVE,,,,1998-06-20,,,,,,,,,
+ROSITA,,PULICAY,MEM0362,Abroad,,,1953-09-15,,,,,,,,,,ACTIVE,,,,,,Conception,,,,,,,
+JOCELYN,,PUNZALANG,MEM0363,Abroad,,,1977-11-05,,,,,,,,,,ACTIVE,,,,2011-03-19,,,,,,,,,
+ROGER,,RAYMUNDO,MEM0364,Abroad,,,1992-04-06,,,,,,,,,,ACTIVE,,,,2011-01-01,Ptr. Cayetano Emilio,,,,,,,,
+NIDA,CALASIAO,SABADO,MEM0365,Abroad,,,1988,,,,,,,,,,ACTIVE,,,,2002-12-07,Ptr. Romeo Wagayan ,Piraso Resort,,,,,,,
+FRIZZ,CELOY,SAGPAEY,MEM0366,Abroad,,,2001-03-02,,,,,,,,,,ACTIVE,,,,2010-07-31,Ptr. Jeramel Dupagan,,,,,,,,
+SHEA,CELOY,SAGPAEY,MEM0367,Abroad,,,1995-01-27,,,,,,,,,,ACTIVE,,,,2003-03-22,Ptr. G. Scheuneman,,,,,,,,
+THRISLYN,C.,SAGPAEY,MEM0368,Abroad,,,1967-07-18,,,,,,,,,,ACTIVE,,,,1979-12-07,Ptr. J. Taylor,Greenvalley,,,,,,,
+JANICE,,SEGUNDO,MEM0369,Abroad,,,1992-12-28,,,,,,,,,,ACTIVE,,,,2011-03-19,,Greenvalley,,,,,,,
+JAN,DANESE,TANELON,MEM0370,Abroad,,,2000-06-12,,,,,,,,,,ACTIVE,,,,2010-07-31,Ptr. Willie Ortaleza,Camp 6 Hydro Tuba,,,,,,,
+ARIEF,S.,TAO-EY,MEM0371,Abroad,,,1983-03-06,,,,,,,,,,ACTIVE,,,,1991-03-30,Ptr. Geronimo Calangan,Trinidad S.D.A.Babtistry,,,,,,,
+ESTHER,S.,TAO-EY,MEM0372,Abroad,,,1959-05-04,,,,,,,,,,ACTIVE,,,,1975-05-24,Ptr. Andrew Edwin,MPM Navy Base,,,,,,,
+GWYNETH LEANNE,TULL,TAO-EY,MEM0373,Abroad,,,2005-06-30,,,,,,,,,,ACTIVE,,,,2017-09-30,Ptr. Eduardo Garlejo,Piraso Resort,,,,,,,
+LUCAS,K.,TAO-EY,MEM0374,Abroad,,,1952-09-23,,,,,,,,,,ACTIVE,,,,june 20 1998,Ptr. Max Delos Reyes,,,,,,,,
+PATY LEAH JOY,COLOMA,TAO-EY,MEM0375,Abroad,,,1990-05-03,,,,,,,,,,ACTIVE,,,,2017-03-04,Ptr. Eduardo Garlejo,,,,,,,,
+DOLORES,,TOQUERO,MEM0376,Abroad,,,,,,,,,,,,,ACTIVE,,,,2014,Ptr. Cayetano Emilio,Greenvalley,,,,,,,
+REGIE,,TOQUERO,MEM0377,Abroad,,,,,,,,,,,,,ACTIVE,,,,2014,Ptr. Cayetano Emilio,Greenvalley,,,,,,,
+CRISLYN,T.,USTARE,MEM0378,Abroad,,,1980-07-18,,,,,,,,,,ACTIVE,,,,1991-03-23,Ptr. Geronimo Calangan,Bokawkan,,,,,,,
+RAMIL,D.,USTARE,MEM0379,Abroad,,,1985-08-13,,,,,,,,,,ACTIVE,,,,2007-04-26,Ptr. Willie Ortaleza,,,,,,,,
+JOHN,JR.,ZARATE,MEM0380,Abroad,,,1976-11-10,,,,,,,,,,ACTIVE,,,,,Ptr. Charles Catolico,,,,,,,,
+FEDERICO,H.,ALLAGA,MEM0381,Transferred,,,1987-11-20,,,,,,,,,,,,,,2014-12-06,Ptr. Cayetano Emilio,Piraso Resort B.C.,,,,,,,2017-09-02
+BRENT,,AGPAWA,MEM0382,Transferred,,,1993-04-23,,,,,,,,,,,,,,,,,,,,,,,2017-09-02
+NARDY,,AGPAWA,MEM0383,Transferred,,,,,,,,,,,,,,,,,2000-11-26,Ptr. Max delos Reyes,,,,,,,,
+BEVERLY,,ALANGDEO,MEM0384,Transferred,,,1988-12-08,,,,,,,,,,,,,,2011-03-19,Ptr. Cayetano Emilio,Piraso Resort,,,,,,,
+HANS,GEOFFREY,ALANGDEO,MEM0385,Transferred,,,1987-08-28,,,,,,,,,,,,,,2011-03-19,Ptr. Cayetano Emilio,Piraso Resort,,,,,,,
+AUGUSTO,C.,BAANI,MEM0386,Transferred,,,1978-08-26,,,,,,,,,,,,,,2015-09-05,Ptr. Cayetano Emilio,Piraso Resort,,,,,,,"February 17, 2024"
+ALTHEA,M.,BALANG,MEM0387,Transferred,,,2006-09-19,,,,,,,,,,,,,,2017-09-30,Ptr. Eduardo Garlejo,La Trinidad S.D.A. Church,,,,,,,
+AGOSTO,,BALANG,MEM0388,Transferred,,,1974-08-17,,,,,,,,,,,,,,2003-03-15,Ptr. J. Legrand,Greenvalley B.C.,,,,,,,
+JANNILYN,M.,BALANG,MEM0389,Transferred,,,1985-01-28,,,,,,,,,,,,,,1994-05-14,Ptr. Willie Ortaleza,,,,,,,,
+NOVEL,,BALANG,MEM0390,Transferred,,,1979-01-27,,,,,,,,,,,,,,,,,,,,,,,
+OGIE,VALDEZ,BUDAYAO,MEM0391,Transferred,,,,,,,,,,,,,,,,,,,,,,,,,,August --- 2022
+IRENE,B.,BUDAYAO,MEM0392,Transferred,,,,,,,,,,,,,,,,,,,,,,,,,,August --- 2022
+NIDA,,CALASIAO,MEM0393,Transferred,,,,,,,,,,,,,,,,,,,,,,,,,,
+MARIETA,BORGUILLAS,CALICA,MEM0394,Transferred,,,,,,,,,,,,,,,,,2001-02-24,Ptr. Willie Ortaleza,,,,,,,,
+CORAZON,,CELOY,MEM0395,Transferred,,,,,,,,,,,,,,,,,,,,,,,,,,
+JAN,,CELOY,MEM0396,Transferred,,,1981-05-17,,,,,,,,,,,,,,1997-05-03,Ptr. R. Liwag,,,,,,,,
+JOHN,JR.,CELOY,MEM0397,Transferred,,,1979-03-17,,,,,,,,,,,,,,,,,,,,,,,
+JUDILYN,,CELOY,MEM0398,Transferred,,,1977-07-27,,,,,,,,,,,,,,,,,,,,,,,2017-09-02
+MAY EMELIE ROSE,POLON,CELOY,MEM0399,Transferred,,,1984-11-20,,,,,,,,,,,,,,,,,,,,,,,drop
+MARIA,COLINA,COMPAS,MEM0400,Transferred,,,1962-11-06,,,,,,,,,,,,,,2016-06-04,Ptr. Hyre Tangonan,Piraso Resort B.C.,,,,,,,2017-09-02
+MARLYN,L.,DALLIGOS,MEM0401,Transferred,,,1971-05-17,,,,,,,,,,,,,,1984-03-04,Ptr. R. Biscaro,,,,,,,,
+DENVER,,DANIEL,MEM0402,Transferred,,,1970-10-04,,,,,,,,,,,,,,1983-05-21,Ptr. D. Tucker,,,,,,,,
+CHRISLYN,,DEL ROSARIO,MEM0403,Transferred,,,,,,,,,,,,,,,,,1998-06-20,Ptr. Max delos Reyes,Navy Base B.C.,,,,,,,
+MADELINE,,DEL ROSARIO,MEM0404,Transferred,,,1979-09-22,,,,,,,,,,,,,,1998-06-20,Ptr. Max delos Reyes,Navy Base B.C.,,,,,,,
+VEGERLIO,,DIASEN,MEM0405,Transferred,,,,,,,,,,,,,,,,,,,,,,,,,,2017-09-02
+DANIELA YSA,DOMINGUEZ,DOG-AP,MEM0406,Transferred,,,,,,,,,,,,,,,,,2010-07-03,Ptr. Valentin Aplod,Greenvalley B.C.,,,,,,,2017-09-02
+ALVIN,,DUMASING,MEM0407,Transferred,,,1987-07-08,,,,,,,,,,,,,,1996-10-23,Ptr. Bruno Pollito,,,,,,,,2017-09-02
+FEBE,GUMINIGUIN,DUMEPNAS,MEM0408,Transferred,,,1971-02-11,,,,,,,,,,,,,,,Ptr. Ajir,,,,,,,,2017-09-02
+MARTINA,,ECCA,MEM0409,Transferred,,,,,,,,,,,,,,,,,,,,,,,,,,2017-09-02
+CZARINA,MAE,EMILIO,MEM0410,Transferred,,,1990-09-01,,,,,,,,,,,,,,,,,,,,,,,2016-10-01
+MIA,,EMILIO,MEM0411,Transferred,,,1964-04-15,,,,,,,,,,,,,,1972-10-17,Ptr. Alejandro Corpuz,Dagman Quirino I.S.,,,,,,,2016-10-02
+PASTOR,CAYETANO,EMILIO,MEM0412,Transferred,,,1955-11-01,,,,,,,,,,,,,,,,,,,,,,,2016-10-03
+JULIET,,GAMBOA,MEM0413,Transferred,,,1982-12-12,,,,,,,,,,,,,,1998-06-20,Ptr. Max delos Reyes,,,,,,,,2017-09-02
+JOSHUA,,GUICINGAN,MEM0414,Transferred,,,,,,,,,,,,,,,,,2011-03-19,,,,,,,,,2017-09-02
+ADELINE,S.,GUMINIGUIN,MEM0415,Transferred,,,1949-08-12,,,,,,,,,,,,,,1960,Ptr. T. Atiteo,,,,,,,,
+RICO,,GURON,MEM0416,Transferred,,,,,,,,,,,,,,,,,2015-03-21,Ptr. Cayetano Emilio,,,,,,,,2017-09-02
+MERJINA,,INFANTE,MEM0417,Transferred,,,1954,,,,,,,,,,,,,,,Ptr. Cayetano Emilio,,,,,,,,2017-09-02
+CARLOS,,LABUTEN,MEM0418,Transferred,,,2002-02-24,,,,,,,,,,,,,,2014-11-29,Ptr. Cayetano Emilio,Greenvalley B.C.,,,,,,,2017-09-02
+COMELAT,,LALAWE,MEM0419,Transferred,,,1969-09-10,,,,,,,,,,,,,,1994-07-14,Ptr.A. Edwin,,,,,,,,
+EMILYN,LESTINO,LALAWE,MEM0420,Transferred,,,1976-03-28,,,,,,,,,,,,,,1989-04-19,Ptr. C. Catolico,,,,,,,,
+JASON,,LALIS,MEM0421,Transferred,,,,,,,,,,,,,,,,,,,,,,,,,,
+DIMLER,,LASATEN,MEM0422,Transferred,,,1978-06-28,,,,,,,,,,,,,,2011-03-19,,,,,,,,,2017-09-02
+ANTONIO,,LAZARO,MEM0423,Transferred,,,1973-05-04,,,,,,,,,,,,,,2011-03-19,,,,,,,,,2017-09-02
+EXAL,,LAZARO,MEM0424,Transferred,,,,,,,,,,,,,,,,,,,,,,,,,,2017-09-02
+ELLEN,,LEGMAYO,MEM0425,Transferred,,,1976,,,,,,,,,,,,,,2003-03-22,Ptr. G. Scheuneman,,,,,,,,2017-09-02
+LYCA ROSE,H.,LEGADO,MEM0426,Transferred,,,2000-12-10,,,,,,,,,,,,,,2016-06-04,Ptr. Hyre Tangonan,Piraso Resort B.C.,,,,,,,2017-09-02
+MARK,JUNEIRY,MADARANG,MEM0427,Transferred,,,1992,,,,,,,,,,,,,,,,,,,,,,,2017-09-02
+RICO,,MANUEL,MEM0428,Transferred,,,1975-11-21,,,,,,,,,,,,,,,Ptr. C. Ojano,,,,,,,,2017-09-02
+ROSALYN,BATANGLAWIN,MOVIDA,MEM0429,Transferred,,,1992-03-22,,,,,,,,,,,,,,2013-01-05,Ptr. Cayetano Emilio,Piraso Resort B.C.,,,,,,,2017-09-02
+ALLEN,P.,MOVIDA,MEM0430,Transferred,,,1987-01-18,,,,,,,,,,,,,,2013-01-05,Ptr. Cayetano Emilio,Piraso Resort B.C.,,,,,,,
+EDWIN,,NAHIG,MEM0431,Transferred,,,1982,,,,,,,,,,,,,,2003-03-22,Ptr. G. Scheuneman,,,,,,,,2017-09-02
+ELENITA,ATEBAW,OMAOENG,MEM0432,Transferred,,,,,,,,,,,,,,,,,,,,,,,,,,"September 1, 2024"
+FELY,,PECUA,MEM0433,Transferred,,,,,,,,,,,,,,,,,1999-01-16,Ptr. Solomon Gandeza,Profession by faith,,,,,,,
+JOHN,JR.,PECUA,MEM0434,Transferred,,,,,,,,,,,,,,,,,1999-01-16,Ptr. Solomon Gandeza,Tuding S.D.A. Church,,,,,,,
+JOHN,SR.,PECUA,MEM0435,Transferred,,,,,,,,,,,,,,,,,1999-01-16,Ptr. Solomon Gandeza,Profession by faith,,,,,,,
+CANDIDO,,PINGKIHAN,MEM0436,Transferred,,,,,,,,,,,,,,,,,2000-03-18,,,,,,,,,2017-09-02
+MARIBEL,,POYAO,MEM0437,Transferred,,,,,,,,,,,,,,,,,,,,,,,,,,2017-09-02
+MINDA,,POYAO,MEM0438,Transferred,,,,,,,,,,,,,,,,,,,,,,,,,,2017-09-02
+NORMA,,PUYAO,MEM0439,Transferred,,,1940-06-15,,,,,,,,,,,,,,1984-03-20,Ptr. A. Smith,,,,,,,,2017-09-02
+NARCISA,ESTARIJA,RAYMUNDO,MEM0440,Transferred,,,1989-01-02,,,,,,,,,,,,,,2015-03-31,,Greenvalley B.C.,,,,,,,2017-09-02
+RODERICK,,RAYMUNDO,MEM0441,Transferred,,,,,,,,,,,,,,,,,2015-03-21,,Greenvalley B.C.,,,,,,,2017-09-02
+VALERIE,SAGALTO,RODRIGUEZ,MEM0442,Transferred,,,2001-12-08,,,,,,,,,,,,,,2014-11-29,Ptr. Cayetano Emilio,Piraso Resort B.C.,,,,,,,2017-09-02
+NIDA,C.,SABADO,MEM0443,Transferred,,,1988-06-10,,,,,,,,,,,,,,"December 7, 2002",Ptr. Romeo Wagayan,,,,,,,,2021-12-01
+ARON JEF,A.,SENCIO,MEM0444,Transferred,,,"April 10, 2009",,,,,,,,,,,,,,,,La Trinidad S.D.A. Church,,,,,,,"October 5, 2024"
+APRIL,JOY,SHONTOGAN,MEM0445,Transferred,,,1990-04-03,,,,,,,,,,,,,,2002-05-18,Ptr. Romeo Wagayan,,,,,,,,
+MAIKO,,SIBAYAN,MEM0446,Transferred,,,2005-06-14,,,,,,,,,,,,,,,,,,,,,,,
+MARILYN,,TACLOY,MEM0447,Transferred,,,1997-01-07,,,,,,,,,,,,,,2015-06-06,Ptr. Cayetano Emilio,,,,,,,,
+GEORGE,,TERCERO,MEM0448,Transferred,,,1955-02-22,,,,,,,,,,,,,,1968,Ptr. Berto,,,,,,,,
+JUANA,A.,TOG-ACA,MEM0449,Transferred,,,1973-12-28,,,,,,,,,,,,,,1986-08-30,Ptr. A. Smith,,,,,,,,
+MADELYN,M.,WADWADAN,MEM0450,Transferred,,,1973-09-05,,,,,,,,,,,,,,1985-09-01,Ptr. Solomon Gandeza,,,,,,,,
+MERCY,M.,WADWADAN,MEM0451,Transferred,,,1975-12-25,,,,,,,,,,,,,,1986-10-01,Ptr. Afenir,,,,,,,,
+GIVEE,LEE,WAGAYAN,MEM0452,Transferred,,,,,,,,,,,,,,,,,,,,,,,,,,
+LOMA,,WAGAYAN,MEM0453,Transferred,,,1965,,,,,,,,,,,,,,1983-05-21,Ptr. R. Biscaro,,,,,,,,
+ROMEO,,WAGAYAN,MEM0454,Transferred,,,1960,,,,,,,,,,,,,,1980-01-01,Ptr. W. Pasiwen,,,,,,,,
+GLECERIA,PACSI,ZARATE,MEM0455,Transferred,,,1974-05-13,,,,,,,,,,,,,,1984-10-02,Ptr. A. Edwin,,,,,,,,
+JOHN,JR.,ZARATE,MEM0456,Transferred,,,1976-11-10,,,,,,,,,,,,,,,Ptr. Charles Catolico,Bokawkan,,,,,,,
+GILBERT,,BAGSAOAN,MEM0457,Drop,,,1984-04-04,,,,,,,,,,,,,,2012-03-03,Ptr. Cayetano Emilio,Piraso Resort B.C.,,,,,,,
+JULIE,L.,BAGSAOAN,MEM0458,Drop,,,1980-07-30,,,,,,,,,,,,,,2012-03-03,Ptr. Cayetano Emilio,Piraso Resort B.C.,,,,,,,
+QUIRINO,,BUKAK-EW,MEM0459,Drop,,,,,,,,,,,,,,,,,,,,,,,,,,
+EMELYN,,CALIAG,MEM0460,Drop,,,1984,,,,,,,,,,,,,,,,,,,,,,,
+CHATO,,COLEMPEP,MEM0461,Drop,,,,,,,,,,,,,,,,,2001-02-24,Ptr. Willie Ortaleza,,,,,,,,
+JOANA,,COLEMPEP,MEM0462,Drop,,,,,,,,,,,,,,,,,2001-04-14,Ptr. Willie Ortaleza,,,,,,,,
+SHALMIA,,EBBES,MEM0463,Drop,,,,,,,,,,,,,,,,,,,,,,,,,,
+JANICE,,ECCA,MEM0464,Drop,,,1987-08-01,,,,,,,,,,,,,,1999-01-16,Ptr. Solomon Gandeza,,,,,,,,
+MA.,LUISA,ECCA,MEM0465,Drop,,,1984-10-14,,,,,,,,,,,,,,1999-01-16,Ptr. Solomon Gandeza,,,,,,,,
+FROILAN,,FADLAS,MEM0466,Drop,,,1985-05-03,,,,,,,,,,,,,,2002-05-18,Ptr. Romeo Wagayan,,,,,,,,
+MILTON,,FANWA,MEM0467,Drop,,,1969-02-04,,,,,,,,,,,,,,1994-04-01,Ptr. Rogelio Taguba,,,,,,,,
+EDWARD,,FLORES,MEM0468,Drop,,,1986-11-17,,,,,,,,,,,,,,1998-01-03,Ptr. Solomon Gandeza,Bayabas L.T.B.,,,,,,,
+REX,S.,GAMBOA,MEM0469,Drop,,,1973-04-09,,,,,,,,,,,,,,1993-08-08,Ptr. Santiago T. Antiporda,,,,,,,,
+DICKWIN,,GAYDAO,MEM0470,Drop,,,1971-06-21,,,,,,,,,,,,,,1998-06-20,Ptr. R. Lawson,,,,,,,,
+ELIZABETH,,GOMEYAC,MEM0471,Drop,,,,,,,,,,,,,,,,,2001-10-13,Ptr. Romeo Wagayan,,,,,,,,
+ABEGAIL,,GUMASTIN,MEM0472,Drop,,,1991,,,,,,,,,,,,,,2003-01-18,Ptr. Romeo Wagayan,,,,,,,,
+MERYGULSA,,INFANTE,MEM0473,Drop,,,1989,,,,,,,,,,,,,,2003-01-18,Ptr. Romeo Wagayan,,,,,,,,
+ELSIE,,INGUSAN,MEM0474,Drop,,,1992,,,,,,,,,,,,,,2003-01-18,Ptr. Romeo Wagayan,,,,,,,,
+MERCY,,INGUSAN,MEM0475,Drop,,,1990,,,,,,,,,,,,,,2003-01-18,Ptr. Romeo Wagayan,,,,,,,,
+MARLON,CHURPING,KILLIP,MEM0476,Drop,,,1995-09-06,,,,,,,,,,,,,,2016-06-04,Ptr. Hyre Tangonan,Piraso Resort B.C.,,,,,,,2017-09-02
+JOCELYN,,LAB-ISA,MEM0477,Drop,,,1970-04-13,,,,,,,,,,,,,,1993-02-09,Ptr. Rogelio Taguba,,,,,,,,
+JUAN,,LAB-ISA,MEM0478,Drop,,,1969-06-27,,,,,,,,,,,,,,1994-05-26,Ptr. Rogelio Taguba,,,,,,,,
+KIMBERLY,,LAB-ISA,MEM0479,Drop,,,1987,,,,,,,,,,,,,,2002-12-07,Ptr. Romeo Wagayan,,,,,,,,
+RONNIE,,LABUTEN,MEM0480,Drop,,,,,,,,,,,,,,,,,,,,,,,,,,
+LYEJIATE,,LASATEN,MEM0481,Drop,,,1998-07-13,,,,,,,,,,,,,,2012-03-03,Ptr. Cayetano Emilio,Piraso Resort B.C.,,,,,,,
+ESTHER,,LATIRO,MEM0482,Drop,,,1991,,,,,,,,,,,,,,2003-03-15,Ptr. Romeo Wagayan,Greenvalley B.C.,,,,,,,
+JENNIFER,,LATIW,MEM0483,Drop,,,1905-06-12,,,,,,,,,,,,,,2003-03-15,Ptr. J. Legrand,,,,,,,,
+ZAIDA,,LIWAN,MEM0484,Drop,,,,,,,,,,,,,,,,,,,,,,,,,,
+LEON,,LONOGAN,MEM0485,Drop,,,1964-01-30,,,,,,,,,,,,,,,,,,,,,,,
+FE,M.,MANGAOANG,MEM0486,Drop,,,1999-04-30,,,,,,,,,,,,,,,,,,,,,,,
+SANCHEZ,,MANGSI,MEM0487,Drop,,,1905-06-03,,,,,,,,,,,,,,2003-03-15,Ptr. Romeo Wagayan,,,,,,,,
+ALMA,,MONTES,MEM0488,Drop,,,1980-12-02,,,,,,,,,,,,,,1998-05-23,Ptr. Solomon Gandeza,,,,,,,,
+MARICEL,,NANA,MEM0489,Drop,,,1993,,,,,,,,,,,,,,2003-03-15,Ptr. G. Scheuneman,,,,,,,,
+ADELIN,,OGALE,MEM0490,Drop,,,,,,,,,,,,,,,,,2001-10-06,Ptr. Romeo Wagayan,,,,,,,,
+DIANA,ROSE,OGALE,MEM0491,Drop,,,,,,,,,,,,,,,,,2001-10-06,Ptr. Romeo Wagayan,,,,,,,,
+MARK,WINSTON,OGALE,MEM0492,Drop,,,,,,,,,,,,,,,,,2001-10-06,Ptr. Romeo Wagayan,,,,,,,,
+WILLIE,,OGALE,MEM0493,Drop,,,,,,,,,,,,,,,,,2001-10-06,Ptr. Romeo Wagayan,,,,,,,,
+WINSTON,,OGALE,MEM0494,Drop,,,,,,,,,,,,,,,,,,Ptr. Romeo Wagayan,,,,,,,,
+CRIS,,PESCADOR,MEM0495,Drop,,,,,,,,,,,,,,,,,2003-03-15,Ptr. J. Legrand,Greenvalley B.C.,,,,,,,
+MELVIN,K.,PONIPON,MEM0496,Drop,,,,,,,,,,,,,,,,,1998-05-23,Ptr. Solomon Gandeza,,,,,,,,
+TESSIE,,PONTINO,MEM0497,Drop,,,,,,,,,,,,,,,,,,Ptr. Robert Carantes,Piraso Resort B.C.,,,,,,,
+JESSICA,,PULICAY,MEM0498,Drop,,,1979-01-22,,,,,,,,,,,,,,2003-03-15,Ptr. Eugene Torres,Greenvalley B.C.,,,,,,,
+JOANA,,SAMSON,MEM0499,Drop,,,1981-01-06,,,,,,,,,,,,,,2002-05-18,Ptr. Romeo Wagayan,,,,,,,,
+ANALYN,,SANTOS,MEM0500,Drop,,,,,,,,,,,,,,,,,2001-04-14,Ptr. Willie Ortaleza,,,,,,,,
+JAY-AN,,SEGUNDO,MEM0501,Drop,,,,,,,,,,,,,,,,,2010-06-16,Ptr. Harold Hall,,,,,,,,
+MAY,A.,SEGUNDO,MEM0502,Drop,,,1984-05-03,,,,,,,,,,,,,,2013-01-05,Ptr. Cayetano Emilio,Piraso Resort B.C.,,,,,,,
+VICTOR,,SIB-ATEN,MEM0503,Drop,,,1974,,,,,,,,,,,,,,2003-03-15,Ptr. G. Scheuneman,Greenvalley B.C.,,,,,,,
+BILLY,BRIAN,SILOY,MEM0504,Drop,,,,,,,,,,,,,,,,,,,,,,,,,,
+LUZ,,SHONTOGAN,MEM0505,Drop,,,1960-03-21,,,,,,,,,,,,,,2002-05-18,Ptr. Romeo Wagayan,,,,,,,,
+DENLY,,TABOR,MEM0506,Drop,,,,,,,,,,,,,,,,,2002-06-01,Ptr. Romeo Wagayan,,,,,,,,
+MYLENE,,TABOR,MEM0507,Drop,,,1985-08-10,,,,,,,,,,,,,,2002-05-18,Ptr. Romeo Wagayan,,,,,,,,
+RICKY,,TABOR,MEM0508,Drop,,,1988-12-22,,,,,,,,,,,,,,2002-05-18,Ptr. Romeo Wagayan,,,,,,,,
+GENGEN,C.,TAMPOA,MEM0509,Drop,,,1984-09-27,,,,,,,,,,,,,,1995-12-25,Ptr. Santiago T. Antiporda,,,,,,,,
+GEORGE ALLEN,A.,TANELON,MEM0510,Drop,,,1995-07-20,,,,,,,,,,,,,,2011-03-19,,Piraso Resort B.C.,,,,,,,
+LUTHER,HARRY,TAO-EY,MEM0511,Drop,,,1986-01-24,,,,,,,,,,,,,,1998-01-03,Ptr. Solomon Gandeza,Bayabas L.T.B.,,,,,,,
+ERIC,,TULAGAN,MEM0512,Drop,,,,,,,,,,,,,,,,,,Ptr. Romeo Wagayan,Piraso Resort B.C.,,,,,,,
+SANDY,,ZORILLA,MEM0513,Drop,,,,,,,,,,,,,,,,,2001-04-21,Ptr. Willie Ortaleza,La Union,,,,,,,
+ANALYN,,AGBUYA,MEM0514,Inactive,,,1980-10-14,,,,,,,,,,,,,,2015-01-24,Ptr. Cayetano Emilio,Piraso Resort B.C.,,,,,,,
+ELLEN,,ALATANG,MEM0515,Inactive,,,1961-01-10,,,,,,,,,,,,,,2005-03-24,Ptr. Jeramel Dupagan,Greenvalley,,,,,,,
+EMILYN,T.,ALIMURONG,MEM0516,Inactive,,,,,,,,,,,,,,,,,,,,,,,,,,
+ELLEN,EBBES,BALDAS,MEM0517,Inactive,,,1977-06-27,,,,,,,,,,,,,,,Ptr. Anthonio B. Smith,,,,,,,,
+ASHLEY,,BANGLOT,MEM0518,Inactive,,,,,,,,,,,,,,,,,2018 - AUGUST,,Piraso Resort B.C.,,,,,,,
+DENNAH,D.,BANGLOT,MEM0519,Inactive,,,1981-01-08,,,,,,,,,,,,,,2001-03-23,Ptr. S. Gifford,,,,,,,,
+EDUARDO,JR.,BANGLOT,MEM0520,Inactive,,,1988-06-07,,,,,,,,,,,,,,1997-01-01,,,,,,,,,
+LACY,,BANGLOT,MEM0521,Inactive,,,,,,,,,,,,,,,,,2018 - AUGUST,,Piraso Resort B.C.,,,,,,,
+MARNIE,D.,BANGLOT,MEM0522,Inactive,,,1995-09-13,,,,,,,,,,,,,,,,,,,,,,,
+DEIRDRE,B.,CABANG,MEM0523,Inactive,,,1975-04-23,,,,,,,,,,,,,,1990-04-01,Ptr. S. Gifford,,,,,,,,
+JAN,RAYE,CABANG,MEM0524,Inactive,,,,,,,,,,,,,,,,,,,,,,,,,,
+AVERY,,CABANG,MEM0525,Inactive,,,,,,,,,,,,,,,,,2018 - AUGUST,,Piraso Resort B.C.,,,,,,,
+YUMI,,CABANG,MEM0526,Inactive,,,,,,,,,,,,,,,,,2018 - AUGUST,,Piraso Resort B.C.,,,,,,,
+JOSHUA,A.,CABEZO,MEM0527,Inactive,,,2004-03-26,,,,,,,,,,,,,,2017-08-05,Ptr. Jemuel Pollito,Piraso Resort,,,,,,,
+LORENA,A.,CABEZO,MEM0528,Inactive,,,1971-09-21,,,,,,,,,,,,,,2016-09-03,Ptr. Eduardo Garlejo,Piraso Resort,,,,,,,
+CHERRYLYN,T.,CALASIAO,MEM0529,Inactive,,,2003-10-01,,,,,,,,,,,,,,2016-06-04,Ptr. Hyre Tangonan,Piraso Resort,,,,,,,
+ELVIE,,CALASIAO,MEM0530,Inactive,,,1986-02-08,,,,,,,,,,,,,,2004-05-01,Ptr. Romeo Wagayan ,,,,,,,,
+JOSEPH,,CARIÑO,MEM0531,Inactive,,,1956-05-30,,,,,,,,,,,,,,1975,Ptr. Anthonio Smith,Bokawkan,,,,,,,
+LORELIE,,CARIÑO,MEM0532,Inactive,,,1959-12-11,,,,,,,,,,,,,,1982-05-01,Ptr. Alolor,,,,,,,,
+MARIE,,DAALONG,MEM0533,Inactive,,,1976-07-27,,,,,,,,,,,,,,,Ptr. Santiago Antiporda,,,,,,,,
+JOSHUA SEAN,L.,DIEGO,MEM0534,Inactive,,,2004-08-03,,,,,,,,,,,,,,2017-07-29,Ptr. Hyre Tangonan,Greenvalley,,,,,,,
+MYRA,,DILMAN,MEM0535,Inactive,,,1990-10-05,,,,,,,,,,,,,,2011-03-19,,,,,,,,,
+AGUSTINA,,ESPADA,MEM0536,Inactive,,,,,,,,,,,,,,,,,2003-03-15,Ptr. Eugene Torres,Greenvalley B.C.,,,,,,,
+JENNIFER,C.,FANWA,MEM0537,Inactive,,,2002-08-18,,,,,,,,,,,,,,2016-06-04,Ptr. Hyre Tangonan,Piraso Resort,,,,,,,
+JOMMEL,,FANWA,MEM0538,Inactive,,,1993-05-23,,,,,,,,,,,,,,2011-03-19,,Piraso Resort,,,,,,,
+JULIE,C.,FANWA,MEM0539,Inactive,,,1976-04-04,,,,,,,,,,,,,,1994-04-01,Ptr. Rogelio Taguba,,,,,,,,
+ZAREEN,VELASCO,GADLANGAN,MEM0540,Inactive,,,1998-05-23,,,,,,,,,,,,,,2017-08-05,Ptr. Hyre Tangonan,Piraso Resort,,,,,,,
+DANTE,,GAMBOA,MEM0541,Inactive,,,,,,,,,,,,,,,,,1998-05-09,Ptr. Solomon Gandeza,,,,,,,,
+IMELDA,KIBLA,GAMBOA,MEM0542,Inactive,,,1970-04-10,,,,,,,,,,,,,,1993-08-08,Ptr. Santiago Antiporda,,,,,,,,Stroke 
+JOSEFINA,,GANADEN,MEM0543,Inactive,,,1946-08-27,,,,,,,,,,,,,,2011-03-19,,,,,,,,,
+GEDEON,,GONATICE,MEM0544,Inactive,,,1986-09-16,,,,,,,,,,,,,,2015-06-06,Ptr. Cayetano Emilio,Piraso Resort B.C.,,,,,,,
+JONARD,,GRAGANTA,MEM0545,Inactive,,,1982,,,,,,,,,,,,,,,,,,,,,,,
+JOHN,ROLAN,HILADO,MEM0546,Inactive,,,"May 23, 1999",,,,,,,,,,,,,,2021,,La Trinidad SDAC,,,,,,,
+FAUSTINO,,LALIS,MEM0547,Inactive,,,1965-11-15,,,,,,,,,,,,,,1991,Ptr. Biscaro,,,,,,,,Discipline
+HILTON,D.,LANDISAN,MEM0548,Inactive,,,1980-08-26,,,,,,,,,,,,,,2014-11-29,Ptr. Cayetano Emilio,Greenvalley B.C.,,,,,,,
+YVONNE,PILASENIA,LEAÑO,MEM0549,Inactive,,,2001-07-24,,,,,,,,,,,,,,2017-07-29,Ptr. Valentin Aplod,Piraso Resort,,,,,,,
+JAIME B.,JR.,MALAG,MEM0550,Inactive,,,1967-02-08,,,,,,,,,,,,,,2013-01-05,Ptr. Cayetano Emilio,Piraso Resort B.C.,,,,,,,
+EMIL,KARL,MANANSALA,MEM0551,Inactive,,,1999-04-30,,,,,,,,,,,,,,2008,Ptr. Jimson Rizalino,Kapangan,,,,,,,
+JOVY,,MANGLEDAN,MEM0552,Inactive,,,,,,,,,,,,,,,,,2003-02-03,Ptr. Romeo Wagayan,,,,,,,,
+NOEMI,DOG-AP,MANUELO,MEM0553,Inactive,,,"August 30, 1991",,,,,,,,,,,,,,2019****,,La Trinidad SDAC,,,,,,,
+JONES,A.,OLANGCAY,MEM0554,Inactive,,,1996-01-20,,,,,,,,,,,,,,2012-12-01,Ptr. Max Delos Reyes,,,,,,,,
+NORA,DUPITSO,PADIW,MEM0555,Inactive,,,"January 1, 1948",,,,,,,,,,,,,,"September 4, 2021",Ptr. Ogie V. Budayao,La Trinidad SDAC,,,,,,,Stroke
+MELCHOR,JR.,PAGCU,MEM0556,Inactive,,,1998-12-14,,,,,,,,,,,,,,2012-02-04,Ptr. Cayetano Emilio,,,,,,,,
+MARICEL,,PALADIO,MEM0557,Inactive,,,1979-03-08,,,,,,,,,,,,,,,,,,,,,,,Discipline
+GORIO,L.,PAYAPAY,MEM0558,Inactive,,,"Jan. 10, 1970",,,,,,,,,,,,,,"July 29, 2023",Ptr. Wilson Laoad,LTSDAC,,,,,,,
+MARLYN,P.,PAYAPAY,MEM0559,Inactive,,,"March 18, 1994",,,,,,,,,,,,,,"Nov. 26, 2022",Ptr. Wilson Laoad,La Trinidad S.D.A. Church,,,,,,,PWD
+IRVIN,,PECUA,MEM0560,Inactive,,,1986-07-06,,,,,,,,,,,,,,1999-01-16,Ptr. Solomon Gandeza,Tuding Church,,,,,,,
+RICHARD,,PECUA,MEM0561,Inactive,,,1979-12-29,,,,,,,,,,,,,,1999-01-16,Ptr. Solomon Gandeza,Tuding Church,,,,,,,
+GLENFORD,PHILIP,POLON,MEM0562,Inactive,,,1987-01-28,,,,,,,,,,,,,,2002-05-18,Ptr. Romeo Wagayan,,,,,,,,
+JAKE,EDWARD,POLON,MEM0563,Inactive,,,1988-02-14,,,,,,,,,,,,,,2002-05-11,,,,,,,,,
+LUCIA,,POLON,MEM0564,Inactive,,,1950-10-17,,,,,,,,,,,,,,2002-05-11,,,,,,,,,
+SHALEMA,,POLON,MEM0565,Inactive,,,1976-05-07,,,,,,,,,,,,,,2002-06-01,Ptr. Romeo Wagayan,,,,,,,,
+LINA,,SINGABOC,MEM0566,Inactive,,,,,,,,,,,,,,,,,"June 25, 2022",Ptr. Max Cadalig,La Trinidad SDAC,,,,,,,
+JUSTIN,,SINGABOC,MEM0567,Inactive,,,"December 16, 2008",,,,,,,,,,,,,,"June 25, 2022",Ptr. Max Cadalig,La Trinidad SDAC,,,,,,,
+RODEL,,SINGABOC,MEM0568,Inactive,,,"June 10, 1983",,,,,,,,,,,,,,"June 25, 2022",Ptr. Max Cadalig,La Trinidad SDAC,,,,,,,
+ARCELYN,COLBONGAN,SILOY,MEM0569,Inactive,,,1990-07-27,,,,,,,,,,,,,,2011-03-19,,,,,,,,,OFW @ Singapore
+BENITA,,SUBADAY,MEM0570,Inactive,,,1954-03-12,,,,,,,,,,,,,,2015-06-06,Ptr. Cayetano Emilio,,,,,,,,
+JAN,DANESE,TANELON,MEM0571,Inactive,,,2000-06-12,,,,,,,,,,,,,,2010-07-31,Ptr. Willie Ortaleza,Greenvalley,,,,,,,
+KRISTIA,,TANELON,MEM0572,Inactive,,,2007-12-01,,,,,,,,,,,,,,,,,,,,,,,
+BRENDON,LUCAS,TAO-EY,MEM0573,Inactive,,,1987-12-07,,,,,,,,,,,,,,1998-01-03,Ptr. Solomon Gandeza,Bayabas L.T.B.,,,,,,,
+IRIANEY,GRACE,TAO-EY,MEM0574,Inactive,,,1991-12-03,,,,,,,,,,,,,,,,Greenvalley B.C.,,,,,,,
+SOLEDAD,,TENGAO,MEM0575,Inactive,,,1958-08-20,,,,,,,,,,,,,,1998-06-20,Ptr. R. Lawson,Greenvalley B.C.,,,,,,,
+TEODORO,KITKITOY,TILADO,MEM0576,Inactive,,,1994-03-04,,,,,,,,,,,,,,2015-06-06,Ptr. Cayetano Emilio,Piraso Resort B.C.,,,,,,,
+FRANCIS,ALANGDEO,TINO,MEM0577,Inactive,,,,,,,,,,,,,,,,,2016-05-01,,Piraso Resort B.C.,,,,,,,
+JULIE,PULICAY,TINO,MEM0578,Inactive,,,1983-07-04,,,,,,,,,,,,,,,Ptr. Rogelio Taguba,,,,,,,,
+DOLORES,,TOQUERO,MEM0579,Inactive,,,"May 3, 1990",,,,,,,,,,,,,,2014,Ptr. Cayetano Emilio,"Piraso, Resort",,,,,,,
+REGIE,,TOQUERO,MEM0580,Inactive,,,,,,,,,,,,,,,,,2014,Ptr. Cayetano Emilio,"Piraso, Resort",,,,,,,
+RIDGE,,TOQUERO,MEM0581,Inactive,,,"August 19, 2011",,,,,,,,,,,,,,,Ptr. Max Cadalig,La Trinidad SDAC,,,,,,,
+RISTY,,TOQUERO,MEM0582,Inactive,,,"April 6, 2006",,,,,,,,,,,,,,,Ptr. Max Cadalig,La Trinidad SDAC,,,,,,,
+ARSENIA,D.,ABAYA,MEM0583,Active,,,1950-11-04,,,,,,,,,,,,,,1969-03-22,Ptr. Berto,San Emilio I.S.,,,,,,,
+ELBERT,,ALATANG,MEM0584,Active,,,1977-05-10,,,,,,,,,,,,,,2004-03-24,Ptr. Jeramel Dupagan,,,,,,,,
+DINA,C.,ALTIGA,MEM0585,Active,,,"December 20, 1984",,,,,,,,,,,,,,"January, 2000",Ptr. Willie Ortaleza,Bayabas,,,,,,,
+JONARD,C.,ALTIGA,MEM0586,Active,,,"February 26, 2007",,,,,,,,,,,,,,"August 1, 2020",Ptr. Max Cadalig,LTSDAC,,,,,,,
+ZYRUS,,ALTIGA,MEM0587,Active,,,"December 24, 2008",,,,,,,,,,,,,,"April 26, 2025",Ptr. Max Cadalig,Rocky Alno Resort LTB,,,,,,,
+LILIA,,ANDRES,MEM0588,Active,,,1956-01-13,,,,,,,,,,,,,,May,Ptr. Manalo,,,,,,,,
+FLUEDIE,,APALLA,MEM0589,Active,,,"Nov. 15, 1991",,,,,,,,,,,,,,,Ptr. Dulay,Lucban Kayapa Bakun,,,,,,,
+ADOR,SANTOS,APILADO,MEM0590,Active,,,"October 19, 1997",,,,,,,,,,,,,,"March 20, 2021",Ptr. Valentin Aplod,BCSDAC,,,,,,,
+DWAYNE,S.,BANDAO,MEM0591,Active,,,"July 12, 2012",,,,,,,,,,,,,,"July 29, 2023",Ptr. Wilson Laoad,LTSDAC,,,,,,,
+LORRAINE,,BANDAO,MEM0592,Active,,,"Sept. 29, 2002",,,,,,,,,,,,,,"May 9, 2015",Ptr. Wincy Tiwan,,,,,,,,
+GIRLIE,ANN,BAGSAOAN,MEM0593,Active,,,"Oct. 11, 2005",,,,,,,,,,,,,,"Sept. 12, 2020",Ptr. Hyre Tangonan,LTSDAC,,,,,,,Working at Manila
+EDUARDO,SR.,BANGLOT,MEM0594,Active,,,1949-07-03,,,,,,,,,,,,,,2002-03-18,Ptr. Max Delos Reyes,MPM Navy Base,,,,,,,
+MERCY,D.,BANGLOT,MEM0595,Active,,,1955-11-03,,,,,,,,,,,,,,"March 27, 1965",Ptr. Dingoasen,Dagmam Quirino I.S. ,,,,,,,
+LORY,,BENYASAN,MEM0596,Active,,,"September 15, 1996 ",,,,,,,,,,,,,,"June 5, 2020",Ptr. Max Cadalig,La Trinidad SDA Church,,,,,,,Manila
+JOHNNY,,BILALAY,MEM0597,Active,,,,,,,,,,,,,,,,,,,,,,,,,,
+YNIZA,LESTINO,CAGA,MEM0598,Active,,,"May 16, 2002",,,,,,,,,,,,,,"October 22, 2022",Ptr. Max Cadalig,LTSDAC,,,,,,,
+JERRY,,CALASIAO,MEM0599,Active,,,1982-01-11,,,,,,,,,,,,,,,,,,,,,,,
+ELIEL SETH,T.,CALBAYAN,MEM0600,Active,,,"November 27, 2002",,,,,,,,,,,,,,"October 22, 2022",Ptr. Max Cadalig,La Trinidad SDA Church,,,,,,,
+EMILY,,CALBAYAN,MEM0601,Active,,,"March 7, 1967",,,,,,,,,,,,,,"March 25, 2005",,Greenvalley,,,,,,,Ambassador 
+LITO,,CALBAYAN,MEM0602,Active,,,"September 17, 1966",,,,,,,,,,,,,,"March 25, 2005",,Greenvalley,,,,,,,Ambassador 
+NOVENSKY,,CALBAYAN,MEM0603,Active,,,"July 19, 1999",,,,,,,,,,,,,,"March 3, 2012",Ptr. Emilio Cayetano,,,,,,,,
+ROSELYN,,CALBAYAN,MEM0604,Active,,,"July 2, 1996",,,,,,,,,,,,,,"May, 2005",Ptr. Romeo Wagayan ,Piraso Resort,,,,,,,Abra
+JEZREEL,,CERTIZA,MEM0605,Active,,,"Sept. 2, 2008",,,,,,,,,,,,,,"April 26, 2025",Ptr. Max Cadalig,Rocky Alno Resort LTB,,,,,,,
+MIRIAM,,CERTIZA,MEM0606,Active,,,"May 30, 1988",,,,,,,,,,,,,,"April 26, 2025",Ptr. Max Cadalig,Rocky Alno Resort LTB,,,,,,,
+GEMMA,MENDOZA,COSME,MEM0607,Active,,,1994-04-06,,,,,,,,,,,,,,2016-08-13,Ptr. Max Cadalig,Piraso Resort,,,,,,,
+VRIX,JAHRYL,CRUZ,MEM0608,Active,,,"October 7, 2008",,,,,,,,,,,,,,"August 1, 2020",Ptr. Max Cadalig,La Trinidad SDA Church,,,,,,,
+GEO MARK,B.,DALO,MEM0609,Active,,,"July 9, 2012",,,,,,,,,,,,,,"July 29, 2023",Ptr. Wilson Laoad,La Trinidad SDA Church,,,,,,,
+RIMAR,,DEGSI,MEM0610,Active,,,1994-10-30,,,,,,,,,,,,,,2004-02-07,Ptr. Cayetano Emilio,,,,,,,,Sinacbat
+MA. THERESA,YLISHA,DE GUZMAN,MEM0611,Active,,,"May 7, 2007",,,,,,,,,,,,,,"Sept. 12, 2020",Ptr. Hyre Tangonan,La Trinidad SDA Church,,,,,,,
+JAYCIN ROSE,B.,DELA CRUZ,MEM0612,Active,,,"Nov. 25, 2009",,,,,,,,,,,,,,"March 30, 2024",Ptr. Arellano Tambong,Piraso Resort,,,,,,,
+RANDY,,DELA CRUZ,MEM0613,Active,,,"Sept. 10, 1983",,,,,,,,,,,,,,"April, 2021",Ptr. Max Cadalig,La Trinidad SDA Church,,,,,,,
+RALPH,VINCE,DELA CRUZ,MEM0614,Active,,,"April 14, 2006",,,,,,,,,,,,,,"August 27, 2021",Ptr. Max Cadalig,La Trinidad SDA Church,,,,,,,
+VINA,RUTH,DELA CRUZ,MEM0615,Active,,,1985-10-02,,,,,,,,,,,,,,"April, 2021 ",Ptr. Max Cadalig,La Trinidad SDA Church,,,,,,,Rebaptism
+VIOLETA,D.,DELA CRUZ,MEM0616,Active,,,"Sept. 10, 1948",,,,,,,,,,,,,,"March 30, 2024",Ptr. Arellano Tambong,Piraso Resort,,,,,,,
+JOSEPH,,DIEGO,MEM0617,Active,,,1970-12-27,,,,,,,,,,,,,,2010-07-03,Ptr. Valentin Aplod,Piraso Resort,,,,,,,
+MICHELLYN,,DIEGO,MEM0618,Active,,,1979-09-17,,,,,,,,,,,,,,2010-07-03,Ptr. Valentin Aplod,Piraso Resort,,,,,,,
+OLIVE,JOZZLE,DIEGO,MEM0619,Active,,,"October 17, 2008",,,,,,,,,,,,,,"August 4, 2018",Eldr. Dan Smith,Piraso Resort,,,,,,,
+FRANCINE LOURIETE,G.,DUPAIS,MEM0620,Active,,,2006-01-23,,,,,,,,,,,,,,2017-09-30,Ptr. Eduardo Garlejo,La Trinidad SDA Church,,,,,,,
+LOVELY ROSE,G.,DUPAIS,MEM0621,Active,,,1987-01-14,,,,,,,,,,,,,,1998-01-03,Ptr. Solomon Gandeza,Bayabas L.T.B.,,,,,,,
+JARED,,DUPAIS,MEM0622,Active,,,"November 10, 2008",,,,,,,,,,,,,,"August 27, 2020",Ptr. Max Cadalig,La Trinidad SDA Church,,,,,,,
+JAPHET,,DUPAIS,MEM0623,Active,,,"January 17, 2011",,,,,,,,,,,,,,"July 30, 2022",Ptr. Novel Balang,Masla,,,,,,,
+PERFECTO,,FIACHING,MEM0624,Active,,,1950-09-12,,,,,,,,,,,,,,1989-07-01,Ptr. Anthonio Smith,,,,,,,,
+EFRAIM,,GATULLA,MEM0625,Active,,,"July 24, 1956",,,,,,,,,,,,,,1975 - 1977,Ptr. Pasiwen,Masla,,,,,,,
+IGNACIA,,GATULLA,MEM0626,Active,,,1966-04-26,,,,,,,,,,,,,,1974,Ptr. Corpuz,Masla,,,,,,,
+GEORGIE,,GAWI,MEM0627,Active,,,"July 22, 1973",,,,,,,,,,,,,,2005,,Lon-oy,,,,,,,attending sabbath at BSDAC
+JULIE,,GAWI,MEM0628,Active,,,"Jan. 31, 2002",,,,,,,,,,,,,,,,Asin,,,,,,,attending sabbath at BSDAC
+JESSIE,,GOMEYENG,MEM0629,Active,,,"January 15, 1985",,,,,,,,,,,,,,"April 26, 2025",Ptr. Max Cadalig,Rocky Alno Resort LTB,,,,,,,
+MYRNA,,HILARIO,MEM0630,Active,,,"May 28, 1961",,,,,,,,,,,,,,,,,,,,,,,
+SARAH,L.,HOMIGGOP,MEM0631,Active,,,"April 5, 2001",,,,,,,,,,,,,,,,La Trinidad SDA Church,,,,,,,
+TIMOTEO,,IBAN,MEM0632,Active,,,1986-11-26,,,,,,,,,,,,,,,Ptr. Emilio Cayetano,Abra,,,,,,,transfer fr. Tubtuba Abra
+MELODY,,IBAN,MEM0633,Active,,,"October 17, 1992",,,,,,,,,,,,,,2001,Ptr. Bruno Pollito,Bangad Tinglayan,,,,,,,
+BERLINDA,,KIBATAY,MEM0634,Active,,,"March 20, 1956",,,,,,,,,,,,,,,,,,,,,,,
+GIRLIE,,KIBATAY,MEM0635,Active,,,"February 7, 1985",,,,,,,,,,,,,,April or May 2010,,,,,,,,,
+HYACINTH,Nabus,KIBATAY,MEM0636,Active,,,"January 11, 2012",,,,,,,,,,,,,,"January 14,2023",Ptr. Bruno Pollito,Piraso Resort,,,,,,,
+ELIZABETH,C.,KIAL,MEM0637,Active,,,"February 15, 1993",,,,,,,,,,,,,,"May 11, 2005",Ptr. Romeo Wagayan ,Piraso Resort,,,,,,,
+BENIGNO,,LACAMEN,MEM0638,Active,,,1978-03-20,,,,,,,,,,,,,,,Ptr. Rogelio Bernal,PUC NLC Isabela,,,,,,,
+DIVINA,J.,LACAMEN,MEM0639,Active,,,1980-02-28,,,,,,,,,,,,,,,,,,,,,,,
+BENJ JAIREL,J.,LACAMEN,MEM0640,Active,,,"July 21, 2008",,,,,,,,,,,,,,2020,Ptr. Jemuel Pollito,Asin,,,,,,,
+JAIRUS,BRYLLE,LACAMEN,MEM0641,Active,,,"December 26, 2007",,,,,,,,,,,,,,2018,,Piraso Resort,,,,,,,
+EPIFANIA,,LAGDA,MEM0642,Active,,,1986-06-22,,,,,,,,,,,,,,2011-03-19,Ptr. Max Delos Reyes,Piraso Resort B.C.,,,,,,,
+MARYJANE,EVALLO,LAGUA,MEM0643,Active,,,"February 7, 1979",,,,,,,,,,,,,,"April 26, 2025",Ptr. Max Cadalig,Rocky Alno Resort LTB,,,,,,,
+EDRALINE,,LASATEN,MEM0644,Active,,,"January 8, 1994",,,,,,,,,,,,,,"September 12, 2020",Ptr. Hyre Tangonan,La Trinidad SDA Church,,,,,,,
+ISABEL,LINDAWAN,LASATEN,MEM0645,Active,,,1987-05-08,,,,,,,,,,,,,,2011-03-19,,Piraso Resort,,,,,,,
+JOLLIC,,LASATEN,MEM0646,Active,,,1983-06-15,,,,,,,,,,,,,,2011-03-19,,Piraso Resort,,,,,,,
+KARLO JIM,P.,LEAŇO,MEM0647,Active,,,"May 12, 2000",,,,,,,,,,,,,,"July 31, 2010",,Greenvalley,,,,,,,
+ALYMAR,,LIBANGAN,MEM0648,Active,,,1986-08-06,,,,,,,,,,,,,,1998-01-03,Ptr. Solomon Gandeza,Bayabas L.T.B.,,,,,,,kalinga
+LYNFA,,LIBANGAN,MEM0649,Active,,,1962-09-27,,,,,,,,,,,,,,1989-11-18,Ptr. Anthonio Smith,,,,,,,,
+NATHANAEL,,LIBANGAN,MEM0650,Active,,,1991-05-04,,,,,,,,,,,,,,,,,,,,,,,Manila
+NOELIA,TINDAAN,LONES,MEM0651,Active,,,"March 12, 2001",,,,,,,,,,,,,,"October 22, 2022",Ptr. Max Cadalig,La Trinidad SDA Church,,,,,,,
+ROMMEL,V.,MANAOIS,MEM0652,Active,,,,,,,,,,,,,,,,,,,,,,,,,," transfer fr. Mangaldan  January 1, 2022"
+ROSELIN,B.,MANOAIS,MEM0653,Active,,,"Nov. 23, 2000",,,,,,,,,,,,,,April / May 2015,,Mangaldan Pangasinan,,,,,,,"transfer fr. Mangaldan Oct. 29, 2022"
+VALERIE,BAGUILOD,ODAYAN,MEM0654,Active,,,2001-02-14,,,,,,,,,,,,,,"September 9, 2017",Ptr. Eduardo Garlejo,Trinidad S.D.A.Babtistry,,,,,,,
+DEXIE,F.,OSNGAO,MEM0655,Active,,,1981-11-21,,,,,,,,,,,,,,,Ptr. Solomon Gandeza,Tabuk,,,,,,,
+ZACKIESHA HANANI,F.,OSNGAO,MEM0656,Active,,,2015-01-23,,,,,,,,,,,,,,2025-10-18,Ptr. Novel Balang,Skyland Irisan Baguio City,,,,,,,
+ZAIDEN ZEBEDEE,F.,OSNGAO,MEM0657,Active,,,2013-02-15,,,,,,,,,,,,,,2025-10-01,Ptr. Arellano Tambong,Skyland Irisan Baguio City,,,,,,,
+SAMITA,DUPITSO,PADIW,MEM0658,Active,,,"August 21, 1965",,,,,,,,,,,,,,"November 20, 2021",Ptr. Ogie V. Budayao,La Trinidad SDA Church,,,,,,,
+TRIOMAR,Abaya,PALADIO,MEM0659,Active,,,"March 28, 2002",,,,,,,,,,,,,,,,,,,,,,,
+MARCIAL,,PALADIO,MEM0660,Active,,,1974-05-12,,,,,,,,,,,,,,1994-09-01,Ptr. Rogelio Taguba,,,,,,,,
+JESREL,,PECUA,MEM0661,Active,,,"September 7, 2005",,,,,,,,,,,,,,"August 27, 2020",Ptr. Max Cadalig,La Trinidad SDA Church,,,,,,,
+JEZIBELLE,,PECUA,MEM0662,Active,,,"May 19, 2007",,,,,,,,,,,,,,,Ptr. Max Cadalig,La Trinidad SDA Church,,,,,,,
+REY,,PECUA,MEM0663,Active,,,"His not yet member of SDA, he is still SDARM",,,,,,,,,,,,,,,,,,,,,,,
+RONABELLE,,PECUA,MEM0664,Active,,,"February 22, 1971",,,,,,,,,,,,,,"February 12, 2005",Ptr. Romeo Wagayan ,,,,,,,,
+FLORENA,C.,PEDRO,MEM0665,Active,,,1960-05-22,,,,,,,,,,,,,,1979-12-07,Ptr. J. Taylor,,,,,,,,
+VANESSA,M.,PELINGAN,MEM0666,Active,,,1993-02-14,,,,,,,,,,,,,,2005,Ptr. Romeo Wagayan ,,,,,,,,
+ALETA,BANGLOT,POLOC,MEM0667,Active,,,1984-04-04,,,,,,,,,,,,,,,,,,,,,,,
+DOUGLAS,,PULICAY,MEM0668,Active,,,1950-07-04,,,,,,,,,,,,,,1998-06-20,,MPM Navy Base,,,,,,,
+ROSITA,,PULICAY,MEM0669,Active,,,1953-09-15,,,,,,,,,,,,,,,,,,,,,,,
+JOCELYN,,PUNZALANG,MEM0670,Active,,,1977-11-05,,,,,,,,,,,,,,2011-03-19,,,,,,,,,
+ROGER,,RAYMUNDO,MEM0671,Active,,,1992-04-06,,,,,,,,,,,,,,2011-01-01,Ptr. Cayetano Emilio,Conception,,,,,,,
+FRIZZ,CELOY,SAGPAEY,MEM0672,Active,,,2001-03-02,,,,,,,,,,,,,,2010-07-31,Ptr. Jeramel Dupagan,,,,,,,,BSDAC
+THRISLYN,C.,SAGPAEY,MEM0673,Active,,,1967-07-18,,,,,,,,,,,,,,1979-12-07,Ptr. J. Taylor,,,,,,,,
+JANICE,,SEGUNDO,MEM0674,Active,,,1992-12-28,,,,,,,,,,,,,,2011-03-19,,,,,,,,,
+QUINSTON,Beso,SUKAW,MEM0675,Active,,,"October 26, 1998",,,,,,,,,,,,,,"May 22, 2021",Ptr. Hyre Tangonan,La Trinidad SDA Church,,,,,,,
+MICAIL,PADNGARAN,TACLOY,MEM0676,Active,,,"October 11, 2005",,,,,,,,,,,,,,"March 20, 2021",,La Trinidad SDA Church,,,,,,,Kapangan
+ROSE ANN,PADNGARAN,TACLOY,MEM0677,Active,,,"June 19, 1980",,,,,,,,,,,,,,"March 20, 2021",,La Trinidad SDA Church,,,,,,,Kapangan
+ARLENE,,TAMBONG,MEM0678,Active,,,"April 16, 1985",,,,,,,,,,,,,,,Ptr. Bruno Pollito,,,,,,,,
+ARELLANO,,TAMBONG,MEM0679,Active,,,"September 10, 1976",,,,,,,,,,,,,,"September , 1997",Ptr. Willie Ortaleza,Apayao,,,,,,,
+JESIMIEL,,TAMBONG,MEM0680,Active,,,"May 23, 2011",,,,,,,,,,,,,,"August, 2022",Ptr. Arellano Tambong,Bokawkan,,,,,,,
+SHEERAH,,TAMBONG,MEM0681,Active,,,"March 20, 2010",,,,,,,,,,,,,,"August, 2022",Ptr. Hyre Tangonan,Bokawkan,,,,,,,
+CHARITO,Mariano,TANGUED,MEM0682,Active,,,"April 5, 2004",,,,,,,,,,,,,,"April 26, 2025",Ptr. Max Cadalig,Rocky Alno Resort LTB,,,,,,,
+CATALINA,,TANELON,MEM0683,Active,,,"December 10, 1967",,,,,,,,,,,,,,,Ptr. Ajir,CAA,,,,,,,
+ANGEL,SHEREEN,TAO-EY,MEM0684,Active,,,"December 16, 2007",,,,,,,,,,,,,,"August 4, 2018",Ptr. Hyre Tangonan,Piraso Resort,,,,,,,
+ARIEF,S.,TAO-EY,MEM0685,Active,,,1983-03-06,,,,,,,,,,,,,,1991-03-30,Ptr. Geronimo Calangan,Greenvalley,,,,,,,BSDAC
+ESTHER,S.,TAO-EY,MEM0686,Active,,,1959-05-04,,,,,,,,,,,,,,1975-05-24,Ptr. Andrew Edwin,Camp 6 Hydro Tuba,,,,,,,
+SALEMJERU,,TA0-EY,MEM0687,Active,,,"January 18,2002",,,,,,,,,,,,,,,,Greenvalley,,,,,,,
+LUCAS,K.,TAO-EY,MEM0688,Active,,,1952-09-23,,,,,,,,,,,,,,june 20 1998,Ptr. Max Delos Reyes,MPM Navy Base,,,,,,,
+CARL,JASPER,USTARE,MEM0689,Active,,,"July 3, 2011",,,,,,,,,,,,,,"May 22, 2021",Ptr. Hyre Tangonan,La Trinidad SDA Church,,,,,,,
+CRIS,EMERALD,USTARE,MEM0690,Active,,,"December 7, 2009",,,,,,,,,,,,,,2019,Ptr. Eduardo Garlejo,Piraso Resort,,,,,,,
+CRISLYN,T.,USTARE,MEM0691,Active,,,1980-07-18,,,,,,,,,,,,,,1991-03-23,Ptr. Geronimo Calangan,Greenvalley,,,,,,,
+RAMIL,D.,USTARE,MEM0692,Active,,,1985-08-13,,,,,,,,,,,,,,2007-04-26,Ptr. Willie Ortaleza,Greenvalley,,,,,,,
+RACHEL,PADNGARAN,VALERA,MEM0693,Active,,,"March 22, 2010",,,,,,,,,,,,,,"March 20, 2021",Ptr. Valentin Aplod,BCSDAC,,,,,,,Kapangan SDAChurch
+ANGEL,,WALLY,MEM0694,Active,,,"January 5, 1975",,,,,,,,,,,,,,"April 12, 2001",Ptr. Ricardo Liwag,Piraso Resort,,,,,,,
+DIANA,,ALBARO,MEM0695,Active - Ambassador,,,"December 10, 1954",,,,,,,,,,,,,,"October 1, 2022",Ptr. Wilson Laoad,La Trinidad SDA Church,,,,,,,Profession by Faith
+MILDRED,POLEG,CARIŇO,MEM0696,Active - Ambassador,,,"June 14, 1984",,,,,,,,,,,,,,2006,Ptr. Romeo Wagayan,Piraso Resort,,,,,,,
+MARY,,DEPOLIO,MEM0697,Active - Ambassador,,,"September 9, 1954",,,,,,,,,,,,,,"November 20, 2022",Ptr. Arellano Tambong,Amburayan River,,,,,,,
+NESTOR,CACMEG,MARIŇAS,MEM0698,Active - Ambassador,,,"April 8, 1958",,,,,,,,,,,,,,"April 3, 2022",Ptr. Arellano Tambong,Coroz Ambassador,,,,,,,
+MARYJANE,P.,NAYAL,MEM0699,Active - Ambassador,,,"feb. 19, 1991",,,,,,,,,,,,,,2006,Ptr. Romeo Wagayan,Piraso Resort,,,,,,,
+SKY,POLIG,NAYAL,MEM0700,Active - Ambassador,,,"July 15, 2008",,,,,,,,,,,,,,"November 20, 2022",Ptr. Arellano Tambong,Amburayan River,,,,,,,
+XAI-RAIN JANE,POLIG,NAYAL,MEM0701,Active - Ambassador,,,"January 16, 2014",,,,,,,,,,,,,,"November 20, 2022",Ptr. Arellano Tambong,Amburayan River,,,,,,,
+DIONY,B.,OLSINO,MEM0702,Active - Ambassador,,,"August 20, 1960",,,,,,,,,,,,,,"October 1, 2022",Ptr. Wilson Laoad,La Trinidad SDA Church,,,,,,,
+MIRANDA,OLCHINO,SIMEON,MEM0703,Active - Ambassador,,,"May 5, 1932",,,,,,,,,,,,,,"April 3, 2022",Ptr. Arellano Tambong,Coroz Ambassador,,,,,,,
+RITA,L.,SUCONG,MEM0704,Active - Ambassador,,,"June 1, 1947",,,,,,,,,,,,,,"October 1, 2022",Ptr. Wilson Laoad,La Trinidad SDA Church,,,,,,,
+ELSIE,SIMEON,TRAQUEŇA,MEM0705,Active - Ambassador,,,"June 7, 1963",,,,,,,,,,,,,,"April 3, 2022",Ptr. Arellano Tambong,Coroz Ambassador,,,,,,,
+BERNARD ERENIO,JR.,DE GUZMAN,MEM0706,Active - Ambassador,,,"November 20, 2009",,,,,,,,,,,,,,"November 9, 2024",Ptr. Arellano Tambong,Piraso Resort,,,,,,,
+DAVID KURT,OLCHINO,FAGTA,MEM0707,Active - Ambassador,,,"September 17, 2011",,,,,,,,,,,,,,"November 9, 2024",Ptr. Arellano Tambong,Piraso Resort,,,,,,,
+EARL,S.,MENDOZA,MEM0708,Active - Ambassador,,,"December 20, 2013",,,,,,,,,,,,,,"November 9, 2024",Ptr. Arellano Tambong,Piraso Resort,,,,,,,
+HEMZYL,D.,MENDOZA,MEM0709,Active - Ambassador,,,"March 29, 2010",,,,,,,,,,,,,,"November 9, 2024",Ptr. Arellano Tambong,Piraso Resort,,,,,,,
+NELSON,AMOYONG,LAMSIS,MEM0710,Active - Ambassador,,,"October 30, 2009",,,,,,,,,,,,,,"November 9, 2024",Ptr. Arellano Tambong,Piraso Resort,,,,,,,
+RUDGE,PABLO,ERENIO,MEM0711,Active - Ambassador,,,"October 21, 2011",,,,,,,,,,,,,,"November 9, 2024",Ptr. Arellano Tambong,Piraso Resort,,,,,,,
+VINCE,,DE GUZMAN,MEM0712,Active - Ambassador,,,"October 21, 2011",,,,,,,,,,,,,,"November 9, 2024",Ptr. Arellano Tambong,Piraso Resort,,,,,,,
+ZI-ER KENN,GASPAR,BALCAC,MEM0713,Active - Ambassador,,,"January 18, 2010",,,,,,,,,,,,,,"April 26, 2025",Ptr. Max Cadalig,Rocky Alno Resrot LTB,,,,,,,
+MICHELLE,,POLIG,MEM0714,Active - Ambassador,,,,,,,,,,,,,,,,,,,,,,,,,,
+MARY,C.,BUNAGAN,MEM0715,Active - Ambassador,,,1942-06-23,,,,,,,,,,,,,,2025-10-18,Ptr. Arellano Tambong,Skyland Irisan,,,,,,,
+BEATRIZE,B.,BUNAGAN,MEM0716,Active - Ambassador,,,1966-07-27,,,,,,,,,,,,,,2025-10-18,Ptr. Arellano Tambong,Skyland Irisan,,,,,,,
+SOLEDAD,,ACOSTA,MEM0717,Missing,,,,,,,,,,,,,,,,,2000-11-26,Ptr. Max Delos Reyes,,,,,,,,
+BOYAN,,ANTONIO,MEM0718,Missing,,,1992-03-01,,,,,,,,,,,,,,2000-06-01,Ptr. Romeo Wagayan,,,,,,,,
+DOMINGA,,BENAWE,MEM0719,Missing,,,1968-03-20,,,,,,,,,,,,,,1990-03-30,Ptr. Geronimo Calangan,,,,,,,,
+DENVER,,BONGYAO,MEM0720,Missing,,,1992,,,,,,,,,,,,,,2003-03-22,Ptr. G. Scheuneman,,,,,,,,
+JOEL,,BONGYAO,MEM0721,Missing,,,1991,,,,,,,,,,,,,,2003-03-22,Ptr. G. Scheuneman,,,,,,,,
+JONRAY,,BONGYAO,MEM0722,Missing,,,,,,,,,,,,,,,,,2003-03-22,Ptr. G. Scheuneman,,,,,,,,
+MANUEL,,BONGYAO,MEM0723,Missing,,,,,,,,,,,,,,,,,2003-03-22,Ptr. G. Scheuneman,,,,,,,,
+LINDA,R.,CARIO,MEM0724,Missing,,,1967-02-23,,,,,,,,,,,,,,1987-11-22,Ptr. C. Catolico,,,,,,,,
+APRIL MAY,LYNN,CHINANGHAY,MEM0725,Missing,,,1975,,,,,,,,,,,,,,,,,,,,,,,
+PRESLYN CAMMIL,JANE,CHINANGHAY,MEM0726,Missing,,,1983,,,,,,,,,,,,,,,,,,,,,,,
+MYRA,,DULNUAN,MEM0727,Missing,,,,,,,,,,,,,,,,,2011-03-19,,,,,,,,,
+DONALD,,DUMPIT,MEM0728,Missing,,,1987,,,,,,,,,,,,,,,,,,,,,,,
+JOCELYN,,HUGO,MEM0729,Missing,,,1983-02-28,,,,,,,,,,,,,,2002-06-30,Ptr. Romeo Wagayan,,,,,,,,
+CARLOS,,LABUTEN,MEM0730,Missing,,,1965,,,,,,,,,,,,,,,,,,,,,,,
+ELLA,,LEGMAYO,MEM0731,Missing,,,1976,,,,,,,,,,,,,,2003-03-22,Ptr. G. Scheuneman,,,,,,,,
+VENUS,"""VIERNEZ""",LIWAN,MEM0732,Missing,,,1992-01-20,,,,,,,,,,,,,,2011-03-19,,,,,,,,,
+MARY,JANE,LOPEZ,MEM0733,Missing,,,,,,,,,,,,,,,,,2011-03-19,,,,,,,,,
+MAGDALENA,,MADILAT,MEM0734,Missing,,,,,,,,,,,,,,,,,"May 9, 1998",Ptr. Solomon Gandeza,,,,,,,,
+JOAN,,MENDOZA,MEM0735,Missing,,,1989,,,,,,,,,,,,,,,Ptr. Romeo Wagayan,,,,,,,,
+FATIMA,,OLIGARIO,MEM0736,Missing,,,1963-05-13,,,,,,,,,,,,,,2011-03-19,,,,,,,,,
+RACHEL,,SAGCHA-AN,MEM0737,Missing,,,1984,,,,,,,,,,,,,,,Ptr. Romeo Wagayan,,,,,,,,
+TESSIE,,SUBLI,MEM0738,Missing,,,,,,,,,,,,,,,,,2000-11-26,Ptr. Max Delos Reyes,,,,,,,,
+MYLENE,,WASIT,MEM0739,Missing,,,1986,,,,,,,,,,,,,,2003-02-02,Ptr. Romeo Wagayan,,,,,,,,
+ADOLFO,,ABAYA,MEM0740,Deceased,,,1950-03-15,,,,,,,,,,,,,,1969-03-22,Ptr. Berto,,,,,,,, | Date of Death: 2002-06-10
+PETER,,BAANI,MEM0741,Deceased,,,1945-12-12,,,,,,,,,,,,,,,Ptr. Santiago Antiporda,,,,,,,, | Date of Death: 2015-06-16
+GUILLERMO,,BALBIN,MEM0742,Deceased,,,1933-06-13,,,,,,,,,,,,,,,,,,,,,,, | Date of Death: 
+JIMMY,,CALBAYAN,MEM0743,Deceased,,,1946-09-16,,,,,,,,,,,,,,1991-05-01,Ptr. R. Biscaro,,,,,,,, | Date of Death: 
+APESA,,CELOY,MEM0744,Deceased,,,1935-11-12,,,,,,,,,,,,,,,,,,,,,,, | Date of Death: 2013-07-02
+JANE,,EBBES,MEM0745,Deceased,,,1927-06-06,,,,,,,,,,,,,,march 5 1945,Ptr. Bañaga,,,,,,,, | Date of Death: 2012-05-01
+EDNA,E.,HILL,MEM0746,Deceased,,,1944-08-29,,,,,,,,,,,,,,1953,Ptr. Williams,,,,,,,, | Date of Death: 
+GEORGE,,HILL,MEM0747,Deceased,,,,,,,,,,,,,,,,,,,,,,,,,, | Date of Death: 
+ALBERTO,,LIBANGAN,MEM0748,Deceased,,,1958-06-04,,,,,,,,,,,,,,1989-11-18,Ptr. Anthonio Smith,,,,,,,," | Date of Death: Feb 15, 2023"
+COSILENG,,LIWAN,MEM0749,Deceased,,,,,,,,,,,,,,,,,1963,Ptr. Dingoasen,,,,,,,, | Date of Death: 2001-06-01
+MAGDALENA,,MADILAT,MEM0750,Deceased,,,,,,,,,,,,,,,,,1998-05-09,Ptr. Solomon Gandeza,,,,,,,, | Date of Death: 
+PAULITA,,PANDUYOS,MEM0751,Deceased,,,,,,,,,,,,,,,,,,,,,,,,,, | Date of Death: 
+TEOFILO,,PANDUYOS,MEM0752,Deceased,,,1937-11-26,,,,,,,,,,,,,,1989-04-29,Ptr. R. Biscaro,,,,,,,, | Date of Death: 
+JAMES,,POLON,MEM0753,Deceased,,,1950-10-31,,,,,,,,,,,,,,2002-03-11,,,,,,,,, | Date of Death: 
+IMELDA,,TRANQUILO,MEM0754,Deceased,,,1939-04-05,,,,,,,,,,,,,,,Ptr. Damocles,,,,,,,, | Date of Death: 2023
+MILA,,POLEG,MEM0755,Deceased,,,"Nov. 5, 1965",,,,,,,,,,,,,,2006,Ptr. Romeo Wagayan,,,,,,,, | Date of Death: 
+DEMSON,M.,OSNGAO,MEM0756,Deceased,,,1980-01-07,,,,,,,,,,,,,,2014-11-29,Ptr. Cayetano Emilio,,,,,,,," | Date of Death: April 28, 2024"
+TAYNAN,CUYANGAN,CAGA,MEM0757,Deceased,,,"nov. 10, 1963",,,,,,,,,,,,,,,,,,,,,,," | Date of Death: June 6, 2024"
+YEAR,,2025,MEM0758,Deceased,,,,,,,,,,,,,,,,,,,,,,,,,," | Date of Death: August 22, 2024"
+LINDA,C.,LACAMAN,MEM0759,Deceased,,,"May 25, 1943",,,,,,,,,,,,,,"September 4, 2022",Ptr. Arellano Tambong,,,,,,,, | Date of Death: 

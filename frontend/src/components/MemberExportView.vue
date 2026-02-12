@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue';
+import { ref, computed, onMounted, watch } from 'vue';
 import { useRouter } from 'vue-router';
 import MemberPrintView from './MemberPrintView.vue';
 
@@ -91,6 +91,31 @@ const filteredMembers = computed(() => {
    }
 
    return result;
+});
+
+// Pagination Logic
+const currentPage = ref(1);
+const itemsPerPage = 10;
+
+const totalPages = computed(() => Math.ceil(filteredMembers.value.length / itemsPerPage));
+
+const paginatedMembers = computed(() => {
+  const start = (currentPage.value - 1) * itemsPerPage;
+  const end = start + itemsPerPage;
+  return filteredMembers.value.slice(start, end);
+});
+
+const nextPage = () => {
+  if (currentPage.value < totalPages.value) currentPage.value++;
+};
+
+const prevPage = () => {
+  if (currentPage.value > 1) currentPage.value--;
+};
+
+// Reset to page 1 when filters change
+watch([searchQuery, statusFilter, genderFilter, civilStatusFilter, minAgeFilter, maxAgeFilter], () => {
+  currentPage.value = 1;
 });
 
 const toggleSelection = (id: number) => {
@@ -289,7 +314,7 @@ onMounted(fetchMembers);
             No members found matching "{{ searchQuery }}"
          </div>
          <div 
-            v-for="member in filteredMembers" 
+            v-for="member in paginatedMembers" 
             :key="member.id"
             class="p-4 flex items-center hover:bg-slate-50 transition-colors cursor-pointer group"
             @click="router.push(`/members/${member.id}`)"
@@ -315,6 +340,29 @@ onMounted(fetchMembers);
             <div class="w-40 text-sm text-slate-500">{{ calculateAge(member.birth_date) }} / {{ member.gender }}</div>
          </div>
       </div>
+       
+       <!-- Pagination Footer -->
+       <div v-if="totalPages > 1" class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between">
+         <span class="text-xs text-slate-500 font-medium">
+            Page {{ currentPage }} of {{ totalPages }} ({{ filteredMembers.length }} results)
+         </span>
+         <div class="flex gap-2">
+            <button 
+               @click="prevPage" 
+               :disabled="currentPage === 1"
+               class="px-3 py-1 text-xs font-bold rounded-lg border bg-white hover:bg-slate-50 disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+               Previous
+            </button>
+            <button 
+               @click="nextPage" 
+               :disabled="currentPage === totalPages"
+               class="px-3 py-1 text-xs font-bold rounded-lg border bg-white hover:bg-slate-50 disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+               Next
+            </button>
+         </div>
+       </div>
    </div>
 
    <!-- HIDDEN PRINT AREA -->

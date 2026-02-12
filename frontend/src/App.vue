@@ -38,6 +38,9 @@ const logout = () => {
         <router-link to="/export" class="nav-link" active-class="nav-link-active">
           <span class="text-lg">🖨️</span> <span>Bulk Export</span>
         </router-link>
+        <router-link to="/import" class="nav-link" active-class="nav-link-active">
+          <span class="text-lg">📥</span> <span>Import</span>
+        </router-link>
       </div>
 
       <div class="pt-6 border-t border-slate-50 space-y-2">

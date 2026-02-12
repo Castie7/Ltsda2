@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted, computed } from 'vue';
+import { ref, onMounted, computed, watch } from 'vue';
 import { useRouter } from 'vue-router';
 
 const router = useRouter();
@@ -8,9 +8,13 @@ const router = useRouter();
 interface Member {
   id: number;
   full_name: string;
+  member_code: string;
   status: string;       // Matches 'Active', 'Inactive'
+  civil_status: string;
+  gender: string;
   phone_no: string;     
   email: string;
+  birth_date: string;
   baptism_date: string;
 }
 
@@ -31,7 +35,7 @@ const toggleFilterMenu = (name: string) => {
 };
 
 // 2. Fetch data from CodeIgniter 4 API
-const fetchMembers = async () => {
+const fetchMembers = async (): Promise<void> => {
   try {
     const response = await fetch('http://localhost:8080/api/members');
     if (!response.ok) throw new Error('Failed to fetch');
@@ -97,8 +101,32 @@ const filteredMembers = computed(() => {
           return true;
        });
    }
-   
    return result;
+});
+
+// Pagination Logic
+const currentPage = ref(1);
+const itemsPerPage = 10;
+
+const totalPages = computed(() => Math.ceil(filteredMembers.value.length / itemsPerPage));
+
+const paginatedMembers = computed(() => {
+  const start = (currentPage.value - 1) * itemsPerPage;
+  const end = start + itemsPerPage;
+  return filteredMembers.value.slice(start, end);
+});
+
+const nextPage = () => {
+  if (currentPage.value < totalPages.value) currentPage.value++;
+};
+
+const prevPage = () => {
+  if (currentPage.value > 1) currentPage.value--;
+};
+
+// Reset to page 1 when filters change
+watch([searchQuery, statusFilter, genderFilter, civilStatusFilter, minAgeFilter, maxAgeFilter], () => {
+  currentPage.value = 1;
 });
 
 // Navigate to Add Page
@@ -125,12 +153,20 @@ onMounted(fetchMembers);
           <span v-else>Managing {{ members.length }} records at La Trinidad SDA.</span>
         </p>
       </div>
-      <button 
-        @click="goToAddMember"
-        class="bg-blue-900 text-white px-5 py-2.5 rounded-xl font-medium shadow-lg shadow-blue-900/20 hover:-translate-y-0.5 transition-all flex items-center gap-2"
-      >
-        <span>+</span> New Member
-      </button>
+      <div class="flex gap-3">
+        <button 
+          @click="router.push('/import')"
+          class="bg-white border border-slate-200 text-slate-600 px-4 py-2.5 rounded-xl font-bold shadow-sm hover:bg-slate-50 transition-colors flex items-center gap-2"
+        >
+          <span>📥</span> Import
+        </button>  
+        <button 
+            @click="goToAddMember"
+            class="bg-blue-900 text-white px-5 py-2.5 rounded-xl font-medium shadow-lg shadow-blue-900/20 hover:-translate-y-0.5 transition-all flex items-center gap-2"
+        >
+            <span>+</span> New Member
+        </button>
+      </div>
     </header>
 
     <div class="bg-white/70 backdrop-blur-md border border-slate-100 p-4 rounded-2xl mb-6 shadow-sm">
@@ -266,7 +302,7 @@ onMounted(fetchMembers);
           </tr>
           
           <tr 
-            v-for="member in filteredMembers" 
+            v-for="member in paginatedMembers" 
             :key="member.id" 
             @click="router.push(`/members/${member.id}`)"
             class="group hover:bg-slate-50/50 transition-colors cursor-pointer"
@@ -306,6 +342,29 @@ onMounted(fetchMembers);
           </tr>
         </tbody>
       </table>
+      
+      <!-- Pagination Footer -->
+      <div v-if="totalPages > 1" class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between">
+        <span class="text-xs text-slate-500 font-medium">
+           Page {{ currentPage }} of {{ totalPages }} ({{ filteredMembers.length }} results)
+        </span>
+        <div class="flex gap-2">
+           <button 
+              @click="prevPage" 
+              :disabled="currentPage === 1"
+              class="px-3 py-1 text-xs font-bold rounded-lg border bg-white hover:bg-slate-50 disabled:opacity-50 disabled:cursor-not-allowed"
+           >
+              Previous
+           </button>
+           <button 
+              @click="nextPage" 
+              :disabled="currentPage === totalPages"
+              class="px-3 py-1 text-xs font-bold rounded-lg border bg-white hover:bg-slate-50 disabled:opacity-50 disabled:cursor-not-allowed"
+           >
+              Next
+           </button>
+        </div>
+      </div>
     </div>
   </div>
 </template>
