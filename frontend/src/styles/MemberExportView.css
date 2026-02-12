@@ -1,0 +1,12 @@
+@reference "tailwindcss";
+
+@media print {
+    body>*:not(.print\:block) {
+        display: none;
+    }
+
+    .print-page-break {
+        break-after: page;
+        page-break-after: always;
+    }
+}

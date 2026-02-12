@@ -1,31 +1,8 @@
 <script setup lang="ts">
-import { computed } from 'vue';
-import { useRoute, useRouter } from 'vue-router';
-import { clearAuthToken } from './api';
+import { useApp } from './composables/useApp';
 import ToastNotification from './components/ToastNotification.vue';
 
-const route = useRoute();
-const router = useRouter();
-
-// Hide navigation if we are on the login page
-const showNav = computed(() => route.path !== '/login');
-
-const logout = async () => {
-  try {
-    const userData = localStorage.getItem('user');
-    const user = userData ? JSON.parse(userData) : null;
-    if (user?.id) {
-      await fetch('http://localhost:8080/auth/logout', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ user_id: user.id }),
-      });
-    }
-  } catch (e) { /* ignore logout errors */ }
-  clearAuthToken();
-  localStorage.removeItem('user');
-  router.push('/login');
-};
+const { showNav, logout } = useApp();
 </script>
 
 <template>
@@ -75,15 +52,4 @@ const logout = async () => {
 </template>
 
 
-<style scoped>
-/* Reference your main CSS file to give @apply access to utilities */
-@reference "./style.css";
-
-.nav-link {
-  @apply flex items-center space-x-3 px-4 py-3 rounded-xl text-slate-500 hover:bg-slate-50 transition-all duration-200;
-}
-
-.nav-link-active {
-  @apply bg-primary/5 text-primary font-semibold border-r-4 border-primary rounded-r-none;
-}
-</style>
+<style scoped src="./styles/App.css"></style>

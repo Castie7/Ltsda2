@@ -1,0 +1,14 @@
+﻿
+> frontend@0.0.0 build
+> vue-tsc -b && vite build
+
+src/components/LoginView.vue(9,3): error TS6133: 'failedAttempts' is declared but its value is never read.
+src/components/MemberExportView.vue(6,3): error TS6133: 'members' is declared but its value is never read.
+src/components/MemberExportView.vue(9,3): error TS6133: 'isPrinting' is declared but its value is never read.
+src/components/MemberExportView.vue(18,3): error TS2339: Property 'fetchMembers' does not exist on type '{ router: Router; members: Ref<any[], any[]>; selectedMembers: Ref<Set<number> & Omit<Set<number>, keyof Set<any>>, Set<number> | (Set<number> & Omit<...>)>; ... 21 more ...; calculateAge: (birthDate: string | null) => number | null; }'.
+src/components/MemberExportView.vue(18,3): error TS6133: 'fetchMembers' is declared but its value is never read.
+src/components/SettingsView.vue(8,5): error TS6133: 'selectedFile' is declared but its value is never read.
+src/components/SettingsView.vue(22,5): error TS6133: 'sqlFileInput' is declared but its value is never read.
+src/components/SettingsView.vue(28,5): error TS6133: 'filteredUsers' is declared but its value is never read.
+src/components/SettingsView.vue(33,5): error TS6133: 'fetchUsers' is declared but its value is never read.
+src/router/index.ts(72,24): error TS6133: 'from' is declared but its value is never read.

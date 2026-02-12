@@ -1,26 +1,4 @@
-<script setup lang="ts">
-import { useMemberFormView } from '../composables/useMemberFormView';
-
-const {
-  router,
-  currentStep,
-  isLoading,
-  isEditMode,
-  religionSelect,
-  isRebaptism,
-  imagePreview,
-  form,
-  firstName,
-  lastName,
-  middleName,
-  handleFileChange,
-  nextStep,
-  prevStep,
-  submitForm,
-} = useMemberFormView();
-</script>
-
-<template>
+﻿<template>
   <div class="max-w-5xl mx-auto p-6 pb-20">
     <div class="mb-8 flex items-center justify-between">
       <div>

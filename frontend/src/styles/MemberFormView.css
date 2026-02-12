@@ -1,0 +1,25 @@
+@reference "tailwindcss";
+
+.label {
+    @apply block text-sm font-bold text-slate-700 uppercase tracking-wider mb-2;
+}
+
+.input-field {
+    @apply w-full px-4 py-4 bg-slate-50 border border-slate-100 rounded-xl focus:ring-2 focus:ring-blue-900/20 focus:border-blue-900 outline-none transition-all text-slate-800 font-medium placeholder:text-slate-300;
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.4s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

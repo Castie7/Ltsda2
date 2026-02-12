@@ -1,56 +1,17 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue';
-import { useRoute, useRouter } from 'vue-router';
+import { useMemberDetailView } from '../composables/useMemberDetailView';
 import MemberPrintView from './MemberPrintView.vue';
-import { api } from '../api';
-import { useToast } from '../composables/useToast';
 
-const toast = useToast();
-
-const route = useRoute();
-const router = useRouter();
-const member = ref<any>(null);
-const isLoading = ref(true);
-const history = ref<any[]>([]);
-const showHistory = ref(false);
-
-const fetchMember = async () => {
-  try {
-    const id = route.params.id;
-    const response = await api(`/api/members/${id}`);
-    
-    if (!response.ok) throw new Error('Member not found');
-    
-    member.value = await response.json();
-
-    // Fetch history
-    const histRes = await api(`/api/members/${id}/history`);
-    if (histRes.ok) {
-      history.value = await histRes.json();
-    }
-  } catch (error) {
-    console.error(error);
-    toast.error('Could not load member record.');
-    router.push('/members');
-  } finally {
-    isLoading.value = false;
-  }
-};
-
-const formatFieldName = (field: string) => {
-  return field.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
-};
-
-const formatDate = (dateStr: string) => {
-  const d = new Date(dateStr);
-  return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit' });
-};
-
-const openPrintView = () => {
-    window.print();
-};
-
-onMounted(fetchMember);
+const {
+  router,
+  member,
+  isLoading,
+  history,
+  showHistory,
+  formatFieldName,
+  formatDate,
+  openPrintView,
+} = useMemberDetailView();
 </script>
 
 <template>
@@ -326,29 +287,4 @@ onMounted(fetchMember);
   </div>
 </template>
 
-<style scoped>
-@reference "tailwindcss";
-
-@media print {
-  /* Hide everything else explicitly if needed */
-  body > *:not(.max-w-6xl) { 
-     display: none; 
-  }
-}
-
-.detail-label {
-  @apply block text-[10px] text-slate-400 uppercase font-bold mb-1;
-}
-
-.detail-value {
-  @apply text-slate-800 font-medium text-sm;
-}
-
-.animate-fade-in {
-  animation: fadeIn 0.4s ease-out;
-}
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-</style>
+<style scoped src="../styles/MemberDetailView.css"></style>

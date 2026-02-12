@@ -1,0 +1,99 @@
+﻿
+> frontend@0.0.0 build
+> vue-tsc -b && vite build
+
+[36mvite v7.3.1 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32mÔ£ô[39m 19 modules transformed.
+node.exe : 
+[31mÔ£ù[39m Build 
+failed in 1.56s
+At line:1 char:1
++ & "C:\Program Files\
+nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
+    + CategoryInfo    
+          : NotSpeci  
+  fied: ([31mÔ£ù[   
+ 39m Build failed     
+in 1.56s:String)     
+[], RemoteExcepti    
+on
+    + FullyQualifiedE 
+   rrorId : NativeCo  
+  mmandError
+ 
+[31merror during 
+build:
+[31m[@tailwindcss/vit
+e:generate:build] 
+Can't resolve 
+'./style.css' in 'C:\x
+ampp\htdocs\LTSDA2\fro
+ntend\src\styles'[31m
+file: [36mC:/xampp/ht
+docs/LTSDA2/frontend/s
+rc/styles/App.css?vue&
+type=style&index=0&src
+=8437fe8b&scoped=8437f
+e8b&lang.css[31m
+    at 
+finishWithoutResolve (
+C:\xampp\htdocs\LTSDA2
+\frontend\node_modules
+\enhanced-resolve\lib\
+Resolver.js:586:18)
+    at C:\xampp\htdocs
+\LTSDA2\frontend\node_
+modules\enhanced-resol
+ve\lib\Resolver.js:678
+:14
+    at C:\xampp\htdocs
+\LTSDA2\frontend\node_
+modules\enhanced-resol
+ve\lib\Resolver.js:739
+:5
+    at eval (eval at 
+create (C:\xampp\htdoc
+s\LTSDA2\frontend\node
+_modules\tapable\lib\H
+ookCodeFactory.js:31:1
+0), <anonymous>:15:1)
+    at C:\xampp\htdocs
+\LTSDA2\frontend\node_
+modules\enhanced-resol
+ve\lib\Resolver.js:739
+:5
+    at eval (eval at 
+create (C:\xampp\htdoc
+s\LTSDA2\frontend\node
+_modules\tapable\lib\H
+ookCodeFactory.js:31:1
+0), <anonymous>:27:1)
+    at C:\xampp\htdocs
+\LTSDA2\frontend\node_
+modules\enhanced-resol
+ve\lib\DescriptionFile
+Plugin.js:89:43
+    at C:\xampp\htdocs
+\LTSDA2\frontend\node_
+modules\enhanced-resol
+ve\lib\Resolver.js:739
+:5
+    at eval (eval at 
+create (C:\xampp\htdoc
+s\LTSDA2\frontend\node
+_modules\tapable\lib\H
+ookCodeFactory.js:31:1
+0), <anonymous>:15:1)
+    at C:\xampp\htdocs
+\LTSDA2\frontend\node_
+modules\enhanced-resol
+ve\lib\Resolver.js:739
+:5[39m

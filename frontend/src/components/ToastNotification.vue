@@ -1,21 +1,7 @@
 <script setup lang="ts">
-import { useToast } from '../composables/useToast';
+import { useToastNotification } from '../composables/useToastNotification';
 
-const { toasts, removeToast } = useToast();
-
-const icons: Record<string, string> = {
-  success: '✅',
-  error: '❌',
-  warning: '⚠️',
-  info: 'ℹ️',
-};
-
-const bgColors: Record<string, string> = {
-  success: 'bg-emerald-50 border-emerald-200 text-emerald-800',
-  error: 'bg-red-50 border-red-200 text-red-800',
-  warning: 'bg-amber-50 border-amber-200 text-amber-800',
-  info: 'bg-blue-50 border-blue-200 text-blue-800',
-};
+const { toasts, removeToast, icons, bgColors } = useToastNotification();
 </script>
 
 <template>
@@ -41,36 +27,4 @@ const bgColors: Record<string, string> = {
   </Teleport>
 </template>
 
-<style scoped>
-.toast-enter-active {
-  animation: slideIn 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.toast-leave-active {
-  animation: slideOut 0.25s cubic-bezier(0.7, 0, 0.84, 0) forwards;
-}
-.toast-move {
-  transition: transform 0.3s ease;
-}
-
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateX(100px) scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0) scale(1);
-  }
-}
-
-@keyframes slideOut {
-  from {
-    opacity: 1;
-    transform: translateX(0) scale(1);
-  }
-  to {
-    opacity: 0;
-    transform: translateX(100px) scale(0.95);
-  }
-}
-</style>
+<style scoped src="../styles/ToastNotification.css"></style>

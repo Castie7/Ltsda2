@@ -1,41 +1,29 @@
-<script setup lang="ts">
-import { ref, onMounted } from 'vue';
+﻿<script setup lang="ts">
+import { useMemberPrintView } from '../composables/useMemberPrintView';
 
-const props = defineProps({
+defineProps({
   member: {
     type: Object,
     required: true
   }
 });
 
-const printedBy = ref('System Admin');
-
-onMounted(() => {
-   const userStr = localStorage.getItem('user');
-   if (userStr) {
-      try {
-         const user = JSON.parse(userStr);
-         if (user.name) {
-            printedBy.value = user.name;
-         }
-      } catch (e) {
-         console.error('Error parsing user data', e);
-      }
-   }
-});
+const { printedBy } = useMemberPrintView();
 </script>
-
 <template>
   <div class="print-container bg-white text-slate-900 font-serif">
     
     <div v-if="member" class="h-full flex flex-col justify-between">
       
       <!-- HEADER -->
-      <div class="text-center mb-6 border-b-2 border-black pb-4">
-         <div class="uppercase font-bold tracking-widest text-sm mb-1">Mountain Provinces Mission</div>
-         <div class="uppercase font-bold tracking-widest text-xs mb-1">of the Seventh-Day Adventists</div>
-         <div class="uppercase font-bold tracking-widest text-sm mt-2">La Trinidad Seventh-Day Adventist Church</div>
-         <div class="mt-4 text-2xl font-bold uppercase tracking-wide">Membership Record</div>
+      <div class="flex items-center justify-center gap-6 mb-6 border-b-2 border-black pb-4">
+         <img src="/sda.png" alt="Logo" class="h-35 w-auto"/>
+         <div class="text-center">
+            <div class="uppercase font-bold tracking-widest text-sm mb-1">Mountain Provinces Mission</div>
+            <div class="uppercase font-bold tracking-widest text-xs mb-1">of the Seventh-Day Adventists</div>
+            <div class="uppercase font-bold tracking-widest text-sm mt-2">La Trinidad Seventh-Day Adventist Church</div>
+            <div class="mt-4 text-2xl font-bold uppercase tracking-wide">Membership Record</div>
+         </div>
       </div>
 
       <!-- MAIN CONTENT - 2 COLUMN LAYOUT -->
@@ -175,28 +163,4 @@ onMounted(() => {
   </div>
 </template>
 
-<style scoped>
-@reference "tailwindcss";
-
-.section-title {
-   @apply text-xs uppercase font-bold border-b border-black mb-3 pb-1 tracking-wider text-slate-700;
-}
-
-.label {
-   @apply text-[9px] uppercase text-slate-500 font-bold mb-0.5 tracking-wide;
-}
-
-.value {
-   @apply text-sm font-medium text-slate-900 leading-snug;
-}
-
-@media print {
-   body { -webkit-print-color-adjust: exact; }
-   @page { size: A4; margin: 0; }
-   .print-container { 
-      width: 210mm;
-      min-height: 297mm;
-      padding: 10mm 10mm 5mm 10mm !important; 
-   }
-}
-</style>
+<style scoped src="../styles/MemberPrintView.css"></style>

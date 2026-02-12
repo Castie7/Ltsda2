@@ -1,0 +1,30 @@
+@reference "tailwindcss";
+
+.section-title {
+    @apply text-xs uppercase font-bold border-b border-black mb-3 pb-1 tracking-wider text-slate-700;
+}
+
+.label {
+    @apply text-[9px] uppercase text-slate-500 font-bold mb-0.5 tracking-wide;
+}
+
+.value {
+    @apply text-sm font-medium text-slate-900 leading-snug;
+}
+
+@media print {
+    body {
+        -webkit-print-color-adjust: exact;
+    }
+
+    @page {
+        size: A4;
+        margin: 0;
+    }
+
+    .print-container {
+        width: 210mm;
+        min-height: 297mm;
+        padding: 10mm 10mm 5mm 10mm !important;
+    }
+}
