@@ -5,7 +5,7 @@ use CodeIgniter\Model;
 class UserModel extends Model {
     protected $table = 'users';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['username', 'password', 'full_name', 'role', 'profile_pic'];
+    protected $allowedFields = ['username', 'password', 'full_name', 'role', 'profile_pic', 'session_token'];
 
     protected $beforeInsert = ['hashPassword'];
     protected $beforeUpdate = ['hashPassword'];

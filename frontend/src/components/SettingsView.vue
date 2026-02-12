@@ -1,5 +1,9 @@
 <script setup lang="ts">
 import { ref, onMounted, computed, watch } from 'vue';
+import { api, getAuthToken } from '../api';
+import { useToast } from '../composables/useToast';
+
+const toast = useToast();
 
 const user = ref({
    id: null,
@@ -39,7 +43,7 @@ const fetchUser = async () => {
 
    isLoading.value = true;
    try {
-      const response = await fetch(`http://localhost:8080/api/users/${id}`);
+      const response = await api(`/api/users/${id}`);
       if (response.ok) {
          const data = await response.json();
          user.value = data;
@@ -94,7 +98,7 @@ const saveSettings = async () => {
    }
 
    try {
-      const response = await fetch(`http://localhost:8080/api/users/update/${id}`, {
+      const response = await api(`/api/users/update/${id}`, {
          method: 'POST',
          body: formData
       });
@@ -159,7 +163,8 @@ const API_URL = 'http://localhost:8080/api'; // Define API_URL
 
 // DATABASE METHODS
 const downloadBackup = () => {
-   window.location.href = `${API_URL}/admin/database/backup`;
+   const token = getAuthToken();
+   window.location.href = `${API_URL}/admin/database/backup${token ? '?token=' + token : ''}`;
 };
 
 const handleSqlFileSelect = (event: Event) => {
@@ -184,23 +189,23 @@ const restoreDatabase = async () => {
    if (userName) formData.append('current_user_name', userName);
 
    try {
-      const response = await fetch(`${API_URL}/admin/database/import`, {
+      const response = await api(`/api/admin/database/import`, {
          method: 'POST',
          body: formData
       });
       const result = await response.json();
       
       if (response.ok) {
-         alert('Database restored successfully!');
+         toast.success('Database restored successfully!');
          selectedSqlFile.value = null; 
          if (sqlFileInput.value) sqlFileInput.value.value = '';
          fetchLogs(); 
       } else {
-         alert('Error: ' + (result.messages?.error || result.message || 'Unknown error'));
+         toast.error('Error: ' + (result.messages?.error || result.message || 'Unknown error'));
       }
    } catch (error) {
       console.error('Restore error:', error);
-      alert('Network error during restore.');
+      toast.error('Network error during restore.');
    } finally {
       isRestoring.value = false;
    }
@@ -208,7 +213,7 @@ const restoreDatabase = async () => {
 
 const fetchLogs = async () => {
    try {
-      const response = await fetch(`${API_URL}/admin/logs`);
+      const response = await api(`/api/admin/logs`);
       if (response.ok) {
          const data = await response.json();
          logs.value = Array.isArray(data) ? data : (data.data || []);
@@ -220,7 +225,7 @@ const fetchLogs = async () => {
 
 const fetchUsers = async () => {
    try {
-      const response = await fetch(`${API_URL}/admin/users`);
+      const response = await api(`/api/admin/users`);
       if (response.ok) {
          usersList.value = await response.json();
       }
@@ -231,12 +236,12 @@ const fetchUsers = async () => {
 
 const createUser = async () => {
    if (!newUser.value.full_name || !newUser.value.username || !newUser.value.password) {
-      alert('Please fill in all fields');
+      toast.warning('Please fill in all fields');
       return;
    }
    
    try {
-      const response = await fetch(`${API_URL}/admin/users/create`, {
+      const response = await api(`/api/admin/users/create`, {
          method: 'POST',
          headers: {
             'Content-Type': 'application/json',
@@ -250,13 +255,13 @@ const createUser = async () => {
       
       const data = await response.json();
       if (response.ok) {
-         alert('User created successfully');
+         toast.success('User created successfully');
          showAddUserModal.value = false;
          newUser.value = { full_name: '', username: '', password: '', role: 'staff' };
          fetchUsers();
          fetchLogs();
       } else {
-         alert(data.messages?.error || 'Failed to create user');
+         toast.error(data.messages?.error || 'Failed to create user');
       }
    } catch (error) {
       console.error('Error creating user:', error);
@@ -271,12 +276,12 @@ const openResetPassword = (u: any) => {
 
 const resetPassword = async () => {
    if (!newPassword.value) {
-      alert('Please enter a new password');
+      toast.warning('Please enter a new password');
       return;
    }
    
    try {
-      const response = await fetch(`${API_URL}/admin/users/reset-password/${resetUser.value.id}`, {
+      const response = await api(`/api/admin/users/reset-password/${resetUser.value.id}`, {
          method: 'POST',
          headers: {
             'Content-Type': 'application/json'
@@ -290,11 +295,11 @@ const resetPassword = async () => {
       
       const data = await response.json();
       if (response.ok) {
-         alert('Password reset successfully');
+         toast.success('Password reset successfully');
          showResetPasswordModal.value = false;
          fetchLogs();
       } else {
-         alert(data.messages?.error || 'Failed to reset password');
+         toast.error(data.messages?.error || 'Failed to reset password');
       }
    } catch (error) {
       console.error('Error resetting password:', error);
@@ -304,7 +309,7 @@ const resetPassword = async () => {
 // DELETE MEMBER FUNCTIONS
 const searchMembersToDelete = async () => {
    if (!deleteSearchQuery.value || deleteSearchQuery.value.trim() === '') {
-      alert("Please enter a name to search");
+      toast.warning("Please enter a name to search");
       return;
    }
    
@@ -312,7 +317,7 @@ const searchMembersToDelete = async () => {
    deleteSearchResults.value = [];
 
    try {
-      const response = await fetch(`${API_URL}/members`); 
+      const response = await api(`/api/members`); 
       if (response.ok) {
          const allMembers = await response.json();
          const query = deleteSearchQuery.value.toLowerCase();
@@ -323,7 +328,7 @@ const searchMembersToDelete = async () => {
       }
    } catch(e) {
       console.error(e);
-      alert("Error searching members");
+      toast.error("Error searching members");
    }
 };
 
@@ -333,7 +338,7 @@ const confirmDeleteMember = async (member: any) => {
    }
 
    try {
-      const response = await fetch(`${API_URL}/members/${member.id}`, {
+      const response = await api(`/api/members/${member.id}`, {
          method: 'DELETE',
          headers: {
             'Content-Type': 'application/json'
@@ -345,16 +350,16 @@ const confirmDeleteMember = async (member: any) => {
       });
 
       if (response.ok) {
-         alert(`Member ${member.full_name} deleted successfully.`);
+         toast.success(`Member ${member.full_name} deleted successfully.`);
          deleteSearchResults.value = deleteSearchResults.value.filter((m: any) => m.id !== member.id);
          fetchLogs(); 
       } else {
          const data = await response.json();
-         alert(data.messages?.error || "Failed to delete member.");
+         toast.error(data.messages?.error || "Failed to delete member.");
       }
    } catch (e) {
       console.error(e);
-      alert("Error processing deletion.");
+      toast.error("Error processing deletion.");
    }
 };
 

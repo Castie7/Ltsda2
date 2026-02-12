@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted, computed } from 'vue';
+import { api } from '../api';
 
 interface Member {
   id: number;
@@ -13,7 +14,7 @@ const isLoading = ref(true);
 
 const fetchMembers = async () => {
   try {
-    const response = await fetch('http://localhost:8080/api/members');
+    const response = await api('/api/members');
     if (!response.ok) throw new Error('Failed to fetch');
     const data = await response.json();
     members.value = data;

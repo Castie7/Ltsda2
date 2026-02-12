@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
+import { api } from '../api';
 
 const router = useRouter();
 const fileInput = ref<HTMLInputElement | null>(null);
@@ -77,7 +78,7 @@ const uploadFile = async () => {
     if (userName) formData.append('current_user_name', userName);
 
     // Assuming backend endpoint is /api/members/import
-    const response = await fetch('http://localhost:8080/api/members/import', {
+    const response = await api('/api/members/import', {
       method: 'POST',
       body: formData,
     });

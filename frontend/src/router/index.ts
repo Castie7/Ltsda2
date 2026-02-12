@@ -73,9 +73,12 @@ router.beforeEach((to, from, next) => {
     const publicPages = ['/login'];
     const authRequired = !publicPages.includes(to.path);
     const loggedIn = localStorage.getItem('user');
+    const token = localStorage.getItem('auth_token');
 
-    // If trying to access a restricted page + not logged in
-    if (authRequired && !loggedIn) {
+    // If trying to access a restricted page + not logged in or no token
+    if (authRequired && (!loggedIn || !token)) {
+        localStorage.removeItem('user');
+        localStorage.removeItem('auth_token');
         return next('/login');
     }
 

@@ -16,6 +16,7 @@ $routes->group('api', function($routes) {
     
     // FIX: Removed the extra "api/" and updated the path to match your Vue fetch URL
     $routes->post('members/update/(:num)', 'Members::update/$1'); // POST api/members/update/1
+    $routes->get('members/(:num)/history', 'Members::history/$1'); // GET api/members/1/history
     $routes->delete('members/(:num)', 'Members::delete/$1');       // DELETE api/members/1
     $routes->post('members/import', 'Members::import');           // POST api/members/import
 

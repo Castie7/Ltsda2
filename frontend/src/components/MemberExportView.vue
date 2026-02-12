@@ -2,6 +2,7 @@
 import { ref, computed, onMounted, watch } from 'vue';
 import { useRouter } from 'vue-router';
 import MemberPrintView from './MemberPrintView.vue';
+import { api } from '../api';
 
 const router = useRouter();
 
@@ -26,7 +27,7 @@ const toggleFilterMenu = (name: string) => {
 const fetchMembers = async () => {
   isLoading.value = true;
   try {
-    const response = await fetch('http://localhost:8080/api/members');
+    const response = await api('/api/members');
     if (response.ok) {
       const data = await response.json();
       members.value = data;
@@ -89,6 +90,14 @@ const filteredMembers = computed(() => {
           return true;
        });
    }
+
+   // Status Priority Sort: Active → Child → Inactive → rest
+   const statusOrder: Record<string, number> = { 'Active': 0, 'Child': 1, 'Inactive': 2 };
+   result = [...result].sort((a, b) => {
+      const aOrder = statusOrder[a.status] ?? 3;
+      const bOrder = statusOrder[b.status] ?? 3;
+      return aOrder - bOrder;
+   });
 
    return result;
 });

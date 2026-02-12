@@ -25,10 +25,11 @@ class Filters extends BaseFilters
         'honeypot'      => Honeypot::class,
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
-        'cors'          => Cors::class, // Ensure this matches the use statement above
+        'cors'          => Cors::class,
         'forcehttps'    => ForceHTTPS::class,
         'pagecache'     => PageCache::class,
         'performance'   => PerformanceMetrics::class,
+        'auth'          => \App\Filters\AuthToken::class,
     ];
 
     /**
@@ -63,5 +64,9 @@ class Filters extends BaseFilters
 
     public array $methods = [];
 
-    public array $filters = [];
+    public array $filters = [
+        'auth' => [
+            'before' => ['api/*'],
+        ],
+    ];
 }

@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, computed, onUnmounted } from 'vue';
 import { useRouter } from 'vue-router';
+import { setAuthToken } from '../api';
 
 const router = useRouter();
 const username = ref('');
@@ -8,17 +9,55 @@ const password = ref('');
 const isLoading = ref(false);
 const errorMessage = ref('');
 
+// ── LOCKOUT STATE ──
+const lockoutSeconds = ref(0);
+const failedAttempts = ref(0);
+let countdownInterval: ReturnType<typeof setInterval> | null = null;
+
+const isLockedOut = computed(() => lockoutSeconds.value > 0);
+
+const lockoutDisplay = computed(() => {
+  const mins = Math.floor(lockoutSeconds.value / 60);
+  const secs = lockoutSeconds.value % 60;
+  return mins > 0 
+    ? `${mins}m ${secs.toString().padStart(2, '0')}s` 
+    : `${secs}s`;
+});
+
+const attemptsWarning = computed(() => {
+  if (failedAttempts.value === 0) return '';
+  const nextLockAt = failedAttempts.value < 3 ? 3 : failedAttempts.value < 6 ? 6 : failedAttempts.value < 9 ? 9 : null;
+  if (!nextLockAt) return 'Maximum lockout reached. Wait 15 minutes.';
+  const remaining = nextLockAt - failedAttempts.value;
+  return `${remaining} attempt${remaining > 1 ? 's' : ''} remaining before lockout`;
+});
+
+const startCountdown = (seconds: number) => {
+  if (countdownInterval) clearInterval(countdownInterval);
+  lockoutSeconds.value = seconds;
+  countdownInterval = setInterval(() => {
+    lockoutSeconds.value--;
+    if (lockoutSeconds.value <= 0) {
+      lockoutSeconds.value = 0;
+      if (countdownInterval) clearInterval(countdownInterval);
+      countdownInterval = null;
+    }
+  }, 1000);
+};
+
+onUnmounted(() => {
+  if (countdownInterval) clearInterval(countdownInterval);
+});
+
 const handleLogin = async () => {
+  if (isLockedOut.value) return;
   isLoading.value = true;
   errorMessage.value = '';
 
   try {
-    // Replace with your actual CI4 local URL
     const response = await fetch('http://localhost:8080/auth/login', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         username: username.value,
         password: password.value,
@@ -28,11 +67,24 @@ const handleLogin = async () => {
     const data = await response.json();
 
     if (response.ok) {
-      // Success: Save user info/token and redirect
+      // Success
+      failedAttempts.value = 0;
+      lockoutSeconds.value = 0;
+      setAuthToken(data.token);
       localStorage.setItem('user', JSON.stringify(data.user));
       router.push('/');
+    } else if (response.status === 429) {
+      // Locked out
+      failedAttempts.value = data.attempts || 0;
+      errorMessage.value = 'Too many failed attempts. Please wait.';
+      startCountdown(data.retry_after || 60);
     } else {
+      // Bad credentials
+      failedAttempts.value = data.attempts || 0;
       errorMessage.value = data.messages?.error || 'Invalid username or password';
+      if (data.retry_after && data.retry_after > 0) {
+        startCountdown(data.retry_after);
+      }
     }
   } catch (error) {
     errorMessage.value = 'Could not connect to the server.';
@@ -57,10 +109,23 @@ const handleLogin = async () => {
          <p class="text-slate-400 text-sm mt-1">Please sign in to continue</p>
       </div>
 
-
         <form @submit.prevent="handleLogin" class="space-y-6">
+
+          <!-- ERROR MESSAGE -->
           <div v-if="errorMessage" class="p-3 text-sm text-red-600 bg-red-50 rounded-xl text-center border border-red-100">
             {{ errorMessage }}
+          </div>
+
+          <!-- LOCKOUT COUNTDOWN -->
+          <div v-if="isLockedOut" class="p-4 bg-amber-50 border border-amber-200 rounded-xl text-center">
+            <div class="text-amber-800 font-bold text-sm mb-1">🔒 Account Temporarily Locked</div>
+            <div class="text-amber-900 text-3xl font-mono font-bold my-2">{{ lockoutDisplay }}</div>
+            <div class="text-amber-600 text-xs">Please wait before trying again</div>
+          </div>
+
+          <!-- ATTEMPTS WARNING -->
+          <div v-else-if="attemptsWarning && !isLockedOut" class="p-2 text-xs text-amber-700 bg-amber-50 rounded-lg text-center border border-amber-100">
+            ⚠️ {{ attemptsWarning }}
           </div>
 
           <div>
@@ -69,7 +134,8 @@ const handleLogin = async () => {
               v-model="username" 
               type="text" 
               required
-              class="w-full px-5 py-4 bg-slate-100/50 border-none rounded-2xl focus:ring-2 focus:ring-blue-900/20 transition-all outline-none placeholder:text-slate-400" 
+              :disabled="isLockedOut"
+              class="w-full px-5 py-4 bg-slate-100/50 border-none rounded-2xl focus:ring-2 focus:ring-blue-900/20 transition-all outline-none placeholder:text-slate-400 disabled:opacity-50 disabled:cursor-not-allowed" 
               placeholder="Your username" 
             />
           </div>
@@ -80,17 +146,19 @@ const handleLogin = async () => {
               v-model="password" 
               type="password" 
               required
-              class="w-full px-5 py-4 bg-slate-100/50 border-none rounded-2xl focus:ring-2 focus:ring-blue-900/20 transition-all outline-none placeholder:text-slate-400" 
+              :disabled="isLockedOut"
+              class="w-full px-5 py-4 bg-slate-100/50 border-none rounded-2xl focus:ring-2 focus:ring-blue-900/20 transition-all outline-none placeholder:text-slate-400 disabled:opacity-50 disabled:cursor-not-allowed" 
               placeholder="••••••••" 
             />
           </div>
 
           <button 
             type="submit" 
-            :disabled="isLoading"
-            class="w-full bg-blue-900 hover:bg-blue-800 disabled:bg-slate-300 text-white font-bold py-4 rounded-2xl transition-all duration-300 shadow-xl shadow-blue-900/20 active:scale-[0.98]"
+            :disabled="isLoading || isLockedOut"
+            class="w-full bg-blue-900 hover:bg-blue-800 disabled:bg-slate-300 text-white font-bold py-4 rounded-2xl transition-all duration-300 shadow-xl shadow-blue-900/20 active:scale-[0.98] disabled:shadow-none"
           >
-            <span v-if="!isLoading">Sign In</span>
+            <span v-if="isLockedOut">Locked ({{ lockoutDisplay }})</span>
+            <span v-else-if="!isLoading">Sign In</span>
             <span v-else class="flex items-center justify-center">
               <svg class="animate-spin h-5 w-5 mr-3 text-white" viewBox="0 0 24 24">
                 <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" fill="none"></circle>

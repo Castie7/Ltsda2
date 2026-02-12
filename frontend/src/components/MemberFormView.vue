@@ -1,16 +1,19 @@
 <script setup lang="ts">
 import { ref, watch, onMounted } from 'vue';
 import { useRouter, useRoute } from 'vue-router';
+import { api } from '../api';
+import { useToast } from '../composables/useToast';
 
 const router = useRouter();
 const route = useRoute();
+const toast = useToast();
 const currentStep = ref(1);
 const isLoading = ref(false);
 const isEditMode = ref(false);
 const memberId = route.params.id;
 
 // UI State for Special Logic
-const religionSelect = ref('Roman Catholic');
+const religionSelect = ref('');
 const isRebaptism = ref(false); 
 const selectedFile = ref<File | null>(null);
 const imagePreview = ref<string | null>(null);
@@ -35,7 +38,7 @@ const form = ref({
   email: '',
   educational_level: 'College', 
   occupation: '',
-  former_religion: 'Roman Catholic', 
+  former_religion: '', 
   hobbies_gifts: '',
   profile_pic: '', // Stores the filename from DB
   
@@ -48,7 +51,7 @@ const form = ref({
   rebaptism_place: '',
   
   // --- STEP 3: TRANSACTION & EXCLUSIONS ---
-  received_by: 'Profession of Faith',
+  received_by: '',
   date_received: '',
   from_church: '',
   observation: '',
@@ -67,7 +70,7 @@ onMounted(async () => {
     isEditMode.value = true;
     isLoading.value = true;
     try {
-      const response = await fetch(`http://localhost:8080/api/members/${memberId}`);
+      const response = await api(`/api/members/${memberId}`);
       if (!response.ok) throw new Error('Member not found');
       
       const data = await response.json();
@@ -117,16 +120,16 @@ onMounted(async () => {
       }
       
       // Handle Religion Dropdown logic
-      const standardReligions = ['Roman Catholic', 'Iglesia ni Cristo', 'Born Again Christian', 'Baptist', 'Methodist', 'Anglican / Episcopal', 'Aglipayan', 'Jehovah\'s Witness', 'Mormon (LDS)', 'Islam', 'Buddhism', 'Indigenous Beliefs', 'None'];
+      const standardReligions = ['Born Seventh-day Adventist', 'Roman Catholic', 'Iglesia ni Cristo', 'Born Again Christian', 'Baptist', 'Methodist', 'Anglican / Episcopal', 'Aglipayan', 'Jehovah\'s Witness', 'Mormon (LDS)', 'Islam', 'Buddhism', 'Indigenous Beliefs', 'None'];
       if (data.former_religion && !standardReligions.includes(data.former_religion)) {
           religionSelect.value = 'Other';
       } else {
-          religionSelect.value = data.former_religion || 'Roman Catholic';
+          religionSelect.value = data.former_religion || '';
       }
 
     } catch (error) {
       console.error(error);
-      alert('Error loading member data');
+      toast.error('Error loading member data');
       router.push('/members');
     } finally {
       isLoading.value = false;
@@ -163,7 +166,7 @@ watch(religionSelect, (newVal) => {
 const validateStep1 = () => {
   // Always require Name
   if (!lastName.value || !firstName.value) {
-      alert("Last Name and First Name are required.");
+      toast.warning("Last Name and First Name are required.");
       return false;
   }
 
@@ -172,7 +175,7 @@ const validateStep1 = () => {
 
   // In Create Mode, require Birthdate and Birthplace
   if (!form.value.birth_date || !form.value.birthplace) {
-    alert("Please fill in all REQUIRED fields:\n- Birthdate\n- Birthplace");
+    toast.warning("Please fill in all REQUIRED fields: Birthdate, Birthplace");
     return false;
   }
   return true;
@@ -210,20 +213,29 @@ const submitForm = async () => {
     formData.append('profile_pic_file', selectedFile.value);
   }
 
+  // Append current user info for change tracking
+  const userData = localStorage.getItem('user');
+  if (userData) {
+    const currentUser = JSON.parse(userData);
+    if (currentUser.name || currentUser.full_name) {
+      formData.append('current_user_name', currentUser.name || currentUser.full_name);
+    }
+  }
+
   // NOTE: We use POST for both create and update because 
   // standard PHP/XAMPP doesn't handle 'PUT' for Multipart files well.
   const url = isEditMode.value 
-    ? `http://localhost:8080/api/members/update/${memberId}`
-    : 'http://localhost:8080/api/members/create';
+    ? `/api/members/update/${memberId}`
+    : '/api/members/create';
 
   try {
-    const response = await fetch(url, {
+    const response = await api(url, {
       method: 'POST',
       body: formData // Note: No Content-Type header needed for FormData
     });
 
     if (response.ok) {
-      alert(isEditMode.value ? 'Member updated successfully!' : 'Member added successfully!');
+      toast.success(isEditMode.value ? 'Member updated successfully!' : 'Member added successfully!');
       router.push('/members');
     } else {
       const errorData = await response.json();
@@ -231,18 +243,18 @@ const submitForm = async () => {
       // Check for Validation Errors
       if (errorData.messages) {
           if (errorData.messages.full_name) {
-              alert(errorData.messages.full_name); // Show "Member name already exists"
+              toast.error(errorData.messages.full_name);
           } else {
               // Show generic error list
-              alert('Error saving:\n' + JSON.stringify(errorData.messages));
+              toast.error('Error saving: ' + JSON.stringify(errorData.messages));
           }
       } else {
-          alert('Error saving: ' + (errorData.message || 'Check your data.'));
+          toast.error('Error saving: ' + (errorData.message || 'Check your data.'));
       }
     }
   } catch (error) {
     console.error(error);
-    alert('Server connection failed.');
+    toast.error('Server connection failed.');
   } finally {
     isLoading.value = false;
   }
@@ -396,6 +408,8 @@ const submitForm = async () => {
             <div>
               <label class="label">Former Religion</label>
               <select v-model="religionSelect" class="input-field">
+                <option value="" disabled>— Select —</option>
+                <option value="Born Seventh-day Adventist">Born Seventh-day Adventist</option>
                 <option value="Roman Catholic">Roman Catholic</option>
                 <option value="Iglesia ni Cristo">Iglesia ni Cristo</option>
                 <option value="Born Again Christian">Born Again Christian</option>
@@ -454,6 +468,7 @@ const submitForm = async () => {
             <div>
               <label class="label">Received By</label>
               <select v-model="form.received_by" class="input-field">
+                <option value="" disabled>— Select —</option>
                 <option>Profession of Faith</option>
                 <option>Letter of Transfer</option>
                 <option>Baptism</option>

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref, onMounted, computed, watch } from 'vue';
 import { useRouter } from 'vue-router';
+import { api } from '../api';
 
 const router = useRouter();
 
@@ -41,7 +42,7 @@ const toggleFilterMenu = (name: string) => {
 // 2. Fetch data from CodeIgniter 4 API
 const fetchMembers = async (): Promise<void> => {
   try {
-    const response = await fetch('http://localhost:8080/api/members');
+    const response = await api('/api/members');
     if (!response.ok) throw new Error('Failed to fetch');
     const data = await response.json();
     members.value = data;
@@ -127,6 +128,14 @@ const filteredMembers = computed(() => {
           return true;
        });
    }
+   // Status Priority Sort: Active → Child → Inactive → rest
+   const statusOrder: Record<string, number> = { 'Active': 0, 'Child': 1, 'Inactive': 2 };
+   result = [...result].sort((a, b) => {
+      const aOrder = statusOrder[a.status] ?? 3;
+      const bOrder = statusOrder[b.status] ?? 3;
+      return aOrder - bOrder;
+   });
+
    return result;
 });
 

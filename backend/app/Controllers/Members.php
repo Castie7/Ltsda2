@@ -69,7 +69,8 @@ class Members extends ResourceController {
     {
         $model = new MemberModel();
 
-        if (!$model->find($id)) {
+        $oldData = $model->find($id);
+        if (!$oldData) {
             return $this->failNotFound('Member not found');
         }
 
@@ -92,10 +93,8 @@ class Members extends ResourceController {
         }
 
         // Fix for is_unique validation with placeholder {id}
-        // We manually replace {id} with the actual ID in the rule
         $rules = $model->getValidationRules();
         if (isset($rules['full_name'])) {
-             // If rule is an array (CI4 format), key is 'rules'
              if (is_array($rules['full_name'])) {
                  $rules['full_name']['rules'] = str_replace('{id}', $id, $rules['full_name']['rules']);
              } else {
@@ -105,10 +104,45 @@ class Members extends ResourceController {
         }
 
         if ($model->update($id, $data)) {
+            // ── TRACK CHANGES ──
+            $changes = [];
+            $skipFields = ['current_user_id', 'current_user_name', 'profile_pic_file', 'updated_at', 'created_at', 'deleted_at', 'id'];
+            
+            foreach ($data as $field => $newValue) {
+                if (in_array($field, $skipFields)) continue;
+                $oldValue = $oldData[$field] ?? '';
+                $newValue = $newValue ?? '';
+                
+                if ((string)$oldValue !== (string)$newValue) {
+                    $changes[$field] = [
+                        'old' => $oldValue,
+                        'new' => $newValue,
+                    ];
+                }
+            }
+
+            if (!empty($changes)) {
+                $historyModel = new \App\Models\MemberHistoryModel();
+                $userName = $this->request->getVar('current_user_name') ?? 'Unknown User';
+                
+                // Build a readable summary
+                $changedFields = array_keys($changes);
+                $note = 'Updated: ' . implode(', ', $changedFields);
+                
+                $historyModel->logChange((int)$id, $userName, $changes, $note);
+            }
+
             return $this->respond(['status' => 'success', 'message' => 'Member updated successfully']);
         } else {
             return $this->fail($model->errors(), 400);
         }
+    }
+
+    // GET MEMBER CHANGE HISTORY
+    public function history($id = null) {
+        $historyModel = new \App\Models\MemberHistoryModel();
+        $history = $historyModel->getHistory((int)$id);
+        return $this->respond($history);
     }
 
     // IMPORT MEMBERS FROM CSV

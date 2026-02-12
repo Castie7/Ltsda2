@@ -2,27 +2,48 @@
 import { ref, onMounted } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import MemberPrintView from './MemberPrintView.vue';
+import { api } from '../api';
+import { useToast } from '../composables/useToast';
+
+const toast = useToast();
 
 const route = useRoute();
 const router = useRouter();
 const member = ref<any>(null);
 const isLoading = ref(true);
+const history = ref<any[]>([]);
+const showHistory = ref(false);
 
 const fetchMember = async () => {
   try {
     const id = route.params.id;
-    const response = await fetch(`http://localhost:8080/api/members/${id}`);
+    const response = await api(`/api/members/${id}`);
     
     if (!response.ok) throw new Error('Member not found');
     
     member.value = await response.json();
+
+    // Fetch history
+    const histRes = await api(`/api/members/${id}/history`);
+    if (histRes.ok) {
+      history.value = await histRes.json();
+    }
   } catch (error) {
     console.error(error);
-    alert('Could not load member record.');
+    toast.error('Could not load member record.');
     router.push('/members');
   } finally {
     isLoading.value = false;
   }
+};
+
+const formatFieldName = (field: string) => {
+  return field.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+};
+
+const formatDate = (dateStr: string) => {
+  const d = new Date(dateStr);
+  return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit' });
 };
 
 const openPrintView = () => {
@@ -250,6 +271,53 @@ onMounted(fetchMember);
 
       </div>
     </div>
+
+    <!-- UPDATE HISTORY BOX -->
+    <div v-if="member" class="mt-8 bg-white border border-slate-100 rounded-2xl shadow-sm overflow-hidden">
+       <button 
+          @click="showHistory = !showHistory"
+          class="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-slate-50 transition-colors cursor-pointer"
+       >
+          <div class="flex items-center gap-3">
+             <span class="text-lg">📋</span>
+             <span class="text-sm font-bold text-slate-700">Update History</span>
+             <span v-if="history.length" class="bg-blue-100 text-blue-700 text-[10px] font-bold px-2 py-0.5 rounded-full">{{ history.length }}</span>
+          </div>
+          <span class="text-slate-400 text-xs">{{ showHistory ? '▲ Hide' : '▼ Show' }}</span>
+       </button>
+
+       <div v-if="showHistory" class="border-t border-slate-100">
+          <div v-if="history.length === 0" class="px-6 py-8 text-center text-slate-400 text-sm">
+             No changes recorded yet.
+          </div>
+          <div v-else class="divide-y divide-slate-50 max-h-96 overflow-y-auto">
+             <div v-for="entry in history" :key="entry.id" class="px-6 py-4 hover:bg-slate-50/50">
+                <div class="flex items-center justify-between mb-2">
+                   <div class="flex items-center gap-2">
+                      <span class="w-6 h-6 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center text-[10px] font-bold">✏️</span>
+                      <span class="text-xs font-bold text-slate-600">{{ entry.changed_by }}</span>
+                   </div>
+                   <span class="text-[10px] text-slate-400 font-mono">{{ formatDate(entry.created_at) }}</span>
+                </div>
+                <div class="ml-8 space-y-1">
+                   <template v-if="entry.changes">
+                      <div 
+                         v-for="(change, field) in (typeof entry.changes === 'string' ? JSON.parse(entry.changes) : entry.changes)" 
+                         :key="String(field)"
+                         class="text-xs text-slate-500"
+                      >
+                         <span class="font-semibold text-slate-700">{{ formatFieldName(String(field)) }}:</span>
+                         <span class="text-red-400 line-through mx-1">{{ change.old || '(empty)' }}</span>
+                         →
+                         <span class="text-green-600 font-medium ml-1">{{ change.new || '(empty)' }}</span>
+                      </div>
+                   </template>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+
   </div>
 
   <!-- HIDDEN PRINT VIEW -->
