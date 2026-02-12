@@ -5,6 +5,7 @@ interface Member {
   id: number;
   status: string;
   gender: string;
+  exclusion_type?: string;
 }
 
 const members = ref<Member[]>([]);
@@ -24,7 +25,12 @@ const fetchMembers = async () => {
 };
 
 const stats = computed(() => {
-   const total = members.value.length;
+   // Total excludes: Deceased, Drop, Abroad, Transferred, Missing (Status) OR Death, Reform (Exclusion)
+   const total = members.value.filter(m => 
+      !['Deceased', 'Drop', 'Abroad', 'Transferred', 'Missing'].includes(m.status) &&
+      !['Death', 'Reform'].includes((m as any).exclusion_type || '')
+   ).length;
+
    const active = members.value.filter(m => m.status === 'Active').length;
    const inactive = members.value.filter(m => m.status === 'Inactive').length;
    const male = members.value.filter(m => m.gender === 'Male').length;

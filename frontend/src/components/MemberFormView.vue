@@ -161,8 +161,18 @@ watch(religionSelect, (newVal) => {
 
 // VALIDATION
 const validateStep1 = () => {
-  if (!lastName.value || !firstName.value || !form.value.birth_date || !form.value.birthplace) {
-    alert("Please fill in all REQUIRED fields:\n- Last Name & First Name\n- Birthdate\n- Birthplace");
+  // Always require Name
+  if (!lastName.value || !firstName.value) {
+      alert("Last Name and First Name are required.");
+      return false;
+  }
+
+  // In Edit Mode, skip other validations
+  if (isEditMode.value) return true;
+
+  // In Create Mode, require Birthdate and Birthplace
+  if (!form.value.birth_date || !form.value.birthplace) {
+    alert("Please fill in all REQUIRED fields:\n- Birthdate\n- Birthplace");
     return false;
   }
   return true;
@@ -278,10 +288,13 @@ const submitForm = async () => {
         
         <div v-show="currentStep === 1" class="space-y-8 animate-fade-in">
           
+
           <div class="flex items-center justify-between border-b pb-4">
             <h2 class="text-xl font-bold text-blue-900">Personal Information</h2>
             <span class="text-xs text-red-500 font-bold">* Required Fields</span>
           </div>
+
+
 
           <div class="flex flex-col md:flex-row items-center gap-6 p-6 bg-slate-50 rounded-2xl border border-slate-100">
              <div class="relative group">
@@ -319,6 +332,12 @@ const submitForm = async () => {
               <select v-model="form.status" class="input-field">
                 <option value="Active">Active</option>
                 <option value="Inactive">Inactive</option>
+                <option value="Child">Child</option>
+                <option value="Transferred">Transferred</option>
+                <option value="Deceased">Deceased</option>
+                <option value="Abroad">Abroad</option>
+                <option value="Missing">Missing</option>
+                <option value="Drop">Drop</option>
               </select>
             </div>
             <div class="col-span-6 md:col-span-4">
@@ -329,12 +348,12 @@ const submitForm = async () => {
               </select>
             </div>
             <div class="col-span-6 md:col-span-4">
-              <label class="label">Birth Date <span class="text-red-500">*</span></label>
-              <input v-model="form.birth_date" type="date" class="input-field" required />
+              <label class="label">Birth Date <span v-if="!isEditMode" class="text-red-500">*</span></label>
+              <input v-model="form.birth_date" type="date" class="input-field" :required="!isEditMode" />
             </div>
             <div class="col-span-12 md:col-span-4">
-              <label class="label">Birthplace <span class="text-red-500">*</span></label>
-              <input v-model="form.birthplace" type="text" class="input-field" placeholder="Town, Province" required />
+              <label class="label">Birthplace <span v-if="!isEditMode" class="text-red-500">*</span></label>
+              <input v-model="form.birthplace" type="text" class="input-field" placeholder="Town, Province" :required="!isEditMode" />
             </div>
             <div class="col-span-12 md:col-span-4">
               <label class="label">Civil Status <span class="text-red-500">*</span></label>
@@ -453,7 +472,7 @@ const submitForm = async () => {
                 <div class="space-y-3">
                   <label class="label text-red-700">Reason for Exclusion</label>
                   <div class="flex flex-col gap-3">
-                    <label class="flex items-center gap-3 cursor-pointer" v-for="opt in ['Discipline', 'Unknown whereabouts', 'Death']" :key="opt">
+                    <label class="flex items-center gap-3 cursor-pointer" v-for="opt in ['Discipline', 'Unknown whereabouts', 'Reform', 'Death']" :key="opt">
                       <input type="radio" v-model="form.exclusion_type" :value="opt" class="w-4 h-4 text-red-600">
                       <span class="text-sm text-slate-700">{{ opt }}</span>
                     </label>
@@ -472,14 +491,15 @@ const submitForm = async () => {
                   <label class="label text-red-700">Date of Exclusion / Death</label>
                   <input v-model="form.exclusion_date" type="date" class="input-field bg-white border-red-200 focus:ring-red-900/20" />
                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div>
+                <div class="mt-4">
             <label class="label">Observations / Notes</label>
             <textarea v-model="form.observation" rows="4" class="input-field" placeholder="Additional clerk remarks..."></textarea>
           </div>
+        </div>
+            </div>
+          </div>
+
+
         </div>
 
         <div class="mt-10 flex justify-between pt-6 border-t border-slate-50">

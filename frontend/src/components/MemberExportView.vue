@@ -213,7 +213,7 @@ onMounted(fetchMembers);
                <div v-if="activeFilter === 'status'" class="absolute top-full mt-2 left-0 bg-white border border-slate-100 shadow-xl rounded-xl p-2 min-w-[150px] z-20 flex flex-col gap-1">
                   <button @click="statusFilter = ''; activeFilter = null" class="text-left px-3 py-2 text-sm rounded-lg hover:bg-red-50 text-slate-500 hover:text-red-500">Clear</button>
                   <div class="h-px bg-slate-100 my-1"></div>
-                  <button v-for="opt in ['Active', 'Inactive', 'Regular', 'Visitor', 'Transferred']" :key="opt" @click="statusFilter = opt; activeFilter = null" class="text-left px-3 py-2 text-sm rounded-lg hover:bg-blue-50 font-medium text-slate-700">
+                  <button v-for="opt in ['Active', 'Inactive', 'Child', 'Transferred', 'Deceased', 'Abroad', 'Drop', 'Missing']" :key="opt" @click="statusFilter = opt; activeFilter = null" class="text-left px-3 py-2 text-sm rounded-lg hover:bg-blue-50 font-medium text-slate-700">
                      {{ opt }}
                   </button>
                </div>
@@ -332,7 +332,17 @@ onMounted(fetchMembers);
             <div class="w-32">
                <span 
                   class="px-2 py-1 rounded-full text-[10px] uppercase font-bold"
-                  :class="member.status === 'Active' ? 'bg-green-100 text-green-700' : 'bg-slate-100 text-slate-500'"
+                  :class="{
+                    'bg-green-100 text-green-700': member.status === 'Active',
+                    'bg-indigo-100 text-indigo-700': member.status === 'Child',
+                    'bg-slate-100 text-slate-500': member.status === 'Inactive',
+                    'bg-amber-100 text-amber-700': member.status === 'Visitor',
+                    'bg-red-100 text-red-700': member.status === 'Transferred',
+                    'bg-stone-800 text-white': member.status === 'Deceased',
+                    'bg-teal-100 text-teal-800': member.status === 'Abroad',
+                    'bg-rose-100 text-rose-800': member.status === 'Drop',
+                    'bg-orange-100 text-orange-800': member.status === 'Missing'
+                  }"
                >
                   {{ member.status }}
                </span>

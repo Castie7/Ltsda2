@@ -76,6 +76,15 @@ onMounted(fetchMember);
         </div>
       </div>
 
+      <!-- CLERK OBSERVATIONS / NOTES - PROMINENT DISPLAY -->
+      <div v-if="member.observation" class="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-r-xl shadow-sm mb-8 flex gap-4 items-start">
+         <div class="text-2xl pt-1">📌</div>
+         <div>
+            <h3 class="text-xs font-bold text-yellow-800 uppercase tracking-wider mb-2">Clerk Observations / Notes</h3>
+            <p class="text-slate-800 text-sm whitespace-pre-wrap leading-relaxed">{{ member.observation }}</p>
+         </div>
+      </div>
+
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
         
         <!-- LEFT COLUMN: MAIN INFO -->
@@ -205,12 +214,7 @@ onMounted(fetchMember);
                 </div>
              </div>
 
-             <div class="flex-1 w-full">
-                <div class="text-xs text-slate-400 uppercase font-bold mb-2">Observations / Clerk Notes</div>
-                <div class="bg-amber-50 border border-amber-100 p-4 rounded-xl text-amber-900 text-sm italic">
-                   "{{ member.observation || 'No additional notes recorded.' }}"
-                </div>
-             </div>
+
           </div>
 
            <!-- EXCLUSION RECORD -->

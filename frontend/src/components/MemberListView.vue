@@ -16,6 +16,7 @@ interface Member {
   email: string;
   birth_date: string;
   baptism_date: string;
+  exclusion_type?: string;
 }
 
 const members = ref<Member[]>([]);
@@ -29,6 +30,9 @@ const civilStatusFilter = ref('');
 const minAgeFilter = ref<number | null>(null);
 const maxAgeFilter = ref<number | null>(null);
 const activeFilter = ref<string | null>(null);
+
+// Tabs State
+const activeTab = ref('All');
 
 const toggleFilterMenu = (name: string) => {
    activeFilter.value = activeFilter.value === name ? null : name;
@@ -63,6 +67,28 @@ const calculateAge = (birthDate: string | null) => {
 // 3. Client-side Search Logic
 const filteredMembers = computed(() => {
   let result = members.value;
+
+  // TAB FILTERING
+  if (activeTab.value === 'All') {
+      // Show all records (no filter applied)
+  } else if (activeTab.value === 'Members') {
+      // Show Active, Inactive, Child. Exclude Deceased/Transferred/Others/Abroad/Reform
+      result = result.filter(m => 
+          ['Active', 'Inactive', 'Child'].includes(m.status) && 
+          !['Death', 'Unknown whereabouts', 'Reform', 'Discipline'].includes(m.exclusion_type || '') &&
+          !['Transferred', 'Deceased', 'Abroad', 'Drop', 'Missing'].includes(m.status)
+      );
+  } else if (activeTab.value === 'Transferred') {
+      result = result.filter(m => m.status === 'Transferred');
+  } else if (activeTab.value === 'Deceased') {
+      result = result.filter(m => m.status === 'Deceased' || m.exclusion_type === 'Death');
+  } else if (activeTab.value === 'Others') {
+      // Unknown whereabouts, Reform (Exclusion), Discipline, Abroad, Missing, Drop
+      result = result.filter(m => 
+        ['Unknown whereabouts', 'Reform', 'Discipline'].includes(m.exclusion_type || '') ||
+        ['Abroad', 'Missing', 'Drop'].includes(m.status)
+      );
+  }
 
   // Text Search
   if (searchQuery.value) {
@@ -145,7 +171,7 @@ onMounted(fetchMembers);
 
 <template>
   <div class="max-w-6xl mx-auto p-8">
-    <header class="flex justify-between items-end mb-8">
+    <header class="flex justify-between items-end mb-6">
       <div>
         <h1 class="text-3xl font-extrabold text-slate-900 tracking-tight">Church Registry</h1>
         <p class="text-slate-500 mt-1">
@@ -153,34 +179,53 @@ onMounted(fetchMembers);
           <span v-else>Managing {{ members.length }} records at La Trinidad SDA.</span>
         </p>
       </div>
-      <div class="flex gap-3">
-        <button 
-          @click="router.push('/import')"
-          class="bg-white border border-slate-200 text-slate-600 px-4 py-2.5 rounded-xl font-bold shadow-sm hover:bg-slate-50 transition-colors flex items-center gap-2"
-        >
-          <span>📥</span> Import
-        </button>  
-        <button 
-            @click="goToAddMember"
-            class="bg-blue-900 text-white px-5 py-2.5 rounded-xl font-medium shadow-lg shadow-blue-900/20 hover:-translate-y-0.5 transition-all flex items-center gap-2"
-        >
-            <span>+</span> New Member
-        </button>
-      </div>
     </header>
 
+    <!-- TOOLBAR: Tabs + Search + Actions -->
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+        <!-- TABS -->
+        <div class="flex space-x-1 bg-slate-100/50 p-1 rounded-xl w-fit overflow-x-auto">
+            <button 
+                v-for="tab in ['All', 'Members', 'Transferred', 'Deceased', 'Others']" 
+                :key="tab"
+                @click="activeTab = tab; currentPage = 1"
+                class="px-4 py-2 rounded-lg text-xs font-bold transition-all whitespace-nowrap"
+                :class="activeTab === tab ? 'bg-white text-blue-900 shadow-sm' : 'text-slate-500 hover:text-slate-700'"
+            >
+                {{ tab }}
+            </button>
+        </div>
+
+        <div class="flex items-center gap-3">
+             <!-- Search Line -->
+             <div class="relative w-64">
+                <span class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">🔍</span>
+                <input 
+                   v-model="searchQuery" 
+                   type="text" 
+                   placeholder="Search..." 
+                   class="w-full pl-9 pr-4 py-2.5 rounded-xl bg-white border border-slate-200 focus:ring-2 focus:ring-blue-900/20 text-sm outline-none text-slate-700 shadow-sm"
+                />
+             </div>
+             
+             <!-- Action Buttons -->
+             <button 
+              @click="router.push('/import')"
+              class="bg-white border border-slate-200 text-slate-600 px-3 py-2.5 rounded-xl font-bold shadow-sm hover:bg-slate-50 transition-colors"
+              title="Import Data"
+            >
+              📥
+            </button>  
+            <button 
+                @click="goToAddMember"
+                class="bg-blue-900 text-white px-4 py-2.5 rounded-xl font-medium shadow-lg shadow-blue-900/20 hover:-translate-y-0.5 transition-all text-sm whitespace-nowrap"
+            >
+                + New
+            </button>
+        </div>
+    </div>
+
     <div class="bg-white/70 backdrop-blur-md border border-slate-100 p-4 rounded-2xl mb-6 shadow-sm">
-         <!-- Search Line -->
-         <div class="relative w-full mb-3">
-            <span class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">🔍</span>
-            <input 
-               v-model="searchQuery" 
-               type="text" 
-               placeholder="Search by name, status, or member code..." 
-               class="w-full pl-10 pr-4 py-3 rounded-xl bg-slate-50 border-none focus:ring-2 focus:ring-blue-900/20 text-sm outline-none text-slate-700"
-            />
-         </div>
-         
          <!-- Filter Buttons -->
          <div class="flex flex-wrap gap-2">
             <span class="text-xs font-bold text-slate-400 uppercase tracking-wider self-center mr-2">Filter By:</span>
@@ -197,7 +242,7 @@ onMounted(fetchMembers);
                <div v-if="activeFilter === 'status'" class="absolute top-full mt-2 left-0 bg-white border border-slate-100 shadow-xl rounded-xl p-2 min-w-[150px] z-20 flex flex-col gap-1">
                   <button @click="statusFilter = ''; activeFilter = null" class="text-left px-3 py-2 text-sm rounded-lg hover:bg-red-50 text-slate-500 hover:text-red-500">Clear</button>
                   <div class="h-px bg-slate-100 my-1"></div>
-                  <button v-for="opt in ['Active', 'Inactive', 'Regular', 'Visitor', 'Transferred']" :key="opt" @click="statusFilter = opt; activeFilter = null" class="text-left px-3 py-2 text-sm rounded-lg hover:bg-blue-50 font-medium text-slate-700">
+                  <button v-for="opt in ['Active', 'Inactive', 'Child', 'Transferred', 'Deceased', 'Abroad', 'Drop', 'Missing']" :key="opt" @click="statusFilter = opt; activeFilter = null" class="text-left px-3 py-2 text-sm rounded-lg hover:bg-blue-50 font-medium text-slate-700">
                      {{ opt }}
                   </button>
                </div>
@@ -320,10 +365,15 @@ onMounted(fetchMembers);
               <span 
                 class="px-2.5 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wide"
                 :class="{
-                  'bg-green-100 text-green-700': member.status === 'Active' || member.status === 'Regular',
+                  'bg-green-100 text-green-700': member.status === 'Active',
+                  'bg-indigo-100 text-indigo-700': member.status === 'Child',
                   'bg-slate-100 text-slate-500': member.status === 'Inactive',
                   'bg-amber-100 text-amber-700': member.status === 'Visitor',
-                  'bg-red-100 text-red-700': member.status === 'Transferred'
+                  'bg-red-100 text-red-700': member.status === 'Transferred',
+                  'bg-stone-800 text-white': member.status === 'Deceased',
+                  'bg-teal-100 text-teal-800': member.status === 'Abroad',
+                  'bg-rose-100 text-rose-800': member.status === 'Drop',
+                  'bg-orange-100 text-orange-800': member.status === 'Missing'
                 }"
               >
                 {{ member.status || 'Unknown' }}

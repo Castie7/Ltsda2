@@ -510,7 +510,7 @@ watch(user, (u) => {
              </div>
 
              <!-- DELETE MEMBERS -->
-             <div v-if="activeTab === 'delete'" class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
+             <div v-if="activeTab === 'delete_members'" class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
                 <div class="p-4 border-b border-slate-100">
                    <h4 class="font-bold text-slate-700 mb-2">Search & Delete Members</h4>
                    <p class="text-xs text-slate-500 mb-4">Search for a member by name to delete them. This action uses Soft Delete.</p>
