@@ -60,6 +60,21 @@ const routes: Array<RouteRecordRaw> = [
         name: 'Settings',
         component: () => import('../components/SettingsView.vue')
     },
+    {
+        path: '/letter/transfer',
+        name: 'TransferLetter',
+        component: () => import('../components/TransferLetterView.vue')
+    },
+    {
+        path: '/letter/transfer-form',
+        name: 'TransferForm',
+        component: () => import('../components/TransferFormView.vue')
+    },
+    {
+        path: '/letter/admission-certificate',
+        name: 'AdmissionCertificate',
+        component: () => import('../components/AdmissionCertificateView.vue')
+    },
 ];
 
 

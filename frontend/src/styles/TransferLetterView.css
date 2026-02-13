@@ -1,0 +1,102 @@
+@reference "../style.css";
+
+/* ── Form Styling ── */
+.transfer-form-card {
+    @apply bg-white rounded-3xl shadow-sm border border-slate-100 p-8 max-w-2xl mx-auto;
+}
+
+.transfer-form-card label {
+    @apply block text-sm font-semibold text-slate-700 mb-1.5;
+}
+
+.transfer-form-card input {
+    @apply w-full px-4 py-3 rounded-xl border border-slate-200 text-sm text-slate-800 bg-slate-50/50 focus:outline-none focus:ring-2 focus:ring-blue-500/30 focus:border-blue-400 transition-all;
+}
+
+/* ── Letter Preview ── */
+.letter-preview-wrapper {
+    @apply max-w-3xl mx-auto;
+}
+
+.letter-page {
+    @apply bg-white rounded-2xl shadow-lg border border-slate-100 p-12 relative;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+.letter-header {
+    @apply text-center mb-10 pb-6 border-b-2 border-slate-800;
+}
+
+.letter-header img {
+    @apply w-20 h-20 mx-auto mb-3 object-contain;
+}
+
+.letter-header h1 {
+    @apply text-lg font-bold uppercase tracking-wider text-slate-900;
+}
+
+.letter-header h2 {
+    @apply text-sm font-semibold text-slate-600 mt-1;
+}
+
+.letter-body {
+    @apply text-base leading-relaxed text-slate-800 my-10;
+    font-size: 1.05rem;
+    line-height: 2;
+}
+
+.letter-body .field-value {
+    @apply font-bold underline decoration-1 underline-offset-4;
+}
+
+.letter-signature {
+    @apply mt-16 pt-2;
+}
+
+.letter-signature .signature-line {
+    @apply border-t border-slate-800 pt-1 text-sm text-slate-700 w-72;
+}
+
+.letter-date {
+    @apply mt-8 text-sm text-slate-700;
+}
+
+/* ── Print Styles (GLOBAL — not scoped) ── */
+@media print {
+
+    /* Hide the entire sidebar nav */
+    nav {
+        display: none !important;
+    }
+
+    /* Hide the page header / buttons */
+    .no-print {
+        display: none !important;
+    }
+
+    /* Make main content take full width */
+    #app {
+        display: block !important;
+    }
+
+    main {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    /* Position the letter for clean printing */
+    .letter-print-area {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        padding: 40px 60px;
+    }
+
+    .letter-page {
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+    }
+}

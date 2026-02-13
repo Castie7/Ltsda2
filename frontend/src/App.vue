@@ -3,6 +3,9 @@ import { useApp } from './composables/useApp';
 import ToastNotification from './components/ToastNotification.vue';
 
 const { showNav, logout } = useApp();
+
+import { ref } from 'vue';
+const lettersOpen = ref(false);
 </script>
 
 <template>
@@ -32,6 +35,23 @@ const { showNav, logout } = useApp();
         <router-link to="/import" class="nav-link" active-class="nav-link-active">
           <span class="text-lg">📥</span> <span>Import</span>
         </router-link>
+        <div class="mt-2 pt-2 border-t border-slate-50">
+          <button @click="lettersOpen = !lettersOpen" class="w-full flex items-center justify-between px-4 py-1.5 cursor-pointer hover:bg-slate-50 rounded-lg transition-colors">
+            <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">📨 Letters</span>
+            <span class="text-slate-400 text-xs transition-transform duration-200" :class="{ 'rotate-180': lettersOpen }">▼</span>
+          </button>
+          <div v-show="lettersOpen" class="space-y-1 mt-1">
+            <router-link to="/letter/transfer" class="nav-link text-sm" active-class="nav-link-active">
+              <span class="text-base">📄</span> <span>Transfer Letter Request</span>
+            </router-link>
+            <router-link to="/letter/transfer-form" class="nav-link text-sm" active-class="nav-link-active">
+              <span class="text-base">📋</span> <span>Letter of Transfer Form</span>
+            </router-link>
+            <router-link to="/letter/admission-certificate" class="nav-link text-sm" active-class="nav-link-active">
+              <span class="text-base">📜</span> <span>Admission Certificate</span>
+            </router-link>
+          </div>
+        </div>
       </div>
 
       <div class="pt-6 border-t border-slate-50 space-y-2">

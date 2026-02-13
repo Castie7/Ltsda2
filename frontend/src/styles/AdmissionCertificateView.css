@@ -1,0 +1,93 @@
+@reference "../style.css";
+
+/* ── Form Styling ── */
+.admission-form-card {
+    @apply bg-white rounded-3xl shadow-sm border border-slate-100 p-8 max-w-2xl mx-auto;
+}
+
+.admission-form-card label {
+    @apply block text-sm font-semibold text-slate-700 mb-1.5;
+}
+
+.admission-form-card input {
+    @apply w-full px-4 py-3 rounded-xl border border-slate-200 text-sm text-slate-800 bg-slate-50/50 focus:outline-none focus:ring-2 focus:ring-blue-500/30 focus:border-blue-400 transition-all;
+}
+
+/* ── Letter Preview ── */
+.admission-letter-page {
+    @apply bg-white rounded-2xl shadow-lg border border-slate-100 p-12 relative;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+.admission-letter-page .letter-header {
+    @apply text-center mb-10 pb-6 border-b-2 border-slate-800;
+}
+
+.admission-letter-page .letter-header img {
+    @apply w-20 h-20 mx-auto mb-3 object-contain;
+}
+
+.admission-letter-page .letter-header h1 {
+    @apply text-lg font-bold uppercase tracking-wider text-slate-900;
+}
+
+.admission-letter-page .letter-header h2 {
+    @apply text-sm font-semibold text-slate-600 mt-1;
+}
+
+.admission-letter-page .letter-body {
+    @apply text-base leading-relaxed text-slate-800 my-8;
+    font-size: 1.05rem;
+    line-height: 2;
+}
+
+.admission-letter-page .field-value {
+    @apply font-bold underline decoration-1 underline-offset-4;
+}
+
+.admission-letter-page .letter-signature {
+    @apply mt-16 pt-2;
+}
+
+.admission-letter-page .signature-line {
+    @apply border-t border-slate-800 pt-1 text-sm text-slate-700 w-72;
+}
+
+.admission-letter-page .letter-date {
+    @apply mt-8 text-sm text-slate-700;
+}
+
+/* ── Print ── */
+@media print {
+    nav {
+        display: none !important;
+    }
+
+    .no-print {
+        display: none !important;
+    }
+
+    #app {
+        display: block !important;
+    }
+
+    main {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .admission-print-area {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        padding: 40px 60px;
+    }
+
+    .admission-letter-page {
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+    }
+}
