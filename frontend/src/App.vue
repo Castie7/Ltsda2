@@ -50,6 +50,9 @@ const lettersOpen = ref(false);
             <router-link to="/letter/admission-certificate" class="nav-link text-sm" active-class="nav-link-active">
               <span class="text-base">📜</span> <span>Admission Certificate</span>
             </router-link>
+            <router-link to="/letter/moving-report" class="nav-link text-sm" active-class="nav-link-active">
+              <span class="text-base">📊</span> <span>Moving Report</span>
+            </router-link>
           </div>
         </div>
       </div>

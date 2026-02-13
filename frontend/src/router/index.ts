@@ -75,6 +75,11 @@ const routes: Array<RouteRecordRaw> = [
         name: 'AdmissionCertificate',
         component: () => import('../components/AdmissionCertificateView.vue')
     },
+    {
+        path: '/letter/moving-report',
+        name: 'MovingReport',
+        component: () => import('../components/MovingReportView.vue')
+    },
 ];
 
 
