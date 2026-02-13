@@ -20,7 +20,18 @@ const {
       Loading record...
     </div>
 
-    <div v-else-if="member" class="animate-fade-in">
+    <div v-else-if="member" class="animate-fade-in rounded-3xl p-6 -m-2 transition-colors duration-300"
+      :class="{
+        'bg-green-100': member.status === 'Active',
+        'bg-blue-100': member.status === 'Inactive',
+        'bg-amber-100': member.status === 'Transferred',
+        'bg-slate-200': member.status === 'Deceased',
+        'bg-purple-100': member.status === 'Abroad',
+        'bg-orange-100': member.status === 'Missing',
+        'bg-red-100': member.status === 'Drop',
+        'bg-cyan-100': member.status === 'Child',
+      }"
+    >
       
       <div class="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
         <div>
@@ -29,7 +40,16 @@ const {
             <h1 class="text-3xl font-extrabold text-slate-900">{{ member.full_name }}</h1>
             <span 
               class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide"
-              :class="member.status === 'Active' ? 'bg-green-100 text-green-700' : 'bg-slate-100 text-slate-500'"
+              :class="{
+                'bg-green-100 text-green-700': member.status === 'Active',
+                'bg-blue-100 text-blue-700': member.status === 'Inactive',
+                'bg-amber-100 text-amber-700': member.status === 'Transferred',
+                'bg-slate-200 text-slate-500': member.status === 'Deceased',
+                'bg-purple-100 text-purple-700': member.status === 'Abroad',
+                'bg-orange-100 text-orange-700': member.status === 'Missing',
+                'bg-red-100 text-red-700': member.status === 'Drop',
+                'bg-cyan-100 text-cyan-700': member.status === 'Child',
+              }"
             >
               {{ member.status }}
             </span>
@@ -203,25 +223,45 @@ const {
            <div class="mt-6 pt-6 border-t border-slate-200">
               <div 
                  class="p-4 rounded-2xl flex items-start gap-4 border"
-                 :class="member.exclusion_type ? 'bg-red-50 border-red-100' : 'bg-slate-50 border-slate-100'"
+                 :class="{
+                   'bg-red-50 border-red-100': member.exclusion_type === 'Discipline' || member.exclusion_type === 'Reform',
+                   'bg-slate-100 border-slate-200': member.exclusion_type === 'Death',
+                   'bg-stone-100 border-stone-200': member.exclusion_type === 'Unknown whereabouts',
+                   'bg-slate-50 border-slate-100': !member.exclusion_type,
+                 }"
               >
                  <div class="text-3xl">{{ member.exclusion_type ? '⚠️' : '✅' }}</div>
                  <div>
                     <div 
                        class="text-xs uppercase font-bold"
-                       :class="member.exclusion_type ? 'text-red-700' : 'text-slate-400'"
+                       :class="{
+                         'text-red-700': member.exclusion_type === 'Discipline' || member.exclusion_type === 'Reform',
+                         'text-slate-500': member.exclusion_type === 'Death',
+                         'text-stone-600': member.exclusion_type === 'Unknown whereabouts',
+                         'text-slate-400': !member.exclusion_type,
+                       }"
                     >
                        Exclusion Record
                     </div>
                     <div 
                        class="text-lg font-bold mt-1"
-                       :class="member.exclusion_type ? 'text-red-900' : 'text-slate-500'"
+                       :class="{
+                         'text-red-900': member.exclusion_type === 'Discipline' || member.exclusion_type === 'Reform',
+                         'text-slate-600': member.exclusion_type === 'Death',
+                         'text-stone-700': member.exclusion_type === 'Unknown whereabouts',
+                         'text-slate-500': !member.exclusion_type,
+                       }"
                     >
                        {{ member.exclusion_type || 'None (Active Member)' }}
                     </div>
                     <div 
                        class="text-sm mt-1"
-                       :class="member.exclusion_type ? 'text-red-600' : 'text-slate-400'"
+                       :class="{
+                         'text-red-600': member.exclusion_type === 'Discipline' || member.exclusion_type === 'Reform',
+                         'text-slate-500': member.exclusion_type === 'Death',
+                         'text-stone-500': member.exclusion_type === 'Unknown whereabouts',
+                         'text-slate-400': !member.exclusion_type,
+                       }"
                     >
                        Date: {{ member.exclusion_date || 'N/A' }}
                     </div>

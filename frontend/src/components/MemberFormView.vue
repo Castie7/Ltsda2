@@ -239,6 +239,46 @@ const {
             </div>
           </div>
 
+          <!-- Transfer Records (Optional) -->
+          <div class="mt-8 pt-6 border-t border-slate-100">
+            <h3 class="text-sm font-bold text-blue-500 uppercase tracking-wider mb-4">Transfer Records (Optional)</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+              <!-- Transferred From -->
+              <div class="bg-blue-50/30 p-5 rounded-2xl border border-blue-100 space-y-4">
+                <div class="flex items-center gap-2 mb-2">
+                  <span class="text-xl">⛪</span>
+                  <span class="text-sm font-bold text-blue-800">Transferred From</span>
+                </div>
+                <div>
+                  <label class="label text-blue-700">Church Group</label>
+                  <input v-model="form.from_church_group" type="text" class="input-field bg-white" placeholder="e.g. Baguio City SDA Church" />
+                </div>
+                <div>
+                  <label class="label text-blue-700">Letter Date</label>
+                  <input v-model="form.date_received_letter" type="date" class="input-field bg-white" />
+                </div>
+              </div>
+
+              <!-- Transferred To -->
+              <div class="bg-amber-50/30 p-5 rounded-2xl border border-amber-100 space-y-4">
+                <div class="flex items-center gap-2 mb-2">
+                  <span class="text-xl">📤</span>
+                  <span class="text-sm font-bold text-amber-800">Transferred To</span>
+                </div>
+                <div>
+                  <label class="label text-amber-700">Church / Group</label>
+                  <input v-model="form.to_church_group" type="text" class="input-field bg-white" placeholder="e.g. Pines SDA Church" />
+                </div>
+                <div>
+                  <label class="label text-amber-700">Date</label>
+                  <input v-model="form.date_transferred_letter" type="date" class="input-field bg-white" />
+                </div>
+              </div>
+
+            </div>
+          </div>
+
           <div class="mt-8 pt-6 border-t border-slate-100">
             <h3 class="text-sm font-bold text-red-500 uppercase tracking-wider mb-4">Exclusions / Removal (Official Checklist)</h3>
             <div class="bg-red-50/50 p-6 rounded-2xl border border-red-100">

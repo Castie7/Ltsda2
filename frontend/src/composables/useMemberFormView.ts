@@ -54,6 +54,10 @@ export function useMemberFormView() {
         received_by: '',
         date_received: '',
         from_church: '',
+        from_church_group: '',
+        date_received_letter: '',
+        to_church_group: '',
+        date_transferred_letter: '',
         observation: '',
         exclusion_type: '',
         exclusion_date: ''
